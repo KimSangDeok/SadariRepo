@@ -6,6 +6,6 @@
 <title></title>
 </head>
 <body>
-사다리 메인입니당aaaaaaa 안녕하세요 우민입니다. 수정을 해봅시다
+사다리 메인입니당aaaaaaa 안녕하세요 우민입니다. 수정
 </body>
 </html>
