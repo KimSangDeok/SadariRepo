@@ -1,60 +1,71 @@
-/*------------------------------ 프로젝트 등록 페이지 스타일시트 ------------------------------ */
+/*------------------------------ 인덱스 페이지 스타일시트 ------------------------------ */
 
 /* 폰트 */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css)
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700)
-
-/* 기본 CSS */
-@import url("./css/style.css")
+@import url(./css/style.css)
 
 body
     display: block
     margin: 0 0 0 0
-    height: 100
+    height: 100%
 
-.menuContainer
-    height: 70px
-    background: rgb(10, 28, 50)
-    background-size: cover
+.menubar
+    position: fixed
+    height: 50px
+    width: 100%
+    top: 0
+    background-color: rgba(36, 36, 36, 1)
     
-    nav
-        float: right
-        vertical-align: middle
-        margin: 25px 
-
-        a
-            display: inline-block
-            font-family: 'Nanum Gothic', serif
-            font-size: 17px
-            margin-left: 30px
-            text-decoration: none
-            color: rgba(255, 255, 255, 100)
-            vertical-align: middle
-            
-        a:hover
-            color: rgba(160,220,255,1)
-
 /* 로고 */
-.logo
-    text-decoration: none
+.menu_logo
+    display: inline-block
     font-size: 30px
     letter-spacing: -2.5px
     color: #FFFFFF
-    display: inline-block
-    margin: 20px
+    margin: 8px 0 8px 16px
     text-align: left
     text-transform: uppercase
-    clear: left
 
-.logo:hover
-     color: white
+.menu_logo:hover
+    color: white
 
+nav
+    float: right
+    // margin: 8px 16px 8px 0
 
+    a
+        font-family: 'Nanum Gothic', serif
+        padding: 18px 20px
+        display: inline-block
+        font-family: 'Nanum Gothic', serif
+        font-size: 12px
+        margin-left: 5px
+        color: white
+        text-align: center
+        text-decoration: none
+
+    a:hover
+        background-color: black
+        color: white
+
+/* section.be_Registered_Project */
+.be_Registered_Project
+    margin-top: 50px
+    height: max-content
+    font-size: 100px
+    text-align: center
+    
+    p
+        font-family: 'Nanum Gothic', serif
+        font-size: 30px
+        text-align: center
+        
 /* footer */
 footer
     height: 300px
     margin: 0 0 0 0
-    background: rgb(10, 28, 50)
+    background: rgba(36, 36, 36, 1)
     background-size: cover
 
 a
@@ -64,7 +75,8 @@ a
 a:hover
     color: rgba(160,220,255,1)
 
-    .logo
+    
+.footer_logo
         font-size: 40px
         letter-spacing: -2.5px
         color: rgb(231, 241, 254)
