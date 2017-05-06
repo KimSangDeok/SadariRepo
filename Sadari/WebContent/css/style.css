@@ -3,14 +3,15 @@
 /* 폰트 */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
-body {
-  display: block;
-  margin: 0 0 0 0;
+/* 바디 */
+.index_body {
+  margin: 0 auto;
   height: 100%;
+  width: 100%;
 }
 
 /* 메인 이미지 */
-header {
+.index_header {
   height: 500px;
   margin: 0 0 0 0;
   background: url(../img/main_image.jpg) top;
@@ -20,7 +21,7 @@ header {
 }
 
 /* 로고 */
-.logo {
+.index_logo {
   font-size: 40px;
   letter-spacing: -2.5px;
   color: #FFFFFF;
@@ -31,27 +32,26 @@ header {
   clear: left;
 }
 
-.logo:hover {
+.index_logo:hover {
   color: white;
 }
 
-nav {
+.main_navbar {
   float: right;
   margin: 28px 60px 0 0;
   vertical-align: middle;
 }
 
-nav a {
+.main_navbar .main_menu {
   display: inline-block;
   font-family: 'Nanum Gothic', serif;
   font-size: 17px;
   margin-left: 30px;
-  text-decoration: none;
   color: white;
   vertical-align: middle;
 }
 
-nav a:hover {
+.main_navbar .main_menu:hover {
   color: #a0dcff;
 }
 
@@ -90,6 +90,7 @@ a .sign {
   margin: 0 auto;
   color: #FFFFFF;
   line-height: 50px;
+  clear: both;
 }
 
 a .sign:hover {
@@ -121,7 +122,7 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* section.stats */
+/* 프로젝트 현황 테이블 section.stats */
 .stats {
   border-top: 1px solid rgba(172, 172, 172, 0.3);
   border-bottom: 1px solid #d4d5d6;
@@ -129,7 +130,6 @@ h2 {
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: #fff;
-  margin-top: 0\0;
   display: block;
   line-height: 20px;
   font-size: 14px;
@@ -137,11 +137,10 @@ h2 {
   text-align: center;
 }
 
-.stats_Inner {
+.stats_inner {
   font-family: 'Nanum Gothic', serif;
   font-size: 20px;
   display: inline-block;
-  border-left: none;
   border-right: 1px solid rgba(136, 136, 136, 0.2);
   text-align: center;
   padding-top: 0;
@@ -150,20 +149,89 @@ h2 {
   padding-right: 120px;
 }
 
-/* section.be_Registered_Project */
-.be_Registered_Project {
+/* 최근 등록 프로젝트 */
+/* 최근 등록 프로젝트 헤더 */
+.recent_reg_project {
+  background: #f3f3f3;
+  width: 100%;
+  position: absolute;
+  font-family: 'Nanum Gothic', serif;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.recent_reg_project_header {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* 최근 등록 프로젝트 테이블 */
+.recent_reg_project_table {
+  display: block;
+  border-spacing: 40px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.recent_reg_project_inner {
+  display: table-row;
+}
+
+.recent_reg_project_item {
+  display: table-cell;
+  padding: 15px;
+  width: 33%;
+  text-align: center;
+  border: 1px solid green;
+  background: white;
+  background-size: 100% 100%;
+  background-position: center center;
+  border: 1px solid #dedede;
+  border-bottom: 3px solid #dedede;
+  overflow: hidden;
+}
+
+.recent_reg_project_item #item {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.recent_reg_project_item .item_period {
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
+
+.recent_reg_project_item .item_describe {
+  display: block;
+  vertical-align: middle;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.recent_reg_project_item .item_header {
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+/* 메인내용 section.be_registered_project */
+.be_registered_project {
   height: max-content;
   font-size: 100px;
   text-align: center;
 }
 
-.be_Registered_Project p {
-  font-family: 'Nanum Gothic', serif;
-  font-size: 30px;
-  text-align: center;
-}
-
-/* footer */
+/* 최하단 footer */
 footer {
   height: 300px;
   margin: 0 0 0 0;
@@ -171,16 +239,7 @@ footer {
   background-size: cover;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #a0dcff;
-}
-
-a:hover .logo {
+.footer_logo {
   font-size: 40px;
   letter-spacing: -2.5px;
   color: #e7f1fe;
@@ -191,12 +250,28 @@ a:hover .logo {
   clear: left;
 }
 
+/* 반응형 웹 설정 */
+@media screen and (max-width: 1276px) {
+  .stats {
+    display: none;
+  }
+}
+
 /* 기업 정보 입력 */
-.companyExplain {
+.company_explain {
   font-family: 'Nanum Gothic';
   font-size: 15px;
   font-weight: 100;
   line-height: 1.7em;
   margin: 10px 0 0 40px;
   color: #e7f1fe;
+}
+
+.company_explain .footer_link {
+  color: white;
+  text-decoration: none;
+}
+
+.company_explain .footer_link:hover {
+  color: #a0dcff;
 }

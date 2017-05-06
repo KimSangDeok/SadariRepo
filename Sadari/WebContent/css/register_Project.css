@@ -3,8 +3,7 @@
 /* 폰트 */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
-@import url(./css/style.css);
-body {
+.sub_body {
   display: block;
   margin: 0 0 0 0;
   height: 100%;
@@ -27,17 +26,14 @@ body {
   margin: 8px 0 8px 16px;
   text-align: left;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.menu_logo:hover {
-  color: white;
-}
-
-nav {
+.sub_menubar {
   float: right;
 }
 
-nav a {
+.sub_menubar .sub_menu {
   font-family: 'Nanum Gothic', serif;
   padding: 18px 20px;
   display: inline-block;
@@ -49,7 +45,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+.sub_menubar .sub_menu:hover {
   background-color: black;
   color: white;
 }
@@ -66,42 +62,4 @@ nav a:hover {
   font-family: 'Nanum Gothic', serif;
   font-size: 30px;
   text-align: center;
-}
-
-/* footer */
-footer {
-  height: 300px;
-  margin: 0 0 0 0;
-  background: #242424;
-  background-size: cover;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #a0dcff;
-}
-
-.footer_logo {
-  font-size: 40px;
-  letter-spacing: -2.5px;
-  color: #e7f1fe;
-  display: inline-block;
-  margin: 30px 0 0 40px;
-  text-align: left;
-  text-transform: uppercase;
-  clear: left;
-}
-
-/* 기업 정보 입력 */
-.companyExplain {
-  font-family: 'Nanum Gothic';
-  font-size: 15px;
-  font-weight: 100;
-  line-height: 1.7em;
-  margin: 10px 0 0 40px;
-  color: #e7f1fe;
 }
