@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/*------------------------------ 인덱스 페이지 스타일시트 ------------------------------ */
+/* 폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+h2 {
+  font-family: "Nanum Gothic";
+  margin: 20px;
+  color: black;
+}
+
+h3 {
+  font-family: "Nanum Gothic", serif;
+  color: grey;
+  margin: 20px;
+}
+
+h4 {
+  margin: 20px;
+  font-family: "Nanum Gothic", serif;
+  color: grey;
+}
+
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+.reg_project_header {
+  margin-top: 25px;
+}
+
+.menubar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background-color: #242424;
+}
+
+/* 로고 */
+.menu_logo {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin: 8px 0 8px 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sub_menubar {
+  float: right;
+}
+
+.sub_menubar .sub_menu {
+  font-family: 'Nanum Gothic', serif;
+  padding: 18px 20px;
+  display: inline-block;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sub_menubar .sub_menu:hover {
+  background-color: black;
+  color: white;
+}
+
+/* 게시판 */
+.wrap {
+  height: 1100px;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+}
+
+.page {
+  width: 1080px;
+  height: 300px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.content {
+  background-color: #f3f3f3;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  width: 770px;
+  margin-left: 20px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.contentProjectBundle {
+  background-color: white;
+  width: 710px;
+  height: 150px;
+}
+
+.newsCenter {
+  background-color: white;
+  width: 710px;
+  height: 250px;
+  margin: 10px auto;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+
+.contentBundle {
+  width: 710px;
+  height: 100%;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.contentBundle .contentInterestProject {
+  background-color: white;
+  width: 710px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.contentBundle .contentApplyProject {
+  background-color: white;
+  width: 710px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.contentBundle .contentProjectProcess {
+  background-color: white;
+  width: 710px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* 사이드 메뉴 */
+.sidebar {
+  background-color: #f3f3f3;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  width: 270px;
+}
+
+.partners {
+  background-color: white;
+  width: 230px;
+  height: 250px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+
+.history {
+  background-color: white;
+  width: 230px;
+  height: 250px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+
+.myNews {
+  background-color: white;
+  width: 230px;
+  height: 300px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+
+/* section.be_Registered_Project */
+.be_Registered_Project {
+  margin-top: 50px;
+  height: max-content;
+  font-size: 100px;
+  text-align: center;
+}
+
+.be_Registered_Project p {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 30px;
+  text-align: center;
+}
