@@ -9,6 +9,10 @@
   height: 100%;
 }
 
+.reg_project_header {
+  margin-top: 25px;
+}
+
 .menubar {
   position: fixed;
   height: 50px;
@@ -48,6 +52,83 @@
 .sub_menubar .sub_menu:hover {
   background-color: black;
   color: white;
+}
+
+/* 게시판 */
+.page {
+  width: 1080px;
+  height: 300px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.content {
+  display: block;
+  float: left;
+  margin: auto;
+  width: 790px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid green;
+  overflow: hidden;
+}
+
+.contentInterestProject {
+  width: 770px;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid red;
+}
+
+.newsCenter {
+  width: 770px;
+  height: 250px;
+  margin: 10px;
+  border: 1px dotted purple;
+}
+
+.contentApplyProject {
+  width: 770px;
+  height: 250px;
+  margin: 10px;
+  border: 1px solid green;
+}
+
+.contentProjectProcess {
+  width: 770px;
+  height: 250px;
+  margin: 10px;
+  border: 1px dotted cyan;
+}
+
+/* 사이드 메뉴 */
+.sidebar {
+  display: block;
+  float: left;
+  margin: auto;
+  width: 250px;
+  border: 1px solid gold;
+}
+
+.partners {
+  width: 230px;
+  height: 250px;
+  margin: 10px;
+  border: 1px dotted green;
+}
+
+.history {
+  width: 230px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid yellow;
+}
+
+.myNews {
+  width: 230px;
+  height: 400px;
+  margin: 10px;
+  border: 1px dotted cyan;
 }
 
 /* section.be_Registered_Project */

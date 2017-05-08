@@ -150,16 +150,15 @@ h2 {
 }
 
 /* 최근 등록 프로젝트 */
-/* 최근 등록 프로젝트 헤더 */
 .recent_reg_project {
   background: #f3f3f3;
   width: 100%;
-  position: absolute;
+  display: table;
   font-family: 'Nanum Gothic', serif;
   padding-bottom: 40px;
-  overflow: hidden;
 }
 
+/* 최근 등록 프로젝트 제목 */
 .recent_reg_project_header {
   font-size: 20px;
   text-align: center;
@@ -179,7 +178,7 @@ h2 {
 
 .recent_reg_project_item {
   display: table-cell;
-  padding: 15px;
+  padding: 30px;
   width: 33%;
   text-align: center;
   border: 1px solid green;
@@ -233,10 +232,13 @@ h2 {
 
 /* 최하단 footer */
 footer {
+  display: block;
   height: 300px;
-  margin: 0 0 0 0;
+  width: 100%;
+  margin: auto;
   background: #242424;
   background-size: cover;
+  clear: both;
 }
 
 .footer_logo {

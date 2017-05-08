@@ -142,15 +142,15 @@ h2
 
 /* 최근 등록 프로젝트 */   
 
-/* 최근 등록 프로젝트 헤더 */
 .recent_reg_project
     background: rgba(243, 243, 243, 1)
     width: 100%
-    position: absolute
+    display: table
+    // position: absolute
     font-family: 'Nanum Gothic', serif
     padding-bottom: 40px
-    overflow: hidden
 
+/* 최근 등록 프로젝트 제목 */
 .recent_reg_project_header
     font-size: 20px
     text-align: center
@@ -167,7 +167,7 @@ h2
 
 .recent_reg_project_item
     display: table-cell
-    padding: 15px
+    padding: 30px
     width: 33%
     text-align: center
     border: 1px solid green
@@ -177,7 +177,6 @@ h2
     border: 1px solid #dedede
     border-bottom: 3px solid #dedede
     overflow: hidden
-
 
     #item
         display: inline-block
@@ -216,10 +215,14 @@ h2
 
 /* 최하단 footer */
 footer
+    display: block
     height: 300px
-    margin: 0 0 0 0
+    width: 100%
+    margin: auto
     background: rgba(36, 36, 36, 1)
     background-size: cover
+    clear: both
+
     
 .footer_logo
         font-size: 40px
@@ -231,6 +234,8 @@ footer
         text-transform: uppercase
         clear: left
 
+.contentHeader
+    
 /* 반응형 웹 설정 */
 @media screen and (max-width: 1276px)
     .stats
@@ -255,6 +260,3 @@ footer
 
     .footer_link:hover
         color: rgba(160,220,255,1)
-
-
-                
