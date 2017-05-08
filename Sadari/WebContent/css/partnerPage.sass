@@ -1,22 +1,27 @@
-/*------------------------------ 인덱스 페이지 스타일시트 ------------------------------ */
+/*------------------------------ 인 덱 스  페 이 지  스 타 일 시 트  ------------------------------ */
 
-/* 폰트 */
+/* 폰 트 */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css)
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700)
 h2
     font-family: "Nanum Gothic"
     margin: 20px
-    color: black
+    color: grey
 
 h3 
     font-family: "Nanum Gothic", serif
     color: grey
     margin: 20px
     
-h4
-    margin: 20px
+.subTitle
+    font-weight: bold !important
+    text-indent: -15px
     font-family: "Nanum Gothic", serif
-    color: grey
+    color: rgba(77, 77, 77, 1)
+    font-size: 20px !important
+
+a
+    text-decoration: none !important
 
 .sub_body
     display: block
@@ -33,7 +38,7 @@ h4
     top: 0
     background-color: rgba(36, 36, 36, 1)
 
-/* 로고 */
+/* 로 고 */
 .menu_logo
     display: inline-block
     font-size: 30px
@@ -92,17 +97,48 @@ h4
     height: 150px
     border: 1px solid #dedede
 
+/* 뉴 스  센 터 */
 .newsCenter
     background-color: white
     width: 710px
-    height: 170px
+    height: 220px
     margin: 10px auto
+    padding: 20px 0 0 5px
     border: 1px solid #dedede
     border-bottom: 2px solid #dedede
 
 .newsList
     list-style: none
+    width: 710px
+    padding: 0 30px 30px 30px
+    display: list-item
 
+.more
+    float: right
+    padding: 10px 5px 0 0
+    font-weight: bold
+
+.newsTitle
+    a
+        color: rgba(82, 82, 82, 1) !important
+        
+    a:hover
+        color: rgba(85, 199, 243, 1) !important
+        
+li
+    display: list-item
+    text-decoration: none
+    padding-top: 9px
+    border-bottom: 1px solid #dedede
+    line-height: 15px
+
+.newsDate
+    display: inline-block
+    float: right
+    font-size: 13px
+    line-height: 15px
+
+/* 프 로 젝 트  현 황 */
 .contentBundle
     width: 710px
     height: 100%
@@ -113,26 +149,31 @@ h4
 
     .contentInterestProject
         background-color: white
-        width: 710px
+        width: 640px
         height: 200px
         margin: 0 auto
-        border-right: 1px solid #dedede
+        padding: 20px 0 0 15px
 
     .contentApplyProject
         background-color: white
-        border-right: 1px solid #dedede
-        width: 710px
+        width: 640px
         height: 200px
         margin: 0 auto
+        padding: 10px 0 0 15px
 
     .contentProjectProcess
         background-color: white
-        border-right: 1px solid #dedede
-        width: 710px
+        width: 640px
         height: 200px
         margin: 0 auto
+        padding: 10px 0 0 15px
 
-/* 사이드 메뉴 */
+.table
+    display: table
+    max-width: 80%
+    line-height: 20px
+
+/* 사 이 드   메 뉴  */
 .sidebar 
     background-color: rgba(243, 243, 243, 1)
     display: block
@@ -163,7 +204,6 @@ h4
     margin: 10px -10px
     border: 1px solid #dedede
     border-bottom: 2px solid #dedede
-
 
 /* section.be_Registered_Project */
 .be_Registered_Project
