@@ -11,6 +11,10 @@
     
     <!-- 스크립트 추가 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
 </head>
 
 <body class="sub_body">
@@ -28,7 +32,9 @@
                 <a class="sub_menu" href="">프로젝트 찾기</a>
                 <a class="sub_menu" href="">파트너스 목록</a>
         </nav>
+    <!-- END OF sub_menubar -->
     </div>
+<!-- END OF menubar -->
  </header>
 
 <!-- 게시판 -->
@@ -36,10 +42,16 @@
      <div class="content">
         <div class="newsCenter">
             <h3>뉴스센터</h3>
+            <div class="newsCenterTable">
+                <ul class="newsList">
+                    <li id="1"><span class="newsDate"></span></li>
+                    <li id="2"><span class="newsDate"></span></li>
+                    <li id3><span class="newsDate"></span></li>
+                </ul>
+            </div>
         </div>
         
         <div class="contentBundle">
-            <div class="contentHeader"><h2>내 프로젝트</h2></div>
             <div class="contentInterestProject">
                 <h3>관심프로젝트</h3>
             </div>
@@ -53,9 +65,6 @@
     <!-- END OF contentBundle -->
      </div>
     <!-- END OF content -->
- </div>
- <!-- END OF page -->
-
 
 <!-- 사이드 메뉴 -->
      <aside class="sidebar">
@@ -66,7 +75,9 @@
         </div>
     </aside>
  </div>
+ <!-- END OF page -->
 </div>
+<!-- END OF wrap -->
 
 <!-- footer  -->
 <footer>
@@ -78,6 +89,7 @@
         고객센터 운영시간 : 오전 10시부터 오후 6시까지(공휴일 제외)<br/><br/><br/>
         ⓒ 2017 SADARI, inc.
     </div>
+<!-- END OF company_explain -->
 </footer>
 </body>
 </html>
