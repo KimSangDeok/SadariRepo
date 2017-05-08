@@ -15,12 +15,28 @@ h3 {
   margin: 20px;
 }
 
+h4 {
+  font-weight: bold !important;
+  text-indent: 28px;
+  font-family: "Nanum Gothic", serif;
+  color: #4d4d4d;
+  font-size: 20px !important;
+  color: grey !important;
+}
+
+.sideTitle {
+  font-weight: bold !important;
+  margin: 20px 0 0 -10px;
+  font-size: 17px !important;
+  color: grey !important;
+}
+
 .subTitle {
   font-weight: bold !important;
   text-indent: -15px;
   font-family: "Nanum Gothic", serif;
   color: #4d4d4d;
-  font-size: 20px !important;
+  font-size: 17px !important;
 }
 
 a {
@@ -29,7 +45,7 @@ a {
 
 .sub_body {
   display: block;
-  margin: 0 0 0 0;
+  margin: 0;
   height: 100%;
 }
 
@@ -42,6 +58,7 @@ a {
   height: 54px;
   width: 100%;
   top: 0;
+  z-index: 1;
   background-color: #242424;
 }
 
@@ -124,7 +141,8 @@ a {
 
 .newsList {
   list-style: none;
-  width: 710px;
+  width: 640px;
+  margin: 0 auto;
   padding: 0 30px 30px 30px;
   display: list-item;
 }
@@ -173,7 +191,7 @@ li {
   width: 640px;
   height: 200px;
   margin: 0 auto;
-  padding: 20px 0 0 15px;
+  padding: 20px 25px 0 25px;
 }
 
 .contentBundle .contentApplyProject {
@@ -181,7 +199,7 @@ li {
   width: 640px;
   height: 200px;
   margin: 0 auto;
-  padding: 10px 0 0 15px;
+  padding: 10px 25px 0 25px;
 }
 
 .contentBundle .contentProjectProcess {
@@ -189,12 +207,11 @@ li {
   width: 640px;
   height: 200px;
   margin: 0 auto;
-  padding: 10px 0 0 15px;
+  padding: 10px 25px 0 25px;
 }
 
 .table {
   display: table;
-  max-width: 80%;
   line-height: 20px;
 }
 
@@ -204,13 +221,13 @@ li {
   display: block;
   float: left;
   margin: 0 auto;
-  width: 270px;
+  width: 280px;
 }
 
 .partners {
   background-color: white;
-  width: 230px;
-  height: 250px;
+  width: 270px;
+  height: 150px;
   margin: 10px -10px;
   border: 1px solid #dedede;
   border-bottom: 2px solid #dedede;
@@ -218,7 +235,7 @@ li {
 
 .history {
   background-color: white;
-  width: 230px;
+  width: 270px;
   height: 250px;
   margin: 10px -10px;
   border: 1px solid #dedede;
@@ -227,7 +244,7 @@ li {
 
 .myNews {
   background-color: white;
-  width: 230px;
+  width: 270px;
   height: 300px;
   margin: 10px -10px;
   border: 1px solid #dedede;
