@@ -199,12 +199,16 @@
  
 
  
- <section>
- <div class="wrap2">
- </div>
-</section>
+<!--  <section> -->
+<!--  <div class="wrap2"> -->
+<!--  </div> -->
+<!-- </section> -->
 
 </div>
+</div>
+</div>
+</section>
+
 		<!-- footer  -->
 		<footer>
 		<p class="footer_logo">SADARI</p>
