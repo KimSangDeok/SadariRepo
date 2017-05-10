@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>SADARI  |  Welcome</title>
+    <title>SADARI  |  Welcome456</title>
 
 <!-- 스타일시트 추가 -->
     <link rel="stylesheet" href="./css/style.css">
