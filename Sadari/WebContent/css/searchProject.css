@@ -1,0 +1,163 @@
+@CHARSET "UTF-8";
+/*------------------------------ 프 로 젝 트 찾 기  페 이 지  스 타 일 시 트  ------------------------------ */
+/* 폰 트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+/* 바 디 */
+.searchProjectBody {
+  display: block;
+  margin: 0;
+  height: 100%;
+}
+
+.searchProjectWrap {
+  display: block;
+  margin: 0;
+  height: 100%;
+}
+
+.searchProjectTable {
+  width: 1080px;
+  height: 1000px;
+  margin: 70px auto 0 auto;
+}
+
+.searchProjectHeader {
+  width: 100%;
+  height: 130px;
+  border: 1px;
+  float: left;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+
+.searchProjectCount {
+  float: left;
+  margin: 10px 0 0 30px;
+  font-size: 15px;
+  letter-spacing: 0.22em;
+}
+
+.searchProjectTitle {
+  margin: 30px 0 0 30px;
+  font-size: 25px;
+}
+
+/* 정렬 테이블 */
+.sortSidebar {
+  float: left;
+  width: 230px;
+  height: 115px;
+  margin: 10px auto;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+
+.sort {
+  display: block;
+  float: left;
+  width: 230px;
+  text-align: center;
+}
+
+.projectSortTitle {
+  margin: 10px 0 0 18px;
+  font-family: "Nanum Gothic", serif;
+  font-weight: bold;
+  padding-bottom: 11px;
+  padding-top: 5px;
+  border-bottom: 2px solid #eeeeee;
+  width: 190px;
+  text-align: left;
+  text-indent: 5px;
+}
+
+.projectSortleftBox {
+  float: left;
+  display: inline-block;
+  width: 99px;
+  height: 40px;
+  border-right: 2px solid #eeeeee;
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+.projectSortRightBox {
+  display: inline-block;
+  width: 99px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 16px;
+}
+
+.sortButton {
+  font-size: 13px;
+  font-family: "Nanum Gothic", serif;
+  color: #2d3a45;
+}
+
+.sortButton:hover {
+  text-decoration: underline;
+}
+
+/* 카테고리 테이블 */
+.projectCategory {
+  width: 230px;
+  height: 500px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  margin-top: 125px;
+}
+
+.projectCategoryTitle {
+  width: 190px;
+  margin: 15px 0 0 18px;
+  font-family: "Nanum Gothic", serif;
+  font-weight: bold;
+  padding-bottom: 11px;
+  border-bottom: 2px solid #eeeeee;
+  text-indent: 3px;
+}
+
+.projectViewBoard {
+  width: 830px;
+  height: 800px;
+  float: right;
+  margin-top: 10px;
+}
+
+.projectTitle {
+  padding-top: 10px;
+}
+
+.registeredProject {
+  width: 830px;
+  height: 180px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  margin-top: 10px;
+}
+
+.registeredProject:hover {
+  border: 1px solid #96bff8;
+}
+
+.projectUnitBody {
+  width: 800px;
+  padding: 5px 35px 5px 35px;
+}
+
+.projectBasicInfo {
+  width: 800px;
+  padding: 5px 40px 0 0;
+  text-align: left;
+  font-size: 17px;
+  font-weight: bold;
+  float: left;
+}
+
+.projectUnitDescribe {
+  width: 800px;
+  display: inline-block;
+  padding: 5px 35px 5px 0;
+}
