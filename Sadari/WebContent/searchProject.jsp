@@ -5,7 +5,7 @@
 <head>
 	<title>SADARI | 프로젝트 찾기</title>
 	
-	<!-- 스타일시트 추가 -->
+	<!-- 스타일시트 추가1 -->
     <link rel="stylesheet" href="./css/partnerPage.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/searchProject.css">
