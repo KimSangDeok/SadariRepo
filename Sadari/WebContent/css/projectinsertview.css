@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*------------------------------ 인덱스 페이지 스타일시트 ------------------------------ */
+/* 폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+.menubar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background-color: #242424;
+  z-index: 1;
+}
+
+/* 로고 */
+.menu_logo {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin: 8px 0 8px 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sub_menubar {
+  float: right;
+}
+
+.sub_menubar .sub_menu {
+  font-family: 'Nanum Gothic', serif;
+  padding: 18px 20px;
+  display: inline-block;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sub_menubar .sub_menu:hover {
+  background-color: black;
+  color: white;
+}
+
+/* section.be_Registered_Project */
+.be_registered_project {
+  margin-top: 50px;
+  height: max-content;
+  font-size: 100px;
+  text-align: center;
+  padding-top:2em;
+  padding-bottom:1.5em;
+}
+
+
+.be_registered_project p {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* side bar */
+/* content */
+
+
+/* foot footer{
+  margin-top:-1.3em;height:1.3em
+  } */
+
+/* 도움말 */
+.help_block{
+font-size:12px;
+
+}
+
+/* li */
+li{
+  width:200px;
+  display: inline-block;
+  text-align: center;
+}
+li:hover{
+  background-color: rgb(92,223,149);
+}
+
+button{
+  font-color: rgb(92,223,149);
+}
+
+.plan{
+ font-size:13px;
+
+}
+
+/* 업로드 버튼 */
+#file{
+  width:0;
+  height:0;
+}
