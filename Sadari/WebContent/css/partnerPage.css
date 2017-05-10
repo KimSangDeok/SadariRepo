@@ -17,7 +17,7 @@ h3 {
 
 h4 {
   font-weight: bold !important;
-  text-indent: 28px;
+  text-indent: 35px;
   font-family: "Nanum Gothic", serif;
   color: #4d4d4d;
   font-size: 20px !important;
@@ -26,7 +26,7 @@ h4 {
 
 .sideTitle {
   font-weight: bold !important;
-  margin: 20px 0 0 -10px;
+  margin: 20px 0 0 -20px;
   font-size: 17px !important;
   color: grey !important;
 }
@@ -35,7 +35,7 @@ h4 {
   font-weight: bold !important;
   text-indent: -15px;
   font-family: "Nanum Gothic", serif;
-  color: #4d4d4d;
+  color: #4cb5dd !important;
   font-size: 17px !important;
 }
 
@@ -59,6 +59,7 @@ a {
   width: 100%;
   top: 0;
   z-index: 1;
+  background-size: cover;
   background-color: #242424;
 }
 
@@ -68,7 +69,7 @@ a {
   font-size: 30px;
   letter-spacing: -2.5px;
   color: #FFFFFF;
-  margin: 8px 0 8px 16px;
+  margin: 5px 0 0 16px;
   text-align: left;
   text-transform: uppercase;
   text-decoration: none;
@@ -76,11 +77,12 @@ a {
 
 .sub_menubar {
   float: right;
+  vertical-align: middle;
 }
 
 .sub_menubar .sub_menu {
   font-family: 'Nanum Gothic', serif;
-  padding: 18px 20px;
+  padding: 16px 20px;
   display: inline-block;
   font-family: 'Nanum Gothic', serif;
   font-size: 12px;
@@ -95,7 +97,32 @@ a {
   color: white;
 }
 
-/* 게시판 */
+.sub_menubar .glyphicon-user {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.sub_menubar .glyphicon-user:hover {
+  background-color: black;
+}
+
+.sub_menubar .badge {
+  display: inline-block;
+  margin: -10px 5px 0 0;
+}
+
+.sub_menubar .signInId {
+  display: inline-block;
+  padding: 17px 0 17px 25px;
+  margin: 0 10px 0 0;
+  color: #80d8f9;
+}
+
+.sub_menubar .signInId:hover {
+  background-color: black;
+}
+
+/* 게 시 판 */
 .wrap {
   height: 960px;
   margin: 0 auto;
@@ -161,7 +188,7 @@ a {
   color: #55c7f3 !important;
 }
 
-li {
+.newsListSet {
   display: list-item;
   text-decoration: none;
   padding-top: 9px;
@@ -227,10 +254,39 @@ li {
 .partners {
   background-color: white;
   width: 270px;
-  height: 150px;
+  height: 140px;
   margin: 10px -10px;
   border: 1px solid #dedede;
   border-bottom: 2px solid #dedede;
+}
+
+.userInfo {
+  text-align: center;
+  width: 230px;
+  margin: 10px;
+}
+
+.userId {
+  display: inline-block;
+  padding: 10px 0 0 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.userInfoModify {
+  padding: 0 0 0 30px;
+  display: block;
+  font-size: 15px;
+}
+
+.userFace {
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  margin: 20px 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .history {
@@ -249,6 +305,23 @@ li {
   margin: 10px -10px;
   border: 1px solid #dedede;
   border-bottom: 2px solid #dedede;
+}
+
+span {
+  display: inline-block;
+  float: right;
+}
+
+.historyList {
+  display: list-item;
+  border: 1px soild gold;
+  width: 230px;
+  list-style-type: none;
+  margin: 30px 0;
+}
+
+.countProject {
+  float: right;
 }
 
 /* section.be_Registered_Project */

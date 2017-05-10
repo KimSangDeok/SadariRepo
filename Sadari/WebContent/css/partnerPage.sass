@@ -16,7 +16,7 @@ h3
     
 h4
     font-weight: bold !important
-    text-indent: 28px
+    text-indent: 35px
     font-family: "Nanum Gothic", serif
     color: rgba(77, 77, 77, 1)
     font-size: 20px !important
@@ -24,7 +24,7 @@ h4
 
 .sideTitle
     font-weight: bold !important
-    margin: 20px 0 0 -10px
+    margin: 20px 0 0 -20px
     font-size: 17px !important
     color: grey !important
 
@@ -32,9 +32,9 @@ h4
     font-weight: bold !important
     text-indent: -15px
     font-family: "Nanum Gothic", serif
-    color: rgba(77, 77, 77, 1)
+    color: rgba(76, 181, 221, 1) !important
     font-size: 17px !important
-
+    
 a
     text-decoration: none !important
 
@@ -52,6 +52,7 @@ a
     width: 100%
     top: 0
     z-index: 1
+    background-size: cover
     background-color: rgba(36, 36, 36, 1)
 
 /* 로 고 */
@@ -60,7 +61,8 @@ a
     font-size: 30px
     letter-spacing: -2.5px
     color: #FFFFFF
-    margin: 8px 0 8px 16px
+    // margin: 8px 0 8px 16px
+    margin: 5px 0 0 16px
     text-align: left
     text-transform: uppercase
     text-decoration: none
@@ -68,10 +70,11 @@ a
 .sub_menubar
     float: right
     // margin: 8px 16px 8px 0
+    vertical-align: middle
     
     .sub_menu
         font-family: 'Nanum Gothic', serif
-        padding: 18px 20px
+        padding: 16px 20px
         display: inline-block
         font-family: 'Nanum Gothic', serif
         font-size: 12px
@@ -84,7 +87,27 @@ a
         background-color: black
         color: white
 
-/* 게시판 */
+    .glyphicon-user
+        display: inline-block
+        margin-right: 20px
+
+    .glyphicon-user:hover
+        background-color: black
+
+    .badge
+        display: inline-block
+        margin: -10px 5px 0 0
+
+    .signInId
+        display: inline-block
+        padding: 17px 0 17px 25px
+        margin: 0 10px 0 0
+        color: rgba(128, 216, 249, 1)
+    
+    .signInId:hover
+        background-color: black
+
+/* 게 시 판 */
 .wrap
     height: 960px
     margin: 0 auto
@@ -142,7 +165,7 @@ a
     a:hover
         color: rgba(85, 199, 243, 1) !important
         
-li
+.newsListSet
     display: list-item
     text-decoration: none
     padding-top: 9px
@@ -200,10 +223,35 @@ li
 .partners
     background-color: white
     width: 270px
-    height: 150px
+    height: 140px
     margin: 10px -10px
     border: 1px solid #dedede
     border-bottom: 2px solid #dedede
+
+.userInfo
+    text-align: center
+    width: 230px
+    margin: 10px
+
+.userId
+    display: inline-block
+    padding: 10px 0 0 0
+    font-size: 15px
+    font-weight: bold
+
+.userInfoModify
+    padding: 0 0 0 30px
+    display: block
+    font-size: 15px
+
+.userFace
+    border: 1px solid black
+    display: inline-block
+    text-align: center
+    float: left
+    margin: 20px 30px
+    width: 60px
+    height: 60px
 
 .history
     background-color: white
@@ -220,6 +268,20 @@ li
     margin: 10px -10px
     border: 1px solid #dedede
     border-bottom: 2px solid #dedede
+
+span
+    display: inline-block
+    float: right
+    
+.historyList
+    display: list-item
+    border: 1px soild gold
+    width: 230px
+    list-style-type: none
+    margin: 30px 0
+
+.countProject
+    float: right
 
 /* section.be_Registered_Project */
 .be_Registered_Project
