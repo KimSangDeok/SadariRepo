@@ -84,17 +84,8 @@
        <p align="left" class="project-client-contact-form-content-caption">사다리와의 원활한 커뮤니케이션을 위해 클라이언트님의 정보를 정확히 입력해주세요.</p>
        <p align="left" class="project-client-contact-form-content-caption">&nbsp;</p>
        </div>
-       <div align="left">
-       <p align="left" class="project-client-contact-form-content-caption"> *클라이언트 형태   
-         <select class="project-client-contact-form-content-input selecter-element" id="form_of_business" name="form_of_business" required tabindex="-1">
-           <option selected="selected" value="individual">개인</option>
-           <option value="team">팀</option>
-           <option value="individual_business">개인 사업자</option>
-           <option value="corporate_business">법인 사업자</option>
-         </select>
-         <br>
-         <br>
-       </div>
+         <br/>
+      
        </label>
      
      <div class="project-client-contact-form-content project-client-contact-form-content-divider">
