@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import SadariCommand.SadariCommand;
+import SadariCommand.SadariCommandPayment;
 import SadariModel.SadariException;
 
 /**
@@ -18,7 +19,7 @@ import SadariModel.SadariException;
 public class SadariControl extends HttpServlet {
 	
 	private HashMap commandMap;
-	private String	jspDir = "/mybatis_mvc_board/";
+	private String	jspDir = "/";
 	private String  error = "error.jsp";
 	
 
@@ -30,7 +31,7 @@ public class SadariControl extends HttpServlet {
 	private void initCommand(){
 		commandMap = new HashMap();
 
-//		commandMap.put("list-page",	new MMBoardCommandList("BoardList.jsp"));
+		commandMap.put("payment",	new SadariCommandPayment("managerPay.jsp"));
 //		commandMap.put("view-page",	new MMBoardCommandViewArticle("BoardView.jsp"));
 //		commandMap.put("write-form",	  new MMBoardCommandNull("BoardInputForm.jsp"));
 //		commandMap.put("write-do",	  new MMBoardCommandWriteArticle("BoardView.jsp"));
