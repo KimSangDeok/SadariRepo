@@ -8,8 +8,8 @@
     <title>SADARI  |  프로젝트 등록</title>
     
     <!-- 스타일시트 추가 -->
-    <link rel="stylesheet" href="./css/lwm0508.css">
-    <link rel="stylesheet" href="./css/lwm0508style.css">
+    <link rel="stylesheet" href="./css/projectinserview.css">
+    <link rel="stylesheet" href="./css/projectinserviewstyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- 스크립트 추가 -->
