@@ -87,6 +87,8 @@ li{
   width:200px;
   display: inline-block;
   text-align: center;
+  font-size:13px;
+  
 }
 li:hover{
   background-color: rgb(92,223,149);
@@ -97,8 +99,8 @@ button{
 }
 
 .plan{
- font-size:13px;
-
+ 
+ 
 }
 
 /* 업로드 버튼 */

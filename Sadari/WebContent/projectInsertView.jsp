@@ -16,7 +16,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-         $(function(){          
+    
+   
+    
+         $(function(){  
+        	 
+        	 
                 $('#btn-upload').click(function(e){
                     e.preventDefault();             
                     $("input:file").click();               
@@ -36,7 +41,7 @@
          var targetE = document.getElementById(targetId);
             
          removeAll(targetE);
-
+ 
          if(val == 'seoul'){
             addOption('강남구', targetE);
             addOption('강독구', targetE);
@@ -119,27 +124,18 @@
     </head>
 
     <body class="sub_body">
-    <header class="reg_project_header">
-        <div class="menubar">
-        <!-- 로고 버튼 -->
-        <a href="#"><div class="menu_logo">SADARI</div></a>
-
-    <!-- 대메뉴 -->
-        <nav class="sub_menubar">
-                <a class="sub_menu" href="">프로젝트 등록</a>
-                <a class="sub_menu" href="">프로젝트 찾기</a>
-                <a class="sub_menu" href="">파트너스 목록</a>
-        </nav>
-    </div>
- </header>
+   
+<!-- header -->
+   <%@ include file="header.jsp" %>
+   
  
     <!-- 메인 내용 -->
 <section class="be_registered_project">
 
 <div class="container">
  <!-- <h2>Horizontal form</h2> -->
-  <form class="form-horizontal">
-  
+  <form class="form-horizontal" action="Sadari2/ssss.sadari" method='post'>
+   <input type='hidden' name='cmd' value='pj-save'/>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">카테고리</label>
       <div class="col-sm-10">
@@ -152,7 +148,7 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">    </label>
       <div class="col-sm-10">
-          <select name="subjob" class="form-control" >
+          <select id="subjob" name="subjob" class="form-control" >
    			 <option value=""> 웹 </option>
    			 <option value=""> 어플리케이션 </option>
              <option value=""> 워드프레스 </option>
@@ -169,52 +165,52 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">프로젝트 제목</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="pwd" placeholder="프로젝트 제목을 입력해주세요." style="text-align:center">
+        <input type="text" class="form-control" id="projectTitle" name="projectTitle" placeholder="프로젝트 제목을 입력해주세요." style="text-align:center">
       </div>
     </div>
     
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">예상기간</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="pwd" placeholder="ex) 2017-05-01 형식으로 입력해주세요." style="text-align:center">
+        <input type="text" class="form-control" id="projectGigan" placeholder="ex) 2017-05-01 형식으로 입력해주세요." style="text-align:center">
       </div>
     </div>
     
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">지출가능예산</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="pwd" placeholder="ex) 9백9십만원" style="text-align:center">
+        <input type="text" class="form-control" id="projectCost" placeholder="ex) 9백9십만원" style="text-align:center">
       </div>
     </div>
     
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">기획상태</label>
+      <label class="control-label col-sm-2">기획상태</label>
       <div class="col-sm-10">          
-        <ul class="plan">
+        <ul>
              <li>
-                <label for="r2_1"><img src="./img/img1-2.png"><br/><input type="radio" id="r2_1" name="r2"><br>아이디어만 있습니다.</label>
-            </li>
-            <li>
-                <label for="r2_2"><img src="./img/img2-2.png"><br/><input type="radio" id="r2_2" name="r2"><br>상세한 기획 문서가 존재합니다.</label>
-           </li>
-           <li>
-                <label for="r2_3"><img src="./img/img3-2.png"><br/><input type="radio" id="r2_3" name="r2"><br>필요한 내용을 정리해두었습니다.</label>
-            </li>
+                <label for="r2_1"><img src="img/img1-2.PNG"><br/><input type="radio" id="r2_1" name="r2"><br>아이디어만 있습니다.</label>
+             </li>
+             <li>
+                <label for="r2_2"><img src="img/img2-2.PNG"><br/><input type="radio" id="r2_2" name="r2"><br>상세한 기획 문서가 존재합니다.</label>
+             </li>
+             <li>
+                <label for="r2_3"><img src="img/img3-2.PNG"><br/><input type="radio" id="r2_3" name="r2"><br>필요한 내용을 정리해두었습니다.</label>
+             </li>
         </ul>
       </div>
     </div>
     
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">프로젝트 내용</label>
+      <label class="control-label col-sm-2" >프로젝트 내용</label>
       <div class="col-sm-10">          
-       <textarea class="form-control" rows="10" cols="60" name="comment" form="usrform">Enter text here...</textarea>
+       <textarea class="form-control" rows="10" cols="60" id="comment" name="comment" form="usrform" placeholder="프로젝트 내용을 입력해주세요."></textarea>
       </div>
     </div>
     
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">관련기술</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="pwd" placeholder="please input skills" style="text-align:center">
+        <input type="text" class="form-control" id="skill" placeholder="please input skills" style="text-align:center">
         <span class="help_block">
           "다수의 관련 기술을 입력 할 때에는 쉼표(,)로 구분해 주세요.(최대 5개)"
           <br>
@@ -235,14 +231,14 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">모집마감일자</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="pwd" placeholder="ex) 2017-07-07 " style="text-align:center">
+        <input type="text" class="form-control" id="deadline" placeholder="ex) 2017-07-07 " style="text-align:center">
       </div>
     </div>
     
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">사전미팅</label>
+      <label class="control-label col-sm-2">사전미팅</label>
       <div class="col-sm-10">          
-        <select name="subjob" class="form-control">
+        <select name="meeting" class="form-control">
    			 <option value=""> 온라인 미팅 </option>
    			 <option value=""> 오프라인 미팅 </option>
            
@@ -251,7 +247,7 @@
     </div>
     
     <div class="form-group">
-      <label class="control-label col-sm-2" for="email">클라이언트위치</label>
+      <label class="control-label col-sm-2" >클라이언트위치</label>
       <div class="col-sm-10">
           <select name="selOne" id="selOne" onchange="doChange(this, 'selTwo')">
 
@@ -291,7 +287,7 @@
     
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default" id="saveBtn">저장</button>
       </div>
     </div>
     
@@ -301,15 +297,7 @@
     </section>
 
 <!-- footer  -->
-<footer>
-    <p class="footer_logo">SADARI</p>
-    <div class="company_explain">
-        사업자명 : 사다리<br/>
-        전화번호 : <a class="footer_link" href="">(02)5222-1112<br/></a>
-        EMAIL : <a class="footer_link" href="">help@sadari.com<br/></a>
-        고객센터 운영시간 : 오전 10시부터 오후 6시까지(공휴일 제외)<br/><br/><br/>
-        ⓒ 2017 SADARI, inc.
-    </div>
-</footer>
+	<%@ include file ="footer.jsp" %>
+
 </body>
 </html>
