@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+/* 헤더 스타일시트 */
+
+/* 폰 트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+
+header {
+  margin-top: 25px;
+}
+
+.menubar {
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  top: 0;
+  background-color: #242424;
+  padding: 0;
+}
+
+/* 로고 */
+.menu_logo {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin: 8px 0 8px 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sub_menubar {
+  float: right;
+}
+
+.sub_menubar .sub_menu {
+  font-family: 'Nanum Gothic', serif;
+  padding: 18px 20px;
+  display: inline-block;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sub_menubar .sub_menu:hover {
+  background-color: black;
+  color: white;
+}
