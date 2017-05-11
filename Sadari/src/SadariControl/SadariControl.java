@@ -39,6 +39,7 @@ public class SadariControl extends HttpServlet {
 		commandMap.put("main-page",	  new SadariCommandNull("index.jsp"));
 		commandMap.put("pwlook-form",	  new SadariCommandNull("passwordLookForm.jsp"));
 		commandMap.put("pwlook-do",	  new SadariCommandPasswordLook("passwordLookForm.jsp"));
+		commandMap.put("pj-save", new SadariCommandNull("partnerList.jsp"));
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
