@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import SadariCommand.SadariCommand;
+import SadariCommand.SadariCommandLoginCheck;
+import SadariCommand.SadariCommandNull;
 import SadariCommand.SadariCommandPayment;
 import SadariModel.SadariException;
 
@@ -32,15 +34,8 @@ public class SadariControl extends HttpServlet {
 		commandMap = new HashMap();
 
 		commandMap.put("payment",	new SadariCommandPayment("managerPay.jsp"));
-//		commandMap.put("view-page",	new MMBoardCommandViewArticle("BoardView.jsp"));
-//		commandMap.put("write-form",	  new MMBoardCommandNull("BoardInputForm.jsp"));
-//		commandMap.put("write-do",	  new MMBoardCommandWriteArticle("BoardView.jsp"));
-//		commandMap.put("delete-form", new BoardCommandNull("BoardDeleteForm.jsp"));
-//		commandMap.put("delete-do", new BoardCommandDeleteArticle("BoardDelete.jsp"));
-//		commandMap.put("modify-form", new BoardCommandNull("BoardModifyForm.jsp"));
-//		commandMap.put("modify-do", new BoardCommandModify("BoardModify.jsp"));
-//		commandMap.put("reply-form", new BoardCommandNull("BoardReplyForm.jsp"));
-//		commandMap.put("reply-do", new BoardCommandReply("BoardReply.jsp"));
+		commandMap.put("login-do",	new SadariCommandLoginCheck("loginForm.jsp"));
+		commandMap.put("main-page",	  new SadariCommandNull("index.jsp"));
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -73,7 +68,7 @@ public class SadariControl extends HttpServlet {
 				throw new SadariException("지정할 명령어가 존재하지 않음");
 			}
 
-			nextPage = cmd.execute( request );
+			nextPage = cmd.execute( request,response );
 
 		}catch( SadariException e ){
 			request.setAttribute("javax.servlet.jsp.jspException", e );
@@ -81,8 +76,10 @@ public class SadariControl extends HttpServlet {
 			System.out.println("오류 : " + e.getMessage() );
 		}
 
-		RequestDispatcher reqDp = getServletContext().getRequestDispatcher( jspDir + nextPage );
-		reqDp.forward( request, response );
+		if(nextPage != null) {
+			RequestDispatcher reqDp = getServletContext().getRequestDispatcher( jspDir + nextPage );
+			reqDp.forward( request, response );
+		}
 		
 	}
 

@@ -115,6 +115,12 @@ h4 {
   height: 150px;
 }
 
+#loginFaileMessage{
+	
+	color: red;
+	display: none;
+}
+
 .newsCenter {
   
   background-color: white;

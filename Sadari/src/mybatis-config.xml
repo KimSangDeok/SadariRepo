@@ -12,7 +12,7 @@
 
 <!-- class name alias -->
 <typeAliases>
-	<typeAlias type="mybatis.board.model.MMBoardRec" alias="mmboardrec"/>
+<!-- 	<typeAlias type="mybatis.board.model.MMBoardRec" alias="mmboardrec"/> -->
 </typeAliases>
 
  <environments default="development">
@@ -27,6 +27,6 @@
  </environment>
  </environments>
  <mappers>
- <mapper resource="mybatis/board/mapper/BoardMapper.xml"/>
+ <mapper resource="SadariMapper/LoginMapper.xml"/>
  </mappers>
 </configuration>

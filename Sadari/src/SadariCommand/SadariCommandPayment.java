@@ -3,6 +3,7 @@ package SadariCommand;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import SadariModel.SadariException;
 import SadariModel.SadariRec;
@@ -22,7 +23,7 @@ public class SadariCommandPayment implements SadariCommand{
 		this.next = next;
 	}
 	@Override
-	public String execute(HttpServletRequest request) throws SadariException {
+	public String execute(HttpServletRequest request, HttpServletResponse response) throws SadariException {
 		
 //		int pageNum=1;
 //		if(request.getParameter("pageVal") != null) pageNum = Integer.parseInt(request.getParameter("pageVal"));

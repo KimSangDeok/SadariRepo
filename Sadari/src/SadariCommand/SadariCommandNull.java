@@ -1,6 +1,7 @@
 package SadariCommand;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import SadariModel.SadariException;
 
@@ -11,7 +12,7 @@ public class SadariCommandNull implements SadariCommand{
 		next = _next;
 	}
 
-	public String execute( HttpServletRequest request ) throws SadariException{
+	public String execute( HttpServletRequest request, HttpServletResponse response ) throws SadariException{
 		return next;
 	}
 

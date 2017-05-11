@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +21,42 @@
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$('#loginBtn').click(function(){
+		
+		$.ajax({
+			
+			url:'login.sadari?cmd=login-do',
+			type:'post',
+			data:{
+				
+				userId:$('#userId').val(),
+				userPw:$('#userPw').val()
+			},
+			dataType:'text',
+			success:function(data){
+				
+				if( data.trim() =='loginFaile'){
+					
+					$('#loginFaileMessage').show();
+				}else{
+					$(location).attr('href','main.sadari?cmd=main-page');
+				}
+			},
+			error : function(request, status , error) {
+				
+				 alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+			}
+					
+		});
+		
+	});
+});
+</script>
 <body class="sub_body">
 	<div class="wrap">
 	
@@ -41,6 +78,7 @@
 
 		<!-- 	content Header -->
 		<div class="page">
+		<div id="loginFaileMessage" class="alert alert-warning fade in">올바른 아이디 또는 이메일와/과 비밀번호를 입력하십시오. 두 필드 모두 대문자와 소문자를 구별합니다.</div>
 <!-- 			<div class="content"> -->
 				<div class="newsCenter" >
 					
@@ -49,24 +87,23 @@
 				</div>
 				<div class="login-content">
 					<div class="loginForm">
-					<form class="form-horizontal">
+					<form id="loginFm" class="form-horizontal">
 					  <div class="form-group">
 					    <label class="col-sm-2 control-label">아이디</label>
 					    <div class="col-sm-8">
-					      <input class="form-control" id="focusedInput" type="text" value="">
+					      <input class="form-control" id="userId" type="text" value="">
 					    </div>
 					  </div>
 					  <div class="form-group">
 					    <label class="col-sm-2 control-label">비밀번호</label>
 					    <div class="col-sm-8">
-					      <input class="form-control" id="focusedInput" type="text" value="">
+					      <input class="form-control" id="userPw" type="text" value="">
 					    </div>
 					  </div>
 					</form>
 					
-					
 						<div class="login-button">
-							<button type="button" class="btn btn-primary btn-lg">로그인</button>
+							<button id="loginBtn" type="button" class="btn btn-primary btn-lg">로그인</button>
 						</div>
 					</div>
 					<div class="facebookLoginForm">
