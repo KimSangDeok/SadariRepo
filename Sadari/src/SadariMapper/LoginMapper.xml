@@ -6,4 +6,7 @@
 <select id="loginCheck" parameterType="hashmap" resultType="String">
 	SELECT PN_ID FROM PARTNER WHERE PN_ID=#{userId} and PN_PASSWORD=#{userPw}
 </select>
+<select id="lookPassword" parameterType="hashmap" resultType="String">
+	SELECT PN_PASSWORD FROM PARTNER WHERE PN_ID=#{userId} and PN_TEL=#{userTel}
+</select>
 </mapper>

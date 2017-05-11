@@ -62,4 +62,26 @@ public class LoginRepository {
 		}
 		
 	}
+	
+	
+	public String lookPassword(String userId, String userTel){
+		
+		SqlSession sqlSess = getSelSessionFactory().openSession();
+		
+		try{
+			
+			HashMap map = new HashMap();
+			map.put("userId", userId);
+			map.put("userTel", userTel);
+			String pw=sqlSess.selectOne(namespace+".lookPassword",map);
+			if(pw!=null) return pw;
+			else{
+				System.out.println("pw값 null");
+				return "lookPwFaile";
+			}
+			
+		}finally{
+			sqlSess.close();
+		}
+	}
 }

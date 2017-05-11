@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import SadariCommand.SadariCommand;
 import SadariCommand.SadariCommandLoginCheck;
 import SadariCommand.SadariCommandNull;
+import SadariCommand.SadariCommandPasswordLook;
 import SadariCommand.SadariCommandPayment;
 import SadariModel.SadariException;
 
@@ -36,6 +37,8 @@ public class SadariControl extends HttpServlet {
 		commandMap.put("payment",	new SadariCommandPayment("managerPay.jsp"));
 		commandMap.put("login-do",	new SadariCommandLoginCheck("loginForm.jsp"));
 		commandMap.put("main-page",	  new SadariCommandNull("index.jsp"));
+		commandMap.put("pwlook-form",	  new SadariCommandNull("passwordLookForm.jsp"));
+		commandMap.put("pwlook-do",	  new SadariCommandPasswordLook("passwordLookForm.jsp"));
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

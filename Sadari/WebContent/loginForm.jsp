@@ -59,7 +59,7 @@ $(document).ready(function(){
 </script>
 <body class="sub_body">
 	<div class="wrap">
-	
+
 		<!-- 	header -->
 		<header class="reg_project_header">
 			<div class="menubar">
@@ -69,8 +69,9 @@ $(document).ready(function(){
 
 				<!-- 대메뉴 -->
 				<nav class="sub_menubar">
-					<a class="sub_menu" href="">프로젝트 등록</a> <a class="sub_menu" href="">프로젝트
-						찾기</a> <a class="sub_menu" href="">파트너스 목록</a>
+					<a class="sub_menu" href="">프로젝트 등록</a>
+					<a class="sub_menu" href="">프로젝트 찾기</a> 
+					<a class="sub_menu" href="">파트너스 목록</a>
 				</nav>
 			</div>
 		</header>
@@ -78,44 +79,47 @@ $(document).ready(function(){
 
 		<!-- 	content Header -->
 		<div class="page">
-		<div id="loginFaileMessage" class="alert alert-warning fade in">올바른 아이디 또는 이메일와/과 비밀번호를 입력하십시오. 두 필드 모두 대문자와 소문자를 구별합니다.</div>
-<!-- 			<div class="content"> -->
-				<div class="newsCenter" >
-					
-					<h3>로그인</h3>
-					<h5>사다리에 오신것을 환영합니다.</h5>
-				</div>
-				<div class="login-content">
-					<div class="loginForm">
-					<form id="loginFm" class="form-horizontal">
-					  <div class="form-group">
-					    <label class="col-sm-2 control-label">아이디</label>
-					    <div class="col-sm-8">
-					      <input class="form-control" id="userId" type="text" value="">
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label class="col-sm-2 control-label">비밀번호</label>
-					    <div class="col-sm-8">
-					      <input class="form-control" id="userPw" type="text" value="">
-					    </div>
-					  </div>
-					</form>
-					
-						<div class="login-button">
-							<button id="loginBtn" type="button" class="btn btn-primary btn-lg">로그인</button>
-						</div>
-					</div>
-					<div class="facebookLoginForm">
-						<h6>이미 페이스북으로 가입하셨다면</h6>
-						<button type="button" class="btn btn-primary btn-lg">페이스북으로 로그인</button>
-						<hr>
-						아직 회원이 아니신가요?
-						<a href="#">회원가입</a>
-					</div>
-					
+			<div id="loginFaileMessage" class="alert alert-warning fade in">올바른 아이디 또는 이메일와/과 비밀번호를 입력하십시오. 두 필드 모두 대문자와 소문자를 구별합니다.</div>
+			<!-- 			<div class="content"> -->
+			<div class="newsCenter">
+				<h3>로그인</h3>
+				<h5>사다리에 오신것을 환영합니다.</h5>
 			</div>
-			<!-- END OF content -->
+			<div class="login-content">
+				<div class="loginForm">
+					<form id="loginFm" class="form-horizontal">
+						<div class="form-group">
+							<label class="col-sm-2 control-label">아이디</label>
+							<div class="col-sm-8">
+								<input class="form-control" id="userId" type="text" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">비밀번호</label>
+							<div class="col-sm-8">
+								<input class="form-control" id="userPw" type="text" value="">
+							</div>
+						</div>
+					</form>
+
+					<div class="login-button">
+						<button  id="loginBtn" type="button" class="btn btn-primary btn-lg">로그인</button>
+					</div>
+					<div class="passwordLookDiv">
+						<p class="find-password">비밀번호를 잊으셨나요? <a href="pwlook.sadari?cmd=pwlook-form">비밀번호 찾기</a></p>
+					</div>
+
+				</div>
+				<div class="facebookLoginForm">
+					<h6>이미 페이스북으로 가입하셨다면</h6>
+					<button type="button" class="btn btn-primary btn-lg">페이스북으로
+						로그인</button>
+					<hr>
+					아직 회원이 아니신가요? <a href="#">회원가입</a>
+				</div>
+
+			</div>
+			<!-- END OF login-content -->
 		</div>
 		<!-- END OF page -->
 	</div>
@@ -126,12 +130,11 @@ $(document).ready(function(){
 		<p class="footer_logo">SADARI</p>
 		<div class="company_explain">
 			사업자명 : 사다리<br /> 전화번호 : <a class="footer_link" href="">(02)5222-1112<br /></a>
-			EMAIL : <a class="footer_link" href="">help@sadari.com<br /></a> 고객센터
-			운영시간 : 오전 10시부터 오후 6시까지(공휴일 제외)<br />
-			<br />
-			<br /> ⓒ 2017 SADARI, inc.
+			EMAIL : <a class="footer_link" href="">help@sadari.com<br /></a>
+			고객센터 운영시간 : 오전 10시부터 오후 6시까지(공휴일 제외)<br /> <br /> <br /> ⓒ 2017
+			SADARI, inc.
 		</div>
-<!-- 		<!-- END OF company_explain  -->
+		<!-- 		<!-- END OF company_explain  -->
 	</footer>
 </body>
 </html>
