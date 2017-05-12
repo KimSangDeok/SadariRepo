@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--  위 코드 3줄은 복붙 -->
+<mapper namespace="sadari.mapper.ProjectInsertMapper">
+
+<insert id="projectInsert" parameterType="SadariModel.ProjectRec">
+INSERT INTO PROJECT VALUES
+(2,
+PROJECT_SEQ.nextval,
+#{pjTitle},
+1000,
+#{pjSt_dt},
+#{pjTerm},
+#{pjCategory},
+#{pjDeadline})
+</insert>
+</mapper>

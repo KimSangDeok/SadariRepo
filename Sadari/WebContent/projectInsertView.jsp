@@ -134,13 +134,13 @@
 
 <div class="container">
  <!-- <h2>Horizontal form</h2> -->
-  <form class="form-horizontal" action="Sadari2/ssss.sadari" method='post'>
+  <form class="form-horizontal" action="ssss.sadari" method='post'>
    <input type='hidden' name='cmd' value='pj-save'/>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">카테고리</label>
       <div class="col-sm-10">
           <select name="job" class="form-control" >
-   			 <option value="">개발</option>
+   			 <option value="개발">개발</option>
           </select>
       </div>
     </div>
@@ -149,15 +149,15 @@
       <label class="control-label col-sm-2" for="email">    </label>
       <div class="col-sm-10">
           <select id="subjob" name="subjob" class="form-control" >
-   			 <option value=""> 웹 </option>
-   			 <option value=""> 어플리케이션 </option>
-             <option value=""> 워드프레스 </option>
-             <option value=""> 퍼블리싱 </option>
-             <option value=""> 일반 소프트웨어 </option>
-             <option value=""> 커머스(쇼핑몰) </option>
-             <option value=""> 게임 </option>
-             <option value=""> 임베디드 </option>
-             <option value=""> 기타 </option>
+   			 <option value="웹"> 웹 </option>
+   			 <option value="어플리케이션"> 어플리케이션 </option>
+             <option value="워드프레스"> 워드프레스 </option>
+             <option value="퍼블리싱"> 퍼블리싱 </option>
+             <option value="일반 소프트웨어"> 일반 소프트웨어 </option>
+             <option value="커머스(쇼핑몰)"> 커머스(쇼핑몰) </option>
+             <option value="게임"> 게임 </option>
+             <option value="임베디드"> 임베디드 </option>
+             <option value="기타 "> 기타 </option>
 		</select>
       </div>
     </div>
@@ -172,14 +172,14 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">예상기간</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="projectGigan" placeholder="ex) 2017-05-01 형식으로 입력해주세요." style="text-align:center">
+        <input type="text" class="form-control" id="projectGigan" name="projectGigan" placeholder="ex) 2017-05-01 형식으로 입력해주세요." style="text-align:center">
       </div>
     </div>
     
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">지출가능예산</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="projectCost" placeholder="ex) 9백9십만원" style="text-align:center">
+        <input type="text" class="form-control" id="projectCost" name="projectCost" placeholder="ex) 9백9십만원" style="text-align:center">
       </div>
     </div>
     
@@ -188,13 +188,13 @@
       <div class="col-sm-10">          
         <ul>
              <li>
-                <label for="r2_1"><img src="img/img1-2.PNG"><br/><input type="radio" id="r2_1" name="r2"><br>아이디어만 있습니다.</label>
+                <label for="r2_1"><img src="img/img1-2.PNG"><br/><input type="radio" id="r2_1" name="r2" value="기획1"><br>아이디어만 있습니다.</label>
              </li>
              <li>
-                <label for="r2_2"><img src="img/img2-2.PNG"><br/><input type="radio" id="r2_2" name="r2"><br>상세한 기획 문서가 존재합니다.</label>
+                <label for="r2_2"><img src="img/img2-2.PNG"><br/><input type="radio" id="r2_2" name="r2" value="기획2"><br>상세한 기획 문서가 존재합니다.</label>
              </li>
              <li>
-                <label for="r2_3"><img src="img/img3-2.PNG"><br/><input type="radio" id="r2_3" name="r2"><br>필요한 내용을 정리해두었습니다.</label>
+                <label for="r2_3"><img src="img/img3-2.PNG"><br/><input type="radio" id="r2_3" name="r2" value="기획3"><br>필요한 내용을 정리해두었습니다.</label>
              </li>
         </ul>
       </div>
@@ -210,7 +210,7 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">관련기술</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="skill" placeholder="please input skills" style="text-align:center">
+        <input type="text" class="form-control" id="skill" name="skill" placeholder="please input skills" style="text-align:center">
         <span class="help_block">
           "다수의 관련 기술을 입력 할 때에는 쉼표(,)로 구분해 주세요.(최대 5개)"
           <br>
@@ -231,7 +231,7 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">모집마감일자</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="deadline" placeholder="ex) 2017-07-07 " style="text-align:center">
+        <input type="text" class="form-control" id="deadline" name="deadline" placeholder="ex) 2017-07-07 " style="text-align:center">
       </div>
     </div>
     
@@ -239,9 +239,8 @@
       <label class="control-label col-sm-2">사전미팅</label>
       <div class="col-sm-10">          
         <select name="meeting" class="form-control">
-   			 <option value=""> 온라인 미팅 </option>
-   			 <option value=""> 오프라인 미팅 </option>
-           
+   			 <option value="온라인"> 온라인 미팅 </option>
+   			 <option value="오프라인"> 오프라인 미팅 </option>
 		</select>
       </div>
     </div>
@@ -281,7 +280,7 @@
     <div class="form-group">
       <label class="control-label col-sm-2" >프로젝트 예상 시작일</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="pwd" placeholder="ex) 2017-05-01" style="text-align:center">
+        <input type="text" class="form-control" id="pwd" name="foreStart" placeholder="ex) 2017-05-01" style="text-align:center">
       </div>
     </div>
     

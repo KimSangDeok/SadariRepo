@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import SadariCommand.SadariCommand;
+import SadariCommand.SadariCommandInsertProject;
 import SadariCommand.SadariCommandLoginCheck;
 import SadariCommand.SadariCommandNull;
 import SadariCommand.SadariCommandPasswordLook;
@@ -39,7 +40,11 @@ public class SadariControl extends HttpServlet {
 		commandMap.put("main-page",	  new SadariCommandNull("index.jsp"));
 		commandMap.put("pwlook-form",	  new SadariCommandNull("passwordLookForm.jsp"));
 		commandMap.put("pwlook-do",	  new SadariCommandPasswordLook("passwordLookForm.jsp"));
-		commandMap.put("pj-save", new SadariCommandNull("partnerList.jsp"));
+		commandMap.put("pj-save", new SadariCommandInsertProject("insertProjectResult.jsp"));
+		commandMap.put("list-partner", new SadariCommandNull("partnerList.jsp"));
+		commandMap.put("count", new SadariCommandGetCountValue("index.jsp"));
+		commandMap.put("reg-project", new SadariCommandNull("registerProject.jsp"));
+		commandMap.put("search-project", new SadariCommandNull("searchProject.jsp"));
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -69,7 +74,7 @@ public class SadariControl extends HttpServlet {
 			if( commandMap.containsKey( cmdKey ) ){
 				cmd = (SadariCommand)commandMap.get( cmdKey.toLowerCase());
 			}else{
-				throw new SadariException("지정할 명령어가 존재하지 않음");
+				throw new SadariException("������ ��ɾ �������� ����");
 			}
 
 			nextPage = cmd.execute( request,response );
@@ -77,7 +82,7 @@ public class SadariControl extends HttpServlet {
 		}catch( SadariException e ){
 			request.setAttribute("javax.servlet.jsp.jspException", e );
 			nextPage = error;
-			System.out.println("오류 : " + e.getMessage() );
+			System.out.println("���� : " + e.getMessage() );
 		}
 
 		if(nextPage != null) {

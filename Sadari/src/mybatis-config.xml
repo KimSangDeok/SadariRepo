@@ -28,5 +28,7 @@
  </environments>
  <mappers>
  <mapper resource="SadariMapper/LoginMapper.xml"/>
+ <mapper resource="SadariMapper/ProjectMapper.xml"/>
+ <mapper resource="SadariMapper/GetCountValue.xml"/>
  </mappers>
 </configuration>
