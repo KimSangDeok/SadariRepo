@@ -38,13 +38,13 @@ public class SadariControl extends HttpServlet {
 
 		commandMap.put("payment",	new SadariCommandPayment("managerPay.jsp"));
 		commandMap.put("login-do",	new SadariCommandLoginCheck("loginForm.jsp"));
-		commandMap.put("main-page",	  new SadariCommandNull("index.jsp"));
+		commandMap.put("main-page",	  new SadariCommandNull("main.jsp"));
 		commandMap.put("pwlook-form",	  new SadariCommandNull("passwordLookForm.jsp"));
 		commandMap.put("pwlook-do",	  new SadariCommandPasswordLook("passwordLookForm.jsp"));
 		commandMap.put("pj-save", new SadariCommandInsertProject("insertProjectResult.jsp"));
 		commandMap.put("list-partner", new SadariCommandNull("partnerList.jsp"));
 		commandMap.put("count", new SadariCommandGetCountValue("index.jsp"));
-		commandMap.put("reg-project", new SadariCommandNull("registerProject.jsp"));
+		commandMap.put("reg-project", new SadariCommandNull("projectInsertView.jsp"));
 		commandMap.put("search-project", new SadariCommandNull("searchProject.jsp"));
 	}
 

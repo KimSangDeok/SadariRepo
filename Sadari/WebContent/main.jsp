@@ -1,3 +1,3 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <% response.sendRedirect("xxx.sadari?cmd=count"); %>
+    <% response.sendRedirect("count.sadari?cmd=count"); %>
