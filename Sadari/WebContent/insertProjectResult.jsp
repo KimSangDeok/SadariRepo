@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
 <%
-	int result = (int)request.getAttribute("result");
+	int result = (int)request.getAttribute("result"); 
 %>
 <!DOCTYPE html>
 <html>
@@ -45,27 +45,24 @@ $(document).ready(function(){
 						</div>
 						<div class="login-content">
 						
-								<div class="loginForm">
-									<form id="loginFm" class="form-horizontal">
-										<div class="form-group">
-											<div class="explain">등록된 프로젝트를 검수 중입니다.<br>
-											파트너목록에서 같이 작업하고 싶으신 분을 찾아보세요.
+								<div class="projectInsertCheck">
+									<form id="loginFm" class="form-horizontal" action="ssss.sadari" method='post'>
+											<input type="hidden" name='cmd' value='show-partnerList'/>
+											<div class="form-group">
+													<h4>등록된프로젝트를 검수 중입니다.<br/></h4>
+													<h4>파트너목록에서 같이 작업하고 싶으신 분을 찾아보세요.</h4>
 											</div>
-										</div>
-										
+											
+											<div class="partnerList3">
+											 		 <button type="submit" class="btn btn-primary" id="partnerlist">파트너스 목록</button>
+											</div>
 									</form>
-				
-									<div class="login-button">
-									
-									</div>
-									<div class="passwordLookDiv">
-										
-									</div>
+								
 				
 								</div>
 							
-							<div class="facebookLoginForm">
-								 <img src="./img/check.PNG" class="img-circle" width="180" height="180"> 
+							<div class="checkimg">
+								 <img src="./img/check.PNG" class="img-circle" width="200" height="200"> 
 							</div>
 			
 						</div>

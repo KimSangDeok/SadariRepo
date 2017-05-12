@@ -172,7 +172,7 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">예상기간</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="projectGigan" name="projectGigan" placeholder="ex) 2017-05-01 형식으로 입력해주세요." style="text-align:center">
+        <input type="text" class="form-control" id="projectGigan" name="projectGigan" placeholder="ex) 2017/05/01 형식으로 입력해주세요." style="text-align:center">
       </div>
     </div>
     
@@ -231,7 +231,7 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">모집마감일자</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="deadline" name="deadline" placeholder="ex) 2017-07-07 " style="text-align:center">
+        <input type="text" class="form-control" id="deadline" name="deadline" placeholder="ex) 201/07/07 " style="text-align:center">
       </div>
     </div>
     
@@ -280,7 +280,7 @@
     <div class="form-group">
       <label class="control-label col-sm-2" >프로젝트 예상 시작일</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="pwd" name="foreStart" placeholder="ex) 2017-05-01" style="text-align:center">
+        <input type="text" class="form-control" id="foreStart" name="foreStart" placeholder="ex) 2017/05/01" style="text-align:center">
       </div>
     </div>
     
