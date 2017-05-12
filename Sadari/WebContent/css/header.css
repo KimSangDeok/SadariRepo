@@ -6,26 +6,23 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
 
-header {
-  margin-top: 25px;
-}
-
 .menubar {
   position: fixed;
-  height: 55px;
+  height: 54px;
   width: 100%;
   top: 0;
+  z-index: 1;
+  background-size: cover;
   background-color: #242424;
-  padding: 0;
 }
 
-/* 로고 */
+/* 로 고 */
 .menu_logo {
   display: inline-block;
   font-size: 30px;
   letter-spacing: -2.5px;
   color: #FFFFFF;
-  margin: 8px 0 8px 16px;
+  margin: 5px 0 0 16px;
   text-align: left;
   text-transform: uppercase;
   text-decoration: none;
@@ -33,11 +30,12 @@ header {
 
 .sub_menubar {
   float: right;
+  vertical-align: middle;
 }
 
 .sub_menubar .sub_menu {
   font-family: 'Nanum Gothic', serif;
-  padding: 18px 20px;
+  padding: 16px 20px;
   display: inline-block;
   font-family: 'Nanum Gothic', serif;
   font-size: 12px;
@@ -50,4 +48,29 @@ header {
 .sub_menubar .sub_menu:hover {
   background-color: black;
   color: white;
+}
+
+.sub_menubar .glyphicon-user {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.sub_menubar .glyphicon-user:hover {
+  background-color: black;
+}
+
+.sub_menubar .badge {
+  display: inline-block;
+  margin: -10px 5px 0 0;
+}
+
+.sub_menubar .signInId {
+  display: inline-block;
+  padding: 17px 0 17px 25px;
+  margin: 0 10px 0 0;
+  color: #80d8f9;
+}
+
+.sub_menubar .signInId:hover {
+  background-color: black;
 }
