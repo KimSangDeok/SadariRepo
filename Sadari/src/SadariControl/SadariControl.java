@@ -41,6 +41,10 @@ public class SadariControl extends HttpServlet {
 		commandMap.put("pwlook-form",	  new SadariCommandNull("passwordLookForm.jsp"));
 		commandMap.put("pwlook-do",	  new SadariCommandPasswordLook("passwordLookForm.jsp"));
 		commandMap.put("pj-save", new SadariCommandInsertProject("insertProjectResult.jsp"));
+		commandMap.put("list-partner", new SadariCommandNull("partnerList.jsp"));
+		commandMap.put("count", new SadariCommandGetCountValue("index.jsp"));
+		commandMap.put("reg-project", new SadariCommandNull("registerProject.jsp"));
+		commandMap.put("search-project", new SadariCommandNull("searchProject.jsp"));
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -70,7 +74,7 @@ public class SadariControl extends HttpServlet {
 			if( commandMap.containsKey( cmdKey ) ){
 				cmd = (SadariCommand)commandMap.get( cmdKey.toLowerCase());
 			}else{
-				throw new SadariException("ÁöÁ¤ÇÒ ¸í·É¾î°¡ Á¸ÀçÇÏÁö ¾ÊÀ½");
+				throw new SadariException("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½É¾î°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 			}
 
 			nextPage = cmd.execute( request,response );
@@ -78,7 +82,7 @@ public class SadariControl extends HttpServlet {
 		}catch( SadariException e ){
 			request.setAttribute("javax.servlet.jsp.jspException", e );
 			nextPage = error;
-			System.out.println("¿À·ù : " + e.getMessage() );
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + e.getMessage() );
 		}
 
 		if(nextPage != null) {

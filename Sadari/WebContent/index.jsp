@@ -1,9 +1,20 @@
+<%@page import="java.math.BigDecimal"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<% String projectName = "/Sadari"; %>
+
+<%
+
+HashMap pList = (HashMap)request.getAttribute("count");
+	int totalProject 		=  ((BigDecimal)pList.get("CNT")).intValue();
+	int totalPrice 			=  ((BigDecimal)pList.get("TOTALPRICE")).intValue();
+	int totalMember 		=  ((BigDecimal)pList.get("MEMBER")).intValue();
+%>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+   	
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>SADARI  |  Welcome</title>
 
@@ -22,10 +33,10 @@
     <!-- 대메뉴 -->
         <nav class="main_navbar">
             <div class="menu_container">
-                <a class="main_menu" href="">프로젝트 등록</a>
-                <a class="main_menu" href="">프로젝트 찾기</a>
-                <a class="main_menu" href="">파트너스 목록</a>
-                <a class="main_menu" href=""><p class="login">SIGN IN</p></a>
+                <a class="main_menu" href="<%= projectName %>/regProject.sadari?cmd=reg-project">프로젝트 등록</a>
+                <a class="main_menu" href="<%= projectName %>/searchProject.sadari?cmd=search-project">프로젝트 찾기</a>
+                <a class="main_menu" href="<%= projectName %>/listProject.sadari?cmd=list-partner">파트너스 목록</a>
+                <a class="main_menu" href="<%= projectName %>/signIn.sadari?cmd=login-do"><p class="login">SIGN IN</p></a>
             </div>
         </nav>
 
@@ -42,19 +53,19 @@
         <div class="stats_box">
             <div class="stats_inner">
                 <p>등록된 프로젝트</p>
-                <span class="stats_project">2222222</span>
+                <span class="stats_project"><%=totalProject%></span>
                 <span>개</span>
             </div>
 
             <div class="stats_inner">
                 <p>프로젝트 등록금액</p>
-                <span class="stats_project_money">222222</span>
+                <span class="stats_project_money"><%= totalPrice %></span>
                 <span>원</span>
             </div>
 
             <div class="stats_inner">
                 <p>개발회사 & 프리랜서</p>
-                <span class="stats_project_partners">222222</span>
+                <span class="stats_project_partners"><%= totalMember %></span>
                 <span>명</span>
             </div>
         </div>
@@ -111,21 +122,14 @@
                     <span class="item_apply_people" id="item"> 현재 20명 지원</span></strong>
                     <div class="item_describe">저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다. 본사저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다.저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다.저희는 2004년부터 연구개발을 착수111111하여 2006년 정식 법22222인설립한 IT전문 개발회사입니다.</div>
         </div>
+        </div>
     <!-- END OF recent_reg_project_table -->
     </section>
 
 
 <!-- 메인 내용 -->
     <section class="be_registered_project">
-        aaaaaaaa<br/>
-        aaaaaaaa<br/>aaaaaaaa<br/>aaaaaaaa<br/>aaaaaaaa<br/>aaaaaaaa<br/>aaaaaaaa<br/>aaaaaaaa<br/>aaaaaaaa<br/>
-        aaaaaaaa<br/>
-        aAieaa<br/>
-        aaaaaaaa<br/>
-        aaaaaaaa<br/>
-        ㅍㅍ
-       ㅍaaaaaaaa<br/>
-
+        기타 내용 
     </section>
 
 </body>
