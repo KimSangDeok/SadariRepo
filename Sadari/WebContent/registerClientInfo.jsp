@@ -7,26 +7,32 @@
 <title>SADARI | 프로젝트 등록</title>
 
 <!-- 스타일시트 추가 -->
-<link rel="stylesheet" href="./css/registerProject.css">
+<link rel="stylesheet" href="./css/registerClientInfo.css">
 <link rel="stylesheet" href="./css/style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- 스크립트 추가 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
 
 
 </head>
 
 <body class="sub_body">
- <!-- 사이드 메뉴 -->
-     <aside class="sidebar">
-        <div>
-            <div class="partners">파트너 정보</div>
-            <div class="history">나의 히스토리</div>
-            <div class="myNews">새로운 소식</div>
-        </div>
-    </aside>
-    <p>&nbsp;</p>
+
+<!-- header -->
+   <%@ include file="header.jsp" %>
+<!--  <!-- 사이드 메뉴 --> -->
+<!--      <aside class="sidebar"> -->
+<!--         <div> -->
+<!--             <div class="partners">파트너 정보</div> -->
+<!--             <div class="history">나의 히스토리</div> -->
+<!--             <div class="myNews">새로운 소식</div> -->
+<!--         </div> -->
+<!--     </aside> -->
+<!--     <p>&nbsp;</p> -->
 
   <div class="wrap">
 		<header class="reg_project_header">
@@ -63,13 +69,11 @@
 		<br/>
  
  <section class="project-client-contact-section">
- <form action="." enctype="multipart/form-data" method="POST" novalidate class="has-validation-callback">
- <div align="center">
-   <input name="csrfmiddlewaretoken" type="hidden" value="CSGyKf9gVgk4GJ3JJ3WsEJ0SbDG9eeQq">
+</section>
    
- </div>
+
  <div class="form-input-rapper">
-   <div class="project-client-contact-form ">
+   <div class="centerText ">
      <label class="project-client-contact-form-label" for="form_of_business">
        
             <div class="project-client-contact-form-content project-client-contact-form-content-divider project-client-contact-form-content-small">
@@ -81,8 +85,8 @@
          <input class="form-control-phone-noncell" id="cell_phone_global" name="cell_phone_global" style="width: 232px; margin-left:15px; display:none;" type="text" value="">
      </div>
        <p align="left" class="project-client-contact-form-content-caption">클라이언트 형태 및 연락처 정보는 파트너들에게 공개되지 않습니다.</p>
-       <p align="left" class="project-client-contact-form-content-caption">사다리와의 원활한 커뮤니케이션을 위해 클라이언트님의 정보를 정확히 입력해주세요.</p>
-       <p align="left" class="project-client-contact-form-content-caption">&nbsp;</p>
+       <p align="left" class="project-client-contact-form-content-caption">사다리와의 원활한 커뮤니케이션을 위해 클라이언트님의 정보를 입력해주세요.</p>
+   
        </div>
          <br/>
       
@@ -98,7 +102,7 @@
        </div>
      </div>
    
-   <div class="project-client-contact-form " style="display: none;">
+   <div class="centerText " style="display: none;">
      <label class="project-client-contact-form-label" for="company_name">
        <div align="left"><span>*</span>회사명</div>
        </label>
@@ -120,30 +124,27 @@
          </div>
        </div>
    
-   <div class="project-client-contact-form ">
-     <label class="project-client-contact-form-label" for="full_name">
-       <div align="left"> 
-        <p align="left" class="project-client-contact-form-content-caption"> *이름
-         <input name="full_name" type="text" class="main_menu" id="full_name" autocomplete="off" size="20" maxlength="50">
-         <br>
-         <br>
+   <div class="centerText ">
+     <label class="project-client-contact-form-label">
+     
+       <div align="left">     
+       
        </div>
+       
        </label>
      <div class="project-client-contact-form-content">
        <div align="left"></div>
        </div>
      </div>
    
-   <div class="project-client-contact-form ">
+   <div class="centerText ">
      <label class="project-client-contact-form-label" for="cell_phone_number">
-       <div align="left"> <p align="left" class="project-client-contact-form-content-caption"> *담당자 핸드폰 번호
-         <select class="project-client-contact-form-content-input-small selecter-element" id="cell_phone_number_code" maxlength="20" name="cell_phone_number_code" tabindex="-1">
+     
+      <input type="text" class="form-control" id="pwd" size="20" maxlength="50" placeholder="이름을 입력해 주세요" style="text-align:left">
+        <br/>        
+       <div align="left"> <p align="left" class="form-control"> *담당자 핸드폰 번호
+         <select class="project-client-contact-form-content-input-small" id="cell_phone_number_code" maxlength="20" name="cell_phone_number_code" tabindex="-1">
            <option value="010">010 </option>
-           <option value="011">011</option>
-           <option value="016">016</option>
-           <option value="017">017</option>
-           <option value="018">018</option>
-           <option value="019">019</option>
            <option value="global">해외</option>
          </select>
          <span class="form-phone-liner">-</span>
@@ -160,18 +161,17 @@
    
    <div class="project-client-contact-form project-client-contact-form-top ">
      <label class="project-client-contact-form-label" for="company_intro">
-       <div align="left"> <p align="left" class="project-client-contact-form-content-caption">*클라이언트소개
+       <div align="left"> <p align="left" class="centerText">
         </div>
        </label>
      
      <div class="project-client-contact-form-content">
        <div align="left">
        <div align="left"> <p align="left" class="project-client-contact-form-content-caption">
-         <textarea name="company_intro" cols="70" rows="10" maxlength="150" wrap="soft" class="project-client-contact-form-content-textarea" id="company_intro" autocomplete="off">
-   </textarea>
+         <textarea name="company_intro" id="pwd" cols="70" rows="10" maxlength="150" wrap="soft" class="form-control"  style="text-align:left"></textarea>
          
        </div>
-       <p align="left" class="project-client-contact-form-content-caption">회사(개인)에 대해 간략하게 설명해주세요. (150자 이내)       </p>
+       <p align="left" class="project-client-contact-form-content-caption">*회사(개인)에 대해 간략하게 설명해주세요. (150자 이내) </p>
        </div>
      </div>
  </div>
@@ -179,21 +179,19 @@
  <div class="form-group">
  <div class="btn-wrapper" style="padding-left: 5px; margin-top: 5px;">
    <div align="left"><span class="project-client-contact-form-content-caption">
- <input type="submit" class="btn btn-client btn-lg" tabindex="1" value="프로젝트 정보 등록하러 가기">
-   </span></div>
+ <a href="./projectInsertView.jsp"><input type="submit" value="프로젝트 정보 등록하러 가기"></a>
+   </span>
+   </div>
+   </div>
    </div>
  </div>
  </div>
  
- </form>
+
  </section>
  
-
  
-<!--  <section> -->
-<!--  <div class="wrap2"> -->
-<!--  </div> -->
-<!-- </section> -->
+ 
 
 </div>
 </div>
@@ -201,14 +199,6 @@
 </section>
 
 		<!-- footer  -->
-		<footer>
-		<p class="footer_logo">SADARI</p>
-		<div class="company_explain">
-			사업자명 : 사다리<br /> 전화번호 : <a class="footer_link" href="">(02)5222-1112<br /></a>
-			EMAIL : <a class="footer_link" href="">help@sadari.com<br /></a>
-			고객센터 운영시간 : 오전 10시부터 오후 6시까지(공휴일 제외)<br /> <br /> <br /> ⓒ 2017
-			SADARI, inc.
-		</div>
-		</footer>
+		<%@ include file ="footer.jsp" %>
 </body>
 </html>
