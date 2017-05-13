@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sadari.mapper.MemberInsertMapper">
+<select id="insertCheck1" parameterType="hashmap" resultType="String">
+	SELECT PN_ID FROM PARTNER WHERE PN_ID=#{userId}
+</select>
+<select id="insertCheck2" parameterType="hashmap" resultType="String">
+	SELECT CT_ID FROM CLIENT WHERE CT_ID=#{userId}
+</select>
+<insert id="insertMember1" parameterType="SadariModel.MemberInsertRec">
+	INSERT INTO CLIENT(ct_no,CT_ID, CT_PASSWORD) VALUES(client_seq.nextval,#{userId},#{password})
+</insert>
+<insert id="insertMember2" parameterType="SadariModel.MemberInsertRec">
+	INSERT INTO PARTNER (pn_no,pn_id,pn_password) values(partner_seq.nextval,#{userId},#{password})
+</insert>
+</mapper>

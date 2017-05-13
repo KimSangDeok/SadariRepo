@@ -1,0 +1,514 @@
+@charset "UTF-8";
+/*------------------------------ 인덱스 페이지 스타일시트 ------------------------------ */
+/* 폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+h2 {
+  font-family: "Nanum Gothic";
+  margin: 20px;
+  color: black;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    margin: 0;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+    text-rendering: optimizelegibility;   
+}
+.content-header .small-text {
+    margin-top: 10px;
+    display: block;
+    font-size: 65%;
+    font-weight: normal;
+    color: #999;
+}
+
+
+
+h5 {
+  font-family: "Nanum Gothic", serif;
+  color: grey;
+  margin: 15px;
+}
+
+h4 {
+  margin: 20px;
+  font-family: "Nanum Gothic", serif;
+  color: grey;
+}
+
+
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+.reg_project_header {
+  margin-top: 25px;
+}
+
+.menubar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background-color: #242424;
+}
+
+/* 로고 */
+.menu_logo {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin: 8px 0 8px 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.sub_menubar {
+  float: right;
+}
+
+.sub_menubar .sub_menu {
+  font-family: 'Nanum Gothic', serif;
+  padding: 18px 20px;
+  display: inline-block;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+.sub_menubar .sub_menu:hover {
+  background-color: black;
+  color: white;
+}
+
+/* 게시판 */
+.wrap {
+  height: 850px;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+}
+
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+}
+
+
+
+
+
+/* 사이드 메뉴 */
+
+
+
+
+.contentProjectBundle {
+  background-color: white;
+  width: 710px;
+  height: 150px;
+}
+
+.newsCenter {
+  
+  background-color: white;
+  width: 1060px;
+  height: 120px;
+  padding-top: 10px;
+  padding-left: 10px;
+/*   border: 1px solid #dedede; */
+  border: 1px solid #dedede;
+}
+
+.contentBundle {
+  width: 710px;
+  height: 100%;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.login-content{
+		
+/* 	vertical-align: middle; */
+/* 	border: 5px solid pink; */
+	
+}
+	
+.loginForm{
+	
+	background-color: white;
+	width: 700px;
+ 	height: 400px;
+  	margin: 10px auto;
+  	padding-top: 70px;
+  	border: 1px solid #dedede;
+/* 	border: solid 3px blue; */
+	float: left;
+}
+
+
+
+
+
+
+.login-button{
+	
+	float: right;
+	padding-right: 108px;
+/* 	border: 1px solid green; */
+}
+
+.facebookLoginForm{
+	
+	background-color: white;
+	width: 420px;
+ 	height: 300px;
+  	margin-top: 10px;
+  	margin-right: 21px;
+  	
+  	border: 1px solid #dedede;
+	padding: 100px;
+	float: right;
+}
+
+
+
+.contentBundle .contentInterestProject {
+  background-color: white;
+  width: 710px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.contentBundle .contentApplyProject {
+  background-color: white;
+  width: 710px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.contentBundle .contentProjectProcess {
+  background-color: white;
+  width: 710px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+
+
+/* .partners { */
+/*   background-color: white; */
+/*   width: 230px; */
+/*   height: 250px; */
+/*   margin: 10px -10px; */
+/*   border: 1px solid #dedede; */
+/*   border-bottom: 2px solid #dedede; */
+/* } */
+
+.history {
+  background-color: white;
+  width: 230px;
+  height: 250px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+
+.myNews {
+  background-color: white;
+  width: 230px;
+  height: 300px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+
+/* section.be_Registered_Project */
+.be_Registered_Project {
+  margin-top: 50px;
+  height: max-content;
+  font-size: 100px;
+  text-align: center;
+}
+
+.be_Registered_Project p {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+body {
+    font-family: "Nanum Gothic", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", AppleGothic, 돋움, Dotum, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: rgb(85, 85, 85);
+    background-color: rgb(243, 244, 247);
+    height: 100%;
+    margin: 0px;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -250px;
+    padding: 0 0 250px;
+    min-width: 1080px;
+}
+
+
+.content{
+	border-radius: 3px;
+	display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 1060px;
+	-webkit-box-sizing: border-box;	
+}
+
+.content-header {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    border-bottom-width: 2px;
+    border: 1px solid #dedede;
+    -webkit-box-sizing: border-box;
+        display: block;
+    
+}
+div {
+    display: block;
+}
+.content-inner{
+	padding: 30px;
+	background-color: #fff;
+    border-radius: 3px;
+    border-bottom-width: 2px;
+	border: 1px solid #dedede;
+}
+
+
+.signup-body form {
+    border-right: 1px solid #09be49;
+}
+
+.form-horizontal.control-label{
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 160px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.form-group.signup-usage{
+	margin-bottom: 25px;
+	margin-left: -10px;
+    margin-right: -10px;
+}
+
+.control-wrapper {
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    border-bottom: 1px dashed #dedede;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 398.5px;
+}
+.control-label.required>span {
+    color: #f48023;
+    font-weight: bold;
+}
+
+.control-wrapper>ul{
+	margin-bottom: 0;
+    overflow: auto;
+    display:inline;
+}
+
+.checkbox-wrapper{
+	padding-left: 180px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 520px;
+}
+
+.btn-wrapper{
+	display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 576.25px;
+}
+
+.control-wrapper>ul>li{
+	margin-right: 0;
+    float: left;
+    display: inline;
+}
+
+.btn.btn-block.btn-wishket.btn-lg.account-btn{
+	color: #fff;
+    background-color: #2099bb;
+    border-color: #2099bb;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.control-label.required{
+	padding-left: -45px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: ;
+    width: 160px;
+    margin-top: 0;
+    margin-bottom: 0;
+    g-top: 7px;
+    text-align: right;
+}
+
+
+
+
+input, button {
+    overflow: visible;
+}
+
+#radio-one{
+    cursor: pointer;
+    width: 190px;
+    height: 137px;
+    margin-right: 0;
+    background-image: url(../img/client_nonselected.png);
+}
+
+
+
+
+#radio-two{
+   	cursor: pointer;
+    width: 190px;
+    height: 137px;
+    margin-left: 16px;
+    background: url(../img/partners_nonselected.png) no-repeat;
+}
+
+* {
+    /* -webkit-box-sizing: border-box; */
+    -moz-box-sizing: borde;
+    box-sizing: border-box;
+}
+
+.radio-inline{
+	margin-left: 0;
+    font-size: 12px;
+    padding: 0;
+    width: 190px;
+    text-align: center;
+    margin-top: 4px;
+    line-height: 18px;
+    line-height: 15px \9;
+    color: #333;
+	vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.signup-body form .signup-usage .control-wrapper ul li div.radio-selected.one input[type="radio"] {
+    margin-top: 80px;
+    margin-left: 89px;
+}
+
+.signup-body form .signup-usage .control-wrapper ul li div.radio-selected.two input[type="radio"] {
+    margin-top: 80px;
+    margin-left: 89px;
+}
+
+
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #666;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    -moz-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+}
+
+.signup-body {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 648.25px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.signup-aside{
+	padding-right: 14px;
+    padding-left: 35px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 308.5px;
+    margin-top: 10px;
+}
+
+
