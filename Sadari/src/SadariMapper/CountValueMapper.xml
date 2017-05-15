@@ -8,4 +8,8 @@
 	SELECT main_pj_cnt as cnt, main_pj_price totalPrice, main_member_cnt member FROM main
 </select>
 
+<select id="getRegProject" resultType="hashmap">
+	SELECT pj_title TITLE, pj_price PRICE, pj_term TERM, pj_category CATEGORY FROM (SELECT rownum AS rnum, p.pj_title,p.pj_price, p.pj_term, p.pj_category FROM project p ORDER BY ct_no DESC)a WHERE a.rnum=1
+</select>
+
 </mapper>

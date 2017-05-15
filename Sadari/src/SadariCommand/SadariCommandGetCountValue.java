@@ -21,8 +21,10 @@ public class SadariCommandGetCountValue implements SadariCommand {
 	public String execute(HttpServletRequest request, HttpServletResponse response) throws SadariException {
 		
 		HashMap count = CountRepository.getInstance().getStatsProject();
+		HashMap regProject = CountRepository.getInstance().getRegProject();
 		
 		request.setAttribute("count", count);
+		request.setAttribute("regProject", regProject);
 		
 		return next;
 	}

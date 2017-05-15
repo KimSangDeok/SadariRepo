@@ -56,4 +56,18 @@ public class CountRepository {
 			sqlSess.close();
 			}
 		}
+	
+	public HashMap getRegProject() throws SadariException{
+		
+		SqlSession sqlSess = getSelSessionFactory().openSession();
+		
+		try{
+			
+			HashMap getRegProject = sqlSess.selectOne(namespace+ ".getRegProject");
+			
+			return getRegProject;
+		}finally {
+			sqlSess.close();
+		}
+	}
 }

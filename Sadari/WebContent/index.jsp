@@ -6,11 +6,26 @@
 
 <%
 
-HashMap pList = (HashMap)request.getAttribute("count");
-	int totalProject 		=  ((BigDecimal)pList.get("CNT")).intValue();
-	int totalPrice 			=  ((BigDecimal)pList.get("TOTALPRICE")).intValue();
-	int totalMember 		=  ((BigDecimal)pList.get("MEMBER")).intValue();
+	HashMap pList 	=	 (HashMap)request.getAttribute("count");
+	
+		int totalProject 		=  ((BigDecimal)pList.get("CNT")).intValue();
+		int totalPrice 			=  ((BigDecimal)pList.get("TOTALPRICE")).intValue();
+		int totalMember 		=  ((BigDecimal)pList.get("MEMBER")).intValue();
+
 %>
+
+<%
+
+		HashMap bList 	=	 (HashMap)request.getAttribute("regProject");
+	
+			String regProj 			= 		((String)bList.get("TITLE")).toString();
+			String regProjTerm 		= 		((String)bList.get("TERM")).toString();
+			String regProjCategory 	= 		((String)bList.get("CATEGORY")).toString();
+			
+			int regProjPrice 		=		((BigDecimal)bList.get("PRICE")).intValue();
+	
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +68,7 @@ HashMap pList = (HashMap)request.getAttribute("count");
         <div class="stats_box">
             <div class="stats_inner">
                 <p>등록된 프로젝트</p>
-                <span class="stats_project"><%=totalProject%></span>
+                <span class="stats_project"><%= totalProject %></span>
                 <span>개</span>
             </div>
 
@@ -79,47 +94,47 @@ HashMap pList = (HashMap)request.getAttribute("count");
     <div class="recent_reg_project_table">
         <div class="recent_reg_project_inner">
             <div class="recent_reg_project_item">
-                <span class="item_header"><a href="">결혼정보 검색 앱(iOS,Android)개발</a></span>
-                    <strong><span class="item_price" id="item">15,1100,000원</span>
-                    <span class="item_period" id="item">50일</span>
-                    <span class="item_apply_people" id="item"> 현재 20명 지원</span></strong>
+                <span class="item_header"><a href=""><%= regProj %></a></span>
+                    <strong><span class="item_price" id="item"><%= regProjPrice %>원</span>
+                    <span class="item_period" id="item"><%= regProjTerm %>일</span>
+                    <span class="item_category" id="item"><%= regProjCategory %></span></strong>
                     <div class="item_describe">저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다. 본사</div>
             </div>
             <div class="recent_reg_project_item">
-               <span class="item_header"><a href="">결혼정보 검색 앱(iOS,Android)개발</a></span>
-                    <strong><span class="item_price" id="item">15,000,000원</span>
-                    <span class="item_period" id="item">50일</span>
-                    <span class="item_apply_people" id="item">현재 20명 지원</span></strong>
+               <span class="item_header"><a href=""><%= regProj %></a></span>
+                    <strong><span class="item_price" id="item"><%= regProjPrice %>원</span>
+                    <span class="item_period" id="item"><%= regProjTerm %>일</span>
+                    <span class="item_category" id="item"><%= regProjCategory %></span></strong>
                     <div class="item_describe">저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다. 본사</div>
             </div>
             <div class="recent_reg_project_item">
-                <span class="item_header"><a href="">결혼정보 검색 앱(iOS,Android)개발</a></span>
-                    <strong><span class="item_price" id="item">15,000,000원</span>
-                    <span class="item_period" id="item">50일</span>
-                    <span class="item_apply_people" id="item"> 현재 20명 지원</span></strong>
+                <span class="item_header"><a href=""><%= regProj %></a></span>
+                    <strong><span class="item_price" id="item"><%= regProjPrice %></span>
+                    <span class="item_period" id="item"><%= regProjTerm %>일</span>
+                    <span class="item_category" id="item"><%= regProjCategory %></span></strong>
                     <div class="item_describe">저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다. 본사</div>
             </div>
         </div>
         <!-- END OF recent_reg_project_inner -->
                         <div class="recent_reg_project_item">
-                <span class="item_header"><a href="">결혼정보 검색 앱(iOS,Android)개발</a></span>
-                    <strong><span class="item_price" id="item">15,000,000원</span>
-                    <span class="item_period" id="item">50일</span>
-                    <span class="item_apply_people" id="item"> 현재 20명 지원</span></strong>
+                <span class="item_header"><a href=""><%= regProj %></a></span>
+                    <strong><span class="item_price" id="item"><%= regProjPrice %>원</span>
+                    <span class="item_period" id="item"><%= regProjTerm %>일</span>
+                    <span class="item_category" id="item"><%= regProjCategory %></span></strong>
                     <div class="item_describe">저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다. 본사저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립</div>
             </div>
             <div class="recent_reg_project_item">
-                <span class="item_header"><a href="">결혼정보 검색 앱(iOS,Android)개발</a></span>
-                    <strong><span class="item_price" id="item">15,000,000원</span>
-                    <span class="item_period" id="item">50일</span>
-                    <span class="item_apply_people" id="item"> 현재 20명 지원</span></strong>
+                <span class="item_header"><a href=""><%= regProj %></a></span>
+                    <strong><span class="item_price" id="item"><%= regProjPrice %>원</span>
+                    <span class="item_period" id="item"><%= regProjTerm %>일</span>
+                    <span class="item_category" id="item"><%= regProjCategory %></span></strong>
                     <div class="item_describe">저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다. 본사저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립</div>
             </div>
             <div class="recent_reg_project_item">
-                <a href=""><span class="item_header">결혼정보 검색 앱(iOS,Android)개발</span></a>
-                    <strong><span class="item_price" id="item">15,000,000원</span>
-                    <span class="item_period" id="item">50일</span>
-                    <span class="item_apply_people" id="item"> 현재 20명 지원</span></strong>
+                <a href=""><span class="item_header"><%= regProj %></span></a>
+                    <strong><span class="item_price" id="item"><%= regProjPrice %>원</span>
+                    <span class="item_period" id="item"><%= regProjTerm %>일</span>
+                    <span class="item_category" id="item"><%= regProjCategory %></span></strong>
                     <div class="item_describe">저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다. 본사저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다.저희는 2004년부터 연구개발을 착수하여 2006년 정식 법인설립한 IT전문 개발회사입니다.저희는 2004년부터 연구개발을 착수111111하여 2006년 정식 법22222인설립한 IT전문 개발회사입니다.</div>
         </div>
         </div>
