@@ -50,6 +50,9 @@ public class SadariControl extends HttpServlet {
 		commandMap.put("search-project", new SadariCommandNull("searchProject.jsp"));
 		commandMap.put("check-member", new SadariCommandInsertCheck("memberInsertView.jsp"));
 		commandMap.put("insert-member", new SadariCommandInsertMember("loginForm.jsp"));
+		commandMap.put("login-form", new SadariCommandNull("loginForm.jsp"));
+		commandMap.put("pt-mypage", new SadariCommandNull("partnersPage.jsp"));
+		commandMap.put("ct-mypage", new SadariCommandNull("partnersPage.jsp"));
 		
 	}
 

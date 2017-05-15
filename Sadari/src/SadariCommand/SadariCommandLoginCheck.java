@@ -1,6 +1,7 @@
 package SadariCommand;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,10 +22,20 @@ public class SadariCommandLoginCheck implements SadariCommand{
 		String userId = request.getParameter("userId");
 	    String userPw = request.getParameter("userPw");
 	    
-	    String id = LoginRepository.getInstance().loginCheck(userId,userPw);
+	    HashMap loginResult = LoginRepository.getInstance().loginCheck(userId,userPw);
+	    String id = ((String) loginResult.get("id")).trim();
+	    String type= ((String) loginResult.get("type")).trim();
+	    
+//	    loginFaile
+	    if(!(id.trim()).equals("loginFaile")){
+	    	
+//	    	HttpSession se = ;
+	    	request.getSession().setAttribute("id", id);
+	    	request.getSession().setAttribute("type", type);
+	    }
 	    
 	    try {
-			response.getWriter().print(id);
+			response.getWriter().print(type);
 		} catch (IOException e) {
 			throw new SadariException();
 		}

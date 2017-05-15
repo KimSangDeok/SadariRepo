@@ -41,7 +41,7 @@ public class LoginRepository {
 		return factory;
 	}
 	
-	public String loginCheck(String userId, String userPw){
+	public HashMap loginCheck(String userId, String userPw){
 		
 		SqlSession sqlSess = getSelSessionFactory().openSession();
 		
@@ -50,11 +50,26 @@ public class LoginRepository {
 			HashMap map = new HashMap();
 			map.put("userId", userId);
 			map.put("userPw", userPw);
-			String id=sqlSess.selectOne(namespace+".loginCheck",map);
-			if(id!=null) return id;
-			else{
+			
+			HashMap loginResult = new HashMap();
+			
+			String ptId=sqlSess.selectOne(namespace+".ptLoginCheck",map);
+			String ctId=sqlSess.selectOne(namespace+".ctLoginCheck",map);
+			
+			if(ptId!=null) {
+				loginResult.put("id", ptId);
+				loginResult.put("type", "pt");
+				return loginResult;
+			}
+			else if (ctId!=null){
+				loginResult.put("id", ctId);
+				loginResult.put("type", "ct");
+				return loginResult;
+			}else{
 				System.out.println("id값 null");
-				return "loginFaile";
+				loginResult.put("id", "loginFaile");
+				loginResult.put("type", "loginFaile");
+				return loginResult;
 			}
 			
 		}finally{
