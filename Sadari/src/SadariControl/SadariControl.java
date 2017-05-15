@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import SadariCommand.SadariCommand;
 import SadariCommand.SadariCommandGetCountValue;
+import SadariCommand.SadariCommandInsertCheck;
+import SadariCommand.SadariCommandInsertMember;
 import SadariCommand.SadariCommandInsertProject;
 import SadariCommand.SadariCommandLoginCheck;
 import SadariCommand.SadariCommandNull;
@@ -46,6 +48,9 @@ public class SadariControl extends HttpServlet {
 		commandMap.put("count", new SadariCommandGetCountValue("index.jsp"));
 		commandMap.put("reg-project", new SadariCommandNull("projectInsertView.jsp"));
 		commandMap.put("search-project", new SadariCommandNull("searchProject.jsp"));
+		commandMap.put("check-member", new SadariCommandInsertCheck("memberInsertView.jsp"));
+		commandMap.put("insert-member", new SadariCommandInsertMember("loginForm.jsp"));
+		
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -75,7 +80,7 @@ public class SadariControl extends HttpServlet {
 			if( commandMap.containsKey( cmdKey ) ){
 				cmd = (SadariCommand)commandMap.get( cmdKey.toLowerCase());
 			}else{
-				throw new SadariException("������ ��ɾ �������� ����");
+				throw new SadariException("지정할 명령어가 존재하지 않음");
 			}
 
 			nextPage = cmd.execute( request,response );
@@ -83,7 +88,7 @@ public class SadariControl extends HttpServlet {
 		}catch( SadariException e ){
 			request.setAttribute("javax.servlet.jsp.jspException", e );
 			nextPage = error;
-			System.out.println("���� : " + e.getMessage() );
+			System.out.println("오류 : " + e.getMessage() );
 		}
 
 		if(nextPage != null) {
