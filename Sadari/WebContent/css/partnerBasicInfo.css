@@ -1,0 +1,482 @@
+@charset "UTF-8";
+/*------------------------------ 인 덱 스  페 이 지  스 타 일 시 트  ------------------------------ */
+/* 폰 트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+h2 {
+  font-family: "Nanum Gothic";
+  margin: 20px;
+  color: grey;
+}
+
+h3 {
+  font-family: "Nanum Gothic", serif;
+  color: grey;
+  margin: 20px;
+}
+
+h4 {
+  font-weight: bold !important;
+  text-indent: 0px;
+  font-family: "Nanum Gothic", serif;
+  color: #4d4d4d;
+  font-size: 20px !important;
+  color: grey !important;
+}
+
+.sideTitle {
+  font-weight: bold !important;
+  margin: 20px 0 0 -20px;
+  font-size: 17px !important;
+  color: grey !important;
+  text-indent:35px;
+}
+
+.subTitle {
+  font-weight: bold !important;
+  text-indent: -15px;
+  font-family: "Nanum Gothic", serif;
+  color: #4cb5dd !important;
+  font-size: 17px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.sub_body {
+  display: block;
+  margin: 0;
+  height: 100%;
+}
+
+.reg_project_header {
+  margin-top: 25px;
+}
+
+.menubar {
+  position: fixed;
+  height: 54px;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-size: cover;
+  background-color: #242424;
+}
+
+/* 로 고 */
+.menu_logo {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin: 5px 0 0 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sub_menubar {
+  float: right;
+  vertical-align: middle;
+}
+
+.sub_menubar .sub_menu {
+  font-family: 'Nanum Gothic', serif;
+  padding: 16px 20px;
+  display: inline-block;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sub_menubar .sub_menu:hover {
+  background-color: black;
+  color: white;
+}
+
+.sub_menubar .glyphicon-user {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.sub_menubar .glyphicon-user:hover {
+  background-color: black;
+}
+
+.sub_menubar .badge {
+  display: inline-block;
+  margin: -10px 5px 0 0;
+}
+
+.sub_menubar .signInId {
+  display: inline-block;
+  padding: 17px 0 17px 25px;
+  margin: 0 10px 0 0;
+  color: #80d8f9;
+}
+
+.sub_menubar .signInId:hover {
+  background-color: black;
+}
+
+/* 게 시 판 */
+.wrap {
+  height: 120%;
+  margin: 0 auto;
+}
+
+.page {
+  width: 1080px;
+  height: 120%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.content {
+ 	display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 790px;    
+}
+
+.contentInner{
+	padding-top: 15px;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	border-bottom-width: 2px;
+	border: 1px solid #dedede;
+}
+
+.contentProjectBundle {
+  background-color: white;
+  width: 710px;
+  height: 150px;
+  border: 1px solid #dedede;
+}
+
+/* 프로필 헤더 */
+.profile-header {
+  background-color: white;
+/*   width: 710px; */
+/*   height: 220px; */
+  margin: 10px auto;
+/*   padding: 20px 0 0 5px; */
+/*   border: 1px solid #dedede; */
+/*   border-bottom: 2px solid #dedede; */
+  margin-top: 15px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #dedede;
+}
+
+.newsList {
+  list-style: none;
+  width: 640px;
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+  display: list-item;
+}
+
+.more {
+  float: right;
+  padding: 10px 5px 0 0;
+  font-weight: bold;
+}
+
+.newsTitle a {
+  color: #525252 !important;
+}
+
+.newsTitle a:hover {
+  color: #55c7f3 !important;
+}
+
+.newsListSet {
+  display: list-item;
+  text-decoration: none;
+  padding-top: 9px;
+  border-bottom: 1px solid #dedede;
+  line-height: 15px;
+}
+
+.newsDate {
+  display: inline-block;
+  float: right;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+/* 프 로 젝 트  현 황 */
+.contentBundle {
+  width: 710px;
+  height: 100%;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.contentBundle .contentInterestProject {
+  background-color: white;
+  width: 640px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 20px 25px 0 25px;
+}
+
+.contentBundle .contentApplyProject {
+  background-color: white;
+  width: 640px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 10px 25px 0 25px;
+}
+
+.contentBundle .contentProjectProcess {
+  background-color: white;
+  width: 640px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 10px 25px 0 25px;
+}
+
+.table {
+  display: table;
+  line-height: 20px;
+}
+
+/* 사 이 드   메 뉴  */
+.sidebar {
+  display: inline;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.partners {
+  background-color: white;
+  width: 270px;
+  height: 320px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  border-radius: 10px;
+}
+
+.userInfo {
+  text-align: center;
+  width: 230px;
+  margin: 10px;
+}
+
+.userId {
+	float: left;
+    width: 220px;
+    margin: 10px auto 2px;
+    font-size: 17px;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.userInfoModify {
+  padding: 0 0 0 30px;
+  display: block;
+  font-size: 15px;
+}
+
+/* .userFace { */
+/*   border: 1px solid black; */
+/*   display: inline-block; */
+/*   text-align: center; */
+/*   float: left; */
+/*   margin: 20px 30px; */
+/*   width: 60px; */
+/*   height: 60px; */
+/* } */
+.userphoto{
+	padding-left:30px;
+	padding-top:20px;
+}
+
+.tab {
+  background-color: white;
+  width: 270px;
+  height: 300px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  border-radius: 10px;
+}
+
+.myNews {
+  background-color: white;
+  width: 270px;
+  height: 300px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+
+span {
+  display: inline-block;
+  float: right;
+}
+
+.historyList {
+  display: list-item;
+  border: 1px soild gold;
+  width: 230px;
+  list-style-type: none;
+  margin: 30px 0;
+}
+
+.countProject {
+  float: right;
+}
+
+/* section.be_Registered_Project */
+.be_Registered_Project {
+  margin-top: 50px;
+  height: max-content;
+  font-size: 100px;
+  text-align: center;
+}
+
+.be_Registered_Project p {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: "Nanum Gothic","Apple SD Gothic Neo","맑은 고딕","Malgun Gothic","AppleGothic","돋움",Dotum,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    background-color: #f3f3f3;
+    height: 100%;
+}
+
+.form-horizontal.control-label{
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 160px;
+}
+
+.control-label.required>span {
+    color: #f48023;
+    font-weight: bold;
+}
+
+.control-label.required{
+	padding-left: -45px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: ;
+    width: 160px;
+    margin-top: 0;
+    margin-bottom: 0;
+    g-top: 7px;
+    text-align: right;
+}
+
+input, button {
+    overflow: visible;
+}
+
+.form-group{
+	margin-left: -10px;
+    margin-right: -10px;
+    position: relative;
+    margin-top: 18px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+.control-label.p5-box-control-label {
+    margin-top: 7px !important;
+    margin-right: 20px;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-left: 90px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
+    float: left;
+    margin-right: 30px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.p5-portfoilo-img-control-wrapper {
+	height: 110px;
+}
+
+.control-wrapper{
+	width: 351px;
+    margin-left: 0;
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+
+.p5-img-name{
+	height: 34px;
+    width: 310px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border: 1px solid #dedede;
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    
+}
+
+.btn{
+	cursor: pointer;
+    left: 0;
+    margin-left: 0;
+    top: 50px;
+    position: absolute;
+    color: #fff;
+    background-color: #2099bb;
+    border-color: #1c87a5;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+

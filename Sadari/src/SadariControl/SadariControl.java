@@ -50,10 +50,19 @@ public class SadariControl extends HttpServlet {
 		commandMap.put("search-project", new SadariCommandNull("searchProject.jsp"));
 		commandMap.put("check-member", new SadariCommandInsertCheck("memberInsertView.jsp"));
 		commandMap.put("insert-member", new SadariCommandInsertMember("loginForm.jsp"));
-		commandMap.put("login-form", new SadariCommandNull("loginForm.jsp"));
-		commandMap.put("pt-mypage", new SadariCommandNull("partnersPage.jsp"));
-		commandMap.put("ct-mypage", new SadariCommandNull("partnersPage.jsp"));
+
+		//파트너 페이지에서 개인 정보 수정하기눌렀을 때
+		commandMap.put("basicinfo", new SadariCommandNull("partnerBasicInfo.jsp"));
 		
+		//개인정보 수정 페이지에서 파트너 개인정보 입력
+		commandMap.put("basincinfoInsert", new SadariCommandNull("partnerBasicInfo.jsp"));
+		
+		//파트너 프로필 페이지 넘기기
+		commandMap.put("introduce",	  new SadariCommandNull("partnersInstroduce.jsp"));
+		commandMap.put("totalview",	  new SadariCommandNull("partnersProfile.jsp"));
+		commandMap.put("portrolio",	  new SadariCommandNull("partnerPortfolio.jsp"));
+		commandMap.put("skill",	  new SadariCommandNull("partnersInstroduce.jsp"));
+		commandMap.put("introduce",	  new SadariCommandNull("partnersInstroduce.jsp"));
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
