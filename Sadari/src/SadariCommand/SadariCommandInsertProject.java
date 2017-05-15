@@ -27,6 +27,16 @@ public class SadariCommandInsertProject implements SadariCommand {
 		rec.setPjPrice(request.getParameter("projectCost"));
 		rec.setPjSt_dt(request.getParameter("foreStart"));
 		rec.setPjTerm(request.getParameter("projectGigan"));
+		
+		rec.setPjPlan(request.getParameter("r2"));
+		rec.setPjContent(request.getParameter("comtest"));
+		rec.setPjSkills(request.getParameter("skill"));
+//		rec.setPjFile(request.getParameter(""));
+		rec.setPjMeeting(request.getParameter("meeting"));
+		rec.setPjLoc(request.getParameter("selOne"));
+		rec.setPjSubloc(request.getParameter("selTwo"));
+		
+		System.out.println("1>"+request.getParameter("comtest"));
 //		String job = request.getParameter("job");
 //		String subjob = ;
 //		String projectTitle = ;
@@ -44,8 +54,9 @@ public class SadariCommandInsertProject implements SadariCommand {
 		
 		
 		int result = InsertProjectRepository.getInstance().insert(rec);
-		
+		System.out.println("dd");
 		request.setAttribute("result", result);
+	
 		return next;
 	}
 

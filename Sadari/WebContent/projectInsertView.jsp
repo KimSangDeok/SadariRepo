@@ -16,25 +16,64 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+ 
     
-   
+//   숫자 천단위 콤마 찍기.
+    $(function() {
+    	  var $input = $("#projectCost");
+    	  $input.on('blur', function() {
+    	    // 입력 값 알아내기
+    	    var _$self = $(this);
+    	    var value = _$self.val();
+
+    	    // 원단위로 변경하기
+    	    var result = AddComma(value);
+
+    	    _$self.val(result);
+    	  })
+
+    });
+
+    	 function AddComma(dataValue) {
+    	  isNumber(dataValue);
+    	  var separateValue = Number(dataValue).toLocaleString('en');
+    	  if (separateValue == 'NaN') {
+    	    return '';
+    	  }
+    	  return separateValue;
+    	 }
+
+    	 function isNumber(checkValue) {
+    	    checkValue = '' + checkValue;
+    	    if (isNaN(checkValue) || checkValue == "") {
+    	      alert('숫자만 입력해 주세요!!!');
+    	      return;
+    	    }
+    	}
     
-         $(function(){  
+    
+    
+// 파일 업로드
+    
+        $(function(){  
         	 
         	 
-                $('#btn-upload').click(function(e){
-                    e.preventDefault();             
-                    $("input:file").click();               
-                    var ext = $("input:file").val().split(".").pop().toLowerCase();
-                    if(ext.length > 0){
+               $('#btn-upload').click(function(e){
+                   e.preventDefault();             
+                   $("input:file").click();               
+                   var ext = $("input:file").val().split(".").pop().toLowerCase();
+                   if(ext.length > 0){
                         if($.inArray(ext, ["gif","png","jpg","jpeg"]) == -1) { 
                             alert("gif,png,jpg 파일만 업로드 할수 있습니다.");
                             return false;  
                         }                  
-                    }
+                   }
                     $("input:file").val().toLowerCase();
                 });                         
-            });               
+        });               
+
+
+// 위치 셀렉트 박스 기능 
 
         function doChange(srcE, targetId){
          var val = srcE.options[srcE.selectedIndex].value;
@@ -134,7 +173,7 @@
 
 <div class="container">
  <!-- <h2>Horizontal form</h2> -->
-  <form class="form-horizontal" action="ssss.sadari" method='post'>
+  <form class="form-horizontal" action="ssss.sadari" method='get'>
    <input type='hidden' name='cmd' value='pj-save'/>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">카테고리</label>
@@ -163,23 +202,30 @@
     </div>
     
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">프로젝트 제목</label>
+      <label class="control-label col-sm-2" >프로젝트 제목</label>
       <div class="col-sm-10">          
         <input type="text" class="form-control" id="projectTitle" name="projectTitle" placeholder="프로젝트 제목을 입력해주세요." style="text-align:center">
       </div>
     </div>
     
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">예상기간</label>
+      <label class="control-label col-sm-2" >예상 시작일</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="projectGigan" name="projectGigan" placeholder="ex) 2017/05/01 형식으로 입력해주세요." style="text-align:center">
+        <input type="text" class="form-control" id="foreStart" name="foreStart" placeholder="ex) 2017/05/01 형식으로 입력해주세요." style="text-align:center">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2" >예상 기간</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="projectGigan" name="projectGigan" placeholder="ex) 20일 / 3개월 / 2년 " style="text-align:center">
       </div>
     </div>
     
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">지출가능예산</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="projectCost" name="projectCost" placeholder="ex) 9백9십만원" style="text-align:center">
+        <input type="text" class="form-control" id="projectCost" name="projectCost" placeholder="ex) 1만원 -> 10000 형식으로 입력" style="text-align:center">
       </div>
     </div>
     
@@ -202,13 +248,15 @@
     
     <div class="form-group">
       <label class="control-label col-sm-2" >프로젝트 내용</label>
-      <div class="col-sm-10">          
-       <textarea class="form-control" rows="10" cols="60" id="comment" name="comment" form="usrform" placeholder="프로젝트 내용을 입력해주세요."></textarea>
+      <div class="col-sm-10">       
+<!--      	 <input type="text" class="form-control" id="comtest" name="comtest" placeholder="프로젝트 내용을 입력해주세요."  style="text-align:center; width:940px; height:500px">  -->
+     	 <textarea class="form-control" name="comtest" rows="10" cols="60" placeholder="프로젝트 내용 입력." ></textarea>  
+<!--        <textarea class="form-control" rows="10" cols="60" id="comment" name="comtest"  placeholder="프로젝트 내용을 입력해주세요."></textarea> -->
       </div>
     </div>
     
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">관련기술</label>
+      <label class="control-label col-sm-2" >관련기술</label>
       <div class="col-sm-10">          
         <input type="text" class="form-control" id="skill" name="skill" placeholder="please input skills" style="text-align:center">
         <span class="help_block">
@@ -238,7 +286,7 @@
     <div class="form-group">
       <label class="control-label col-sm-2">사전미팅</label>
       <div class="col-sm-10">          
-        <select name="meeting" class="form-control">
+        <select id="meeting" name="meeting" class="form-control">
    			 <option value="온라인"> 온라인 미팅 </option>
    			 <option value="오프라인"> 오프라인 미팅 </option>
 		</select>
@@ -272,17 +320,12 @@
           </select>
 
           <select name="selTwo" id="selTwo">
-          <option value="default">시, 군, 구</option>
+          	<option value="default">시, 군, 구</option>
           </select>
       </div>
     </div>
     
-    <div class="form-group">
-      <label class="control-label col-sm-2" >프로젝트 예상 시작일</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="foreStart" name="foreStart" placeholder="ex) 2017/05/01" style="text-align:center">
-      </div>
-    </div>
+    
     
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">

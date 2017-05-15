@@ -63,6 +63,9 @@ public class SadariControl extends HttpServlet {
 		commandMap.put("portrolio",	  new SadariCommandNull("partnerPortfolio.jsp"));
 		commandMap.put("skill",	  new SadariCommandNull("partnersInstroduce.jsp"));
 		commandMap.put("introduce",	  new SadariCommandNull("partnersInstroduce.jsp"));
+	
+		//프로젝트 등록후 검수화면에서 파트너목록 버튼 눌러서 파트너목록 페이지 불러오기.
+		commandMap.put("show-partnerList", new SadariCommandNull("partnerList.jsp"));
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
