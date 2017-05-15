@@ -23,7 +23,7 @@
 <div class="wrap">
 
 <!-- header -->
-<jsp:include page="header.jsp"/>
+<%@ include file="header.jsp" %>
 
 <!-- 나의 프로젝트 대시보드 -->
  <div class="page">
@@ -123,7 +123,7 @@
             </div>
             <div class="userInfo"></div>
                 <div class="userId">jylid89</div>
-                <a href=""><h5 class="userInfoModify">기본 정보 수정</h5></a>
+                <a href=".sadari?cmd=basicinfo"><h5 class="userInfoModify">기본 정보 수정</h5></a>
             </div>
             <div class="history"><h4 class="sideTitle">나의 히스토리</h4>
                 <ul class="historyList">
