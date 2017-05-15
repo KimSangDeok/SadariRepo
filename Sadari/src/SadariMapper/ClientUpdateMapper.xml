@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--  위 코드 3줄은 복붙 -->
+<mapper namespace="sadari.mapper.ClientUpdateMapper">
+
+
+<update id="clientUpdate" parameterType="SadariModel.ClientRec">
+update client set
+ct_name=#{ctName},
+CT_TEL=#{ctTel},
+CT_INTRODUCE=#{ctIntroduce}
+where ct_id=#{ctId}
+</update>
+
+
+<select id="clientSelect" parameterType="SadariModel.ClientRec">
+select ct_name as cName, ct_id as cId, ct_introduce as cI 
+from client
+where ct_id=#{ctId}
+</select>
+</mapper>

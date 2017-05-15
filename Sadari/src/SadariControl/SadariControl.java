@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import SadariCommand.SadariCommand;
+import SadariCommand.SadariCommandClientUpdate;
 import SadariCommand.SadariCommandGetCountValue;
 import SadariCommand.SadariCommandInsertCheck;
 import SadariCommand.SadariCommandInsertMember;
@@ -66,6 +67,9 @@ public class SadariControl extends HttpServlet {
 	
 		//프로젝트 등록후 검수화면에서 파트너목록 버튼 눌러서 파트너목록 페이지 불러오기.
 		commandMap.put("show-partnerList", new SadariCommandNull("partnerList.jsp"));
+		
+		//클라이언트 정보 업데이트
+		commandMap.put("client-info", new SadariCommandClientUpdate("projectInsertView.jsp"));
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
