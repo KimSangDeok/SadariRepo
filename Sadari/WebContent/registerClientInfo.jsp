@@ -22,17 +22,9 @@
 
 <body class="sub_body">
 
-<!-- header -->
-   <%@ include file="header.jsp" %>
-<!--  <!-- 사이드 메뉴 --> -->
-<!--      <aside class="sidebar"> -->
-<!--         <div> -->
-<!--             <div class="partners">파트너 정보</div> -->
-<!--             <div class="history">나의 히스토리</div> -->
-<!--             <div class="myNews">새로운 소식</div> -->
-<!--         </div> -->
-<!--     </aside> -->
-<!--     <p>&nbsp;</p> -->
+<!-- 	header -->
+		<%@ include file="header.jsp" %> 
+		<!-- end of header -->
 
   <div class="wrap">
 		<header class="reg_project_header">

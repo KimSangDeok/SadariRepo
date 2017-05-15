@@ -18,6 +18,7 @@
 
 <body class="searchProjectBody">
 	<div class="searchProjectWrap">
+<!-- 	header -->
 		<%@ include file="header.jsp" %> 
 	
 	<!-- 프로젝트 찾기 전체 테이블 -->
@@ -26,6 +27,10 @@
             <div class="searchProjectHeader">
 				<div class="searchProjectTitle">프로젝트 찾기</div>
 				<div class="searchProjectCount">000<span class="searchProject">개의 프로젝트가 있습니다</span></div>
+				<div style="float:right">
+					<input style="float:left; margin-right:5px" class="searchText" id="searchText" name="searchText" type="text" >
+					<button type="button" style="margin-right:5px" id="searchbtn" name="searchbtn" class="btn btn-primary btn-sm">검색</button>					
+				</div>
 			</div>
 		<!-- 프로젝트 정렬 테이블 -->
         <aside class="sortSidebar">
