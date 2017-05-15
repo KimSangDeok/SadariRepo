@@ -9,6 +9,16 @@ public class ProjectRec {
 	private String pjCategory;
 	private String pjDeadline;
 	
+	private String pjPlan;
+	private String pjContent;
+	private String pjSkills;
+	private String pjFile;
+	private String pjMeeting;
+	private String pjLoc;
+	private String pjSubloc;
+	private String pjSavecheck;
+	
+	
 	public String getPjTitle() {
 		return pjTitle;
 	}
@@ -45,6 +55,58 @@ public class ProjectRec {
 	public void setPjDeadline(String pjDeadline) {
 		this.pjDeadline = pjDeadline;
 	}
+	public String getPjPlan() {
+		return pjPlan;
+	}
+	public void setPjPlan(String pjPlan) {
+		this.pjPlan = pjPlan;
+	}
+	public String getPjContent() {
+		return pjContent;
+	}
+	public void setPjContent(String pjContent) {
+		this.pjContent = pjContent;
+	}
+	public String getPjSkills() {
+		return pjSkills;
+	}
+	public void setPjSkills(String pjSkills) {
+		this.pjSkills = pjSkills;
+	}
+	public String getPjFile() {
+		return pjFile;
+	}
+	public void setPjFile(String pjFile) {
+		this.pjFile = pjFile;
+	}
+	public String getPjMeeting() {
+		return pjMeeting;
+	}
+	public void setPjMeeting(String pjMeeting) {
+		this.pjMeeting = pjMeeting;
+	}
+	
+	public String getPjLoc() {
+		return pjLoc;
+	}
+	public void setPjLoc(String pjLoc) {
+		this.pjLoc = pjLoc;
+	}
+	
+	public String getPjSubloc() {
+		return pjSubloc;
+	}
+	public void setPjSubloc(String pjSubloc) {
+		this.pjSubloc = pjSubloc;
+	}
+	public String getPjSavecheck() {
+		return pjSavecheck;
+	}
+	public void setPjSavecheck(String pjSavecheck) {
+		this.pjSavecheck = pjSavecheck;
+	}
+	
+	
 	
 	
 }
