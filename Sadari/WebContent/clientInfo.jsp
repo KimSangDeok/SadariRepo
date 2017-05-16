@@ -44,16 +44,58 @@
 	<div class="user-name-tag">
 		<h3 class="user-name-tag-heading">클라이언트</h3>
 		<div class="user-name-tag-body">
-			<img alt="user사진"  src="img/default.png">
-			<h4 class="userid"><%=map.get("CT_ID") %></h4>
-			<a class="profile-setting" href=".">사진 업로드</a>
+	
+	
+<!-- 	사진파일업로드		 -->
+			<article>
+			
+  <p id="status" class="success"></p>
+  <p><input type="file"></p> 
+  <div id="holder"></div>
+            </article>
+            
+			<h4 class="userid">클라이언트아이디 <%=map.get("CT_ID") %></h4>			
+			                  
+         <script>
+var upload = document.getElementsByTagName('input')[0],
+    holder = document.getElementById('holder'),
+    state = document.getElementById('status');
+
+if (typeof window.FileReader === 'undefined') {
+  state.className = 'fail';
+} else {
+  state.className = 'success';
+  state.innerHTML = '';
+}
+ 
+upload.onchange = function (e) {
+  e.preventDefault();
+
+  var file = upload.files[0],
+      reader = new FileReader();
+  reader.onload = function (event) {
+    var img = new Image();
+    img.src = event.target.result;
+    // note: no onload required since we've got the dataurl...I think! :)
+    if (img.width > 560) { // holder width
+      img.width = 560;
+    }
+    holder.innerHTML = '';
+    holder.appendChild(img);
+  };
+  reader.readAsDataURL(file);
+
+  return true;
+};
+</script>
+
 		</div>
 	</div>
 
 	
 		<div class="user-name-tag">
 			<ul class="sidebarbtn">
-				<input type="submit" value="    클라이언트 정보    " class="active" ><a href="./clientInfo.jsp"></a></p>
+				<input type="submit" value="    클라이언트  정보    " class="active" ><a href="./clientInfo.jsp"></a></p>
 				<input type="submit" value="  프로젝트 히스토리    " class="active"><a href="."></a></p>
 			</ul>
 		</div>
