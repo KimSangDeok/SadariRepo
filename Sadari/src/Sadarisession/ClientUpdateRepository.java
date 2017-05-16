@@ -62,7 +62,7 @@ public class ClientUpdateRepository {
 			int result = sqlSess.update(namespace+".clientUpdate",rec);
 			
 			if(result==1){
-				
+				System.out.println("aa");
 				sqlSess.commit();
 			}else{
 				
@@ -91,7 +91,7 @@ public class ClientUpdateRepository {
 		
 		try{
 			
-			HashMap clientSelect = sqlSess.selectOne(namespace+".clientSelect");
+			HashMap clientSelect = sqlSess.selectOne(namespace+".clientSelect",rec);
 //			HashMap map = new HashMap();
 //			map.put("userId", userId);
 //			map.put("userPw", userPw);

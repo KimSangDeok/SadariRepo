@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<%
+	
+	<%	
 // 	String userId=request.getParameter("id");  
 	String userId="iii";
 	%>
@@ -39,8 +40,9 @@
 			<!-- 대메뉴 -->
 			<nav class="sub_menubar"> 
 			<a class="sub_menu" href="./projectInsertView.jsp">프로젝트 등록</a> 
-			<a class="sub_menu" href="">프로젝트 찾기</a> 
-			<a class="sub_menu" href="">파트너스 목록</a> 
+			<a class="sub_menu" href="./searchProject.jsp">프로젝트 찾기</a> 
+			<a class="sub_menu" href="./partnerList.jsp">파트너스 목록</a> 
+			<div class="signInId">userID<span class="badge">?</span></div>
 			</nav>
 		</div>
 		</header>
@@ -138,6 +140,7 @@
      
       <form class="form-group" action="sadari.sadari" method='post'>
      <input type='hidden' name='cmd' value='client-info'/>
+     <input type='hidden' name='userId' value='<%=userId%>'/>
      
       <input type="text" class="form-control" name=ctName id="pwd" size="20" maxlength="50" placeholder="이름을 입력해 주세요" style="text-align:left">
         <br/>        

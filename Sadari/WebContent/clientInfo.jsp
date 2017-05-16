@@ -23,6 +23,20 @@
 	
 <!-- 	배경 -->
 	 <div class="wrap">
+	 	<header class="reg_project_header">
+		<div class="menubar">
+			<!-- 로고 버튼 -->
+			<a href="."><div class="menu_logo">SADARI</div></a>
+
+			<!-- 대메뉴 -->
+			<nav class="sub_menubar"> 
+			<a class="sub_menu" href="./projectInsertView.jsp">프로젝트 등록</a> 
+			<a class="sub_menu" href="./searchProject.jsp">프로젝트 찾기</a> 
+			<a class="sub_menu" href="./partnerList.jsp">파트너스 목록</a> 
+			<div class="signInId">userID<span class="badge">?</span></div>
+			</nav>
+		</div>
+		</header>
 
 	<!-- 사이드 메뉴 -->
 	<aside class="sidebar">
@@ -40,7 +54,7 @@
 		<div class="user-name-tag">
 			<ul class="sidebarbtn">
 				<p class="active"><a href="./clientInfo.jsp">클라이언트 정보</a></p>
-				<p class=""><a href="">프로젝트 히스토리</a></p>
+				<p class=""><a href=".">프로젝트 히스토리</a></p>
 			</ul>
 		</div>
 	</aside>
@@ -54,8 +68,8 @@
 		<a href="#"><div class="menu_logo">SADARI</div></a>
 
 		<!-- 대메뉴 -->
-		<nav class="sub_menubar"> <a class="sub_menu" href="">프로젝트
-			등록</a> <a class="sub_menu" href="">프로젝트 찾기</a> <a class="sub_menu"
+		<nav class="sub_menubar"> <a class="sub_menu" href="./projectInsertView.jsp">프로젝트
+			등록</a> <a class="sub_menu" href="./searchProject.jsp">프로젝트 찾기</a><a class="sub_menu"
 			href="">파트너스 목록</a> </nav>
 	</div>
 
@@ -78,8 +92,10 @@
 			</div>
 		</div>
 		<div class="client-homepage">
-			<div class="client-homepage-label">홈페이지</div>
-			<div class="client-homepage-data">None</div>
+			<div class="client-homepage-label">* 홈페이지</div>
+			<br/>
+			<a class="client-homepage-data" href="./main.jsp">homepage.sadari</a>
+			
 		</div>
 		<br/>
 		<a href="./registerClientInfo.jsp"><input type="submit" value="수정"></a> </section>

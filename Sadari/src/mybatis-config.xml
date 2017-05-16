@@ -31,5 +31,6 @@
  <mapper resource="SadariMapper/ProjectMapper.xml"/>
  <mapper resource="SadariMapper/CountValueMapper.xml"/>
  <mapper resource="SadariMapper/MemberInsertMapper.xml"/>
+   <mapper resource="SadariMapper/ClientUpdateMapper.xml"/>
  </mappers>
 </configuration>
