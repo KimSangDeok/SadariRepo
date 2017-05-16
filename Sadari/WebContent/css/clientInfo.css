@@ -5,6 +5,8 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
 
+
+
 /* 사이드 메뉴 */
 .user-name-tag{
     width: 250px;
@@ -18,6 +20,2577 @@
 .user-name-tag .active {
     height: 48px;
     padding: 4px 0;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.user-name-tag .sidebarbtn{
+	margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* 클라이언트정보 */
+.content-inner{
+	padding: 30px;
+	background-color: #fff;
+    border-radius: 3px;
+    border-bottom-width: 2px;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 300px;
+     margin-top: 30px;
+}
+
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+/* .userInfo { */
+/*   text-align: center; */
+/*   width: 230px; */
+/*   margin: 10px; */
+/* } */
+
+/* .userFace { */
+/*   border: 1px solid black; */
+/*   display: inline-block; */
+/*   text-align: center; */
+/*   float: left; */
+/*   margin: 20px 30px; */
+/*   width: 60px; */
+/*   height: 60px; */
+/* } */
+
+/* .sideTitle { */
+/*   font-weight: bold !important; */
+/*   margin: 20px 0 0 -20px; */
+/*   font-size: 17px !important; */
+/*   color: grey !important; */
+/* } */
+
+/* .clients { */
+/*   background-color: white; */
+/*   width: 270px; */
+/*   height: 140px; */
+/*   margin: 10px -10px; */
+/*   border: 1px solid #dedede; */
+/*   border-bottom: 2px solid #dedede; */
+/* } */
+/* /* 파트너 히스토리 마이뉴스 */ */
+/* .partners { */
+/*   background-color: white; */
+/*   width: 230px; */
+/*   height: 250px; */
+/*   margin: 10px; */
+/*   border-bottom: 3px solid #dedede; */
+/*   border: 1px solid #dedede; */
+/* } */
+
+.history {
+/*   background-color: white; */
+/*   width: 230px; */
+/*   height: 200px; */
+/*   margin: 10px; */
+/*   border-bottom: 3px solid #dedede; */
+/*   border: 1px solid #dedede; */
+  
+/*   .client 클래스 css정보 */
+  background-color: white;
+  width: 270px;
+  height: 140px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+.clientInfo{
+	background-color: white;
+  width: 270px;
+  height: 70px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+	
+}
+
+.myNews {
+  background-color: white;
+  width: 230px;
+  height: 400px;
+  margin: 10px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+}
+/* -- */
+
+.contentInterestProject {
+  background-color: white;
+  width: 960px;
+  height: 150px;
+  margin: -10px auto;
+   padding: 50px 0 5px 5px;
+  border-bottom: 2px solid #dedede;
+   border: 1px solid #dedede;
+  
+ 
+}
+
+.sidebar {
+
+  
+  display: block;
+  float: left;
+  margin: auto;
+  width: 250px;
+
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+/* 뉴 스  센 터 */
+.newsCenter {
+  background-color: #f3f3f3;
+  width: 980px;
+  height: 220px;
+  margin: 10px auto;
+  padding: 20px 0 0 5px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+   margin-top: 30px;
+}
+
+.newsList {
+  list-style: none;
+  width: 640px;
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+  display: list-item;
+}
+
+/*프로젝트 등록*/
+
+/* 게시판 */
+.wrap {
+  min-height: 100%;
+  height: 700px;
+  min-width: 1080px;
+/*   padding: 5 0 0 0px; */
+  margin: 0 auto;
+  background-color: #f3f3f3;
+}
+
+
+.project-client-contact-form-content-caption{
+	  margin: 10px 0 0 40px;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+
+
+.btn-wrapper{
+style="padding-left: 5px; margin-top: 5px;"
+}
+.project-client-contact-form-content project-client-contact-form-content-divider project-client-contact-form-content-small{
+ background-color: white;
+  width: 710px;
+  height: 150px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+ style="padding-bottom: 15px;"
+  margin: 10px 0 0 40px;
+  /*   margin: 30px; */
+   font-family: 'Nanum Gothic';
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+
+/* -- */
+
+.form-input-rapper{
+	font-family: "Nanum Gothic", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", AppleGothic, 돋움, Dotum, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: rgb(85, 85, 85)
+}
+
+
+.project-client-contact-title{
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.0;	
+}
+
+.content-header{
+	
+/*     border-top-color: rgb(222, 222, 222); */
+/*     border-top-style: solid; */
+/*     border-top-width: 1px; */
+/*     border-right-color: rgb(222, 222, 222); */
+/*     border-right-style: solid; */
+/*     border-right-width: 1px; */
+/*     border-bottom-color: rgb(222, 222, 222); */
+/*     border-bottom-style: solid; */
+/*     border-bottom-width: 1px; */
+/*     border-left-color: rgb(222, 222, 222); */
+/*     border-left-style: solid; */
+/*     border-left-width: 1px; */
+/*     border-image-source: initial; */
+/*     border-image-slice: initial; */
+/*     border-image-width: initial; */
+/*     border-image-outset: initial; */
+/*     border-image-repeat: initial; */
+	
+/* 	border-radius: 3px; */
+/*     border-bottom-width: 2px */
+	
+/*     padding-top: 5px; */
+/*     padding-right: 30px; */
+/*     padding-bottom: 1px; */
+/*     padding-left: 30px; */
+	
+/*     margin-top: 0px; */
+/*     margin-right: 0px; */
+/*     margin-bottom: 5px; */
+/*     margin-left: 0px; */
+/*     margin-bottom: 5px; */
+/* 	background-color: white; */
+
+  background-color: white;
+  width: 960px;
+  height: 210px;
+  margin: -10px auto;
+  padding: 3px 0 5px 5px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+
+}
+.small-text{
+    margin-top: 10px;
+    display: block;	
+}
+
+.header-text{
+	font-size: 24px;
+	font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+    text-rendering: optimizelegibility;
+     padding: 10px 0 0 5px;
+}
+
+
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+.menubar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background-color: #242424;
+}
+
+/* 로고 */
+.menu_logo {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin: 8px 0 8px 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sub_menubar {
+  float: left;
+}
+
+.sub_menubar .sub_menu {
+  font-family: 'Nanum Gothic', serif;
+  padding: 18px 20px;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sub_menubar .sub_menu:hover {
+  background-color: black;
+  color: white;
+}
+.left_menu {
+	font-family: 'Nanum Gothic', serif;
+	font-size: 30px;
+	text-align: left;
+	float : left;
+	margin-top: 30px;
+}
+
+/* section.be_Registered_Project */
+.content_inner{
+	background-color: white;
+  width: 710px;
+  height: 150px;
+  margin: 30px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+   margin-top: 50px;
+}
+
+.be_Registered_Project {
+  margin-top: 50px;
+  height: max-content;
+  font-size: 50px;
+  text-align: center;
+}
+
+.center {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* style */
+
+
+/* 바디 */
+.index_body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+/* 메인 이미지 */
+.index_header {
+  height: 500px;
+  margin: 0 0 0 0;
+  background: url(../img/main_image.jpg) top;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+/* 로고 */
+.index_logo {
+  font-size: 40px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  text-align: left;
+  text-transform: uppercase;
+  clear: left;
+}
+
+.index_logo:hover {
+  color: white;
+}
+
+.main_navbar {
+  float: right;
+  margin: 28px 60px 0 0;
+  vertical-align: middle;
+}
+
+.main_navbar .main_menu {
+  display: inline-block;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 17px;
+  margin-left: 30px;
+  color: white;
+  vertical-align: middle;
+}
+
+.main_navbar .main_menu:hover {
+  color: #a0dcff;
+}
+
+/* 로그인 버튼 */
+.login {
+  display: table-cell;
+  font-size: 15px;
+  text-align: center;
+  padding: 0.3em;
+  border: #043e86 solid 5px;
+  vertical-align: middle;
+  border-radius: 250px;
+  background: #043e86;
+  width: 80px;
+  height: 22px;
+}
+
+.login:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+/* SIGN UP 버튼 */
+a {
+  text-decoration: none;
+}
+
+a .sign {
+  font-family: 'Ubuntu';
+  display: block;
+  border: 2px solid #FFFFFF;
+  border-radius: 220px;
+  width: 200px;
+  text-align: center;
+  font-size: 23px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  line-height: 50px;
+  clear: both;
+}
+
+a .sign:hover {
+  opacity: 0.8;
+}
+
+/* 메인 문구 */
+h1 {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 0.01em;
+  margin-bottom: 5px;
+  padding-top: 80px;
+  clear: both;
+}
+
+/* 서브 문구 */
+h2 {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: white;
+  padding-top: 1px;
+  margin-bottom: 40px;
+}
+
+/* 프로젝트 현황 테이블 section.stats */
+.stats {
+  border-top: 1px solid rgba(172, 172, 172, 0.3);
+  border-bottom: 1px solid #d4d5d6;
+  height: 92px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #fff;
+  display: block;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: 'Nanum Gothic';
+  text-align: center;
+}
+
+.stats_inner {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 20px;
+  display: inline-block;
+  border-right: 1px solid rgba(136, 136, 136, 0.2);
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+/* 최근 등록 프로젝트 */
+/* 최근 등록 프로젝트 헤더 */
+.recent_reg_project {
+  background: #f3f3f3;
+  width: 100%;
+  position: absolute;
+  font-family: 'Nanum Gothic', serif;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.recent_reg_project_header {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* 최근 등록 프로젝트 테이블 */
+.recent_reg_project_table {
+  display: block;
+  border-spacing: 40px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.recent_reg_project_inner {
+  display: table-row;
+}
+
+.recent_reg_project_item {
+  display: table-cell;
+  padding: 15px;
+  width: 33%;
+  text-align: center;
+  border: 1px solid green;
+  background: white;
+  background-size: 100% 100%;
+  background-position: center center;
+  border: 1px solid #dedede;
+  border-bottom: 3px solid #dedede;
+  overflow: hidden;
+}
+
+.recent_reg_project_item #item {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.recent_reg_project_item .item_period {
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
+
+.recent_reg_project_item .item_describe {
+  display: block;
+  vertical-align: middle;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.recent_reg_project_item .item_header {
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+/* 메인내용 section.be_registered_project */
+.be_registered_project {
+  height: max-content;
+  font-size: 100px;
+  text-align: center;
+}
+
+/* 최하단 footer */
+footer {
+  height: 300px;
+  margin: 0 0 0 0;
+  background: #242424;
+  background-size: cover;
+}
+
+.footer_logo {
+  font-size: 40px;
+  letter-spacing: -2.5px;
+  color: #e7f1fe;
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  text-align: left;
+  text-transform: uppercase;
+  clear: left;
+}
+
+/* 반응형 웹 설정 */
+@media screen and (max-width: 1276px) {
+  .stats {
+    display: none;
+  }
+}
+
+/* 기업 정보 입력 */
+.company_explain {
+  font-family: 'Nanum Gothic';
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+  margin: 10px 0 0 40px;
+  color: #e7f1fe;
+}
+
+.company_explain .footer_link {
+  color: white;
+  text-decoration: none;
+}
+
+.company_explain .footer_link:hover {
+  color: #a0dcff;
+}
+
+
+@charset "UTF-8";
+/*------------------------------ 인덱스 페이지 스타일시트 ------------------------------ */
+/* 폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+
+
+
+/* 사이드 메뉴 */
+.user-name-tag{
+    width: 250px;
+    padding: 15px 15px 19px;
+    background-color: #ffffff;
+    border: solid 1px #dedede;
+    border-bottom-width: 2px;
+    border-radius: 2px
+}
+
+.user-name-tag .active {
+    height: 48px;
+    padding: 4px 0;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.user-name-tag .sidebarbtn{
+	margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* 클라이언트정보 */
+.content-inner{
+	padding: 30px;
+	background-color: #fff;
+    border-radius: 3px;
+    border-bottom-width: 2px;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 300px;
+     margin-top: 30px;
+}
+
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+/* .userInfo { */
+/*   text-align: center; */
+/*   width: 230px; */
+/*   margin: 10px; */
+/* } */
+
+/* .userFace { */
+/*   border: 1px solid black; */
+/*   display: inline-block; */
+/*   text-align: center; */
+/*   float: left; */
+/*   margin: 20px 30px; */
+/*   width: 60px; */
+/*   height: 60px; */
+/* } */
+
+/* .sideTitle { */
+/*   font-weight: bold !important; */
+/*   margin: 20px 0 0 -20px; */
+/*   font-size: 17px !important; */
+/*   color: grey !important; */
+/* } */
+
+/* .clients { */
+/*   background-color: white; */
+/*   width: 270px; */
+/*   height: 140px; */
+/*   margin: 10px -10px; */
+/*   border: 1px solid #dedede; */
+/*   border-bottom: 2px solid #dedede; */
+/* } */
+/* /* 파트너 히스토리 마이뉴스 */ */
+/* .partners { */
+/*   background-color: white; */
+/*   width: 230px; */
+/*   height: 250px; */
+/*   margin: 10px; */
+/*   border-bottom: 3px solid #dedede; */
+/*   border: 1px solid #dedede; */
+/* } */
+
+.history {
+/*   background-color: white; */
+/*   width: 230px; */
+/*   height: 200px; */
+/*   margin: 10px; */
+/*   border-bottom: 3px solid #dedede; */
+/*   border: 1px solid #dedede; */
+  
+/*   .client 클래스 css정보 */
+  background-color: white;
+  width: 270px;
+  height: 140px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+.clientInfo{
+	background-color: white;
+  width: 270px;
+  height: 70px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+	
+}
+
+.myNews {
+  background-color: white;
+  width: 230px;
+  height: 400px;
+  margin: 10px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+}
+/* -- */
+
+.contentInterestProject {
+  background-color: white;
+  width: 960px;
+  height: 150px;
+  margin: -10px auto;
+   padding: 50px 0 5px 5px;
+  border-bottom: 2px solid #dedede;
+   border: 1px solid #dedede;
+  
+ 
+}
+
+.sidebar {
+
+  
+  display: block;
+  float: left;
+  margin: auto;
+  width: 250px;
+
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+/* 뉴 스  센 터 */
+.newsCenter {
+  background-color: #f3f3f3;
+  width: 980px;
+  height: 220px;
+  margin: 10px auto;
+  padding: 20px 0 0 5px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+   margin-top: 30px;
+}
+
+.newsList {
+  list-style: none;
+  width: 640px;
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+  display: list-item;
+}
+
+/*프로젝트 등록*/
+
+/* 게시판 */
+.wrap {
+  min-height: 100%;
+  height: 700px;
+  min-width: 1080px;
+/*   padding: 5 0 0 0px; */
+  margin: 0 auto;
+  background-color: #f3f3f3;
+}
+
+
+.project-client-contact-form-content-caption{
+	  margin: 10px 0 0 40px;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+
+
+.btn-wrapper{
+style="padding-left: 5px; margin-top: 5px;"
+}
+.project-client-contact-form-content project-client-contact-form-content-divider project-client-contact-form-content-small{
+ background-color: white;
+  width: 710px;
+  height: 150px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+ style="padding-bottom: 15px;"
+  margin: 10px 0 0 40px;
+  /*   margin: 30px; */
+   font-family: 'Nanum Gothic';
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+
+/* -- */
+
+.form-input-rapper{
+	font-family: "Nanum Gothic", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", AppleGothic, 돋움, Dotum, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: rgb(85, 85, 85)
+}
+
+
+.project-client-contact-title{
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.0;	
+}
+
+.content-header{
+	
+/*     border-top-color: rgb(222, 222, 222); */
+/*     border-top-style: solid; */
+/*     border-top-width: 1px; */
+/*     border-right-color: rgb(222, 222, 222); */
+/*     border-right-style: solid; */
+/*     border-right-width: 1px; */
+/*     border-bottom-color: rgb(222, 222, 222); */
+/*     border-bottom-style: solid; */
+/*     border-bottom-width: 1px; */
+/*     border-left-color: rgb(222, 222, 222); */
+/*     border-left-style: solid; */
+/*     border-left-width: 1px; */
+/*     border-image-source: initial; */
+/*     border-image-slice: initial; */
+/*     border-image-width: initial; */
+/*     border-image-outset: initial; */
+/*     border-image-repeat: initial; */
+	
+/* 	border-radius: 3px; */
+/*     border-bottom-width: 2px */
+	
+/*     padding-top: 5px; */
+/*     padding-right: 30px; */
+/*     padding-bottom: 1px; */
+/*     padding-left: 30px; */
+	
+/*     margin-top: 0px; */
+/*     margin-right: 0px; */
+/*     margin-bottom: 5px; */
+/*     margin-left: 0px; */
+/*     margin-bottom: 5px; */
+/* 	background-color: white; */
+
+  background-color: white;
+  width: 960px;
+  height: 210px;
+  margin: -10px auto;
+  padding: 3px 0 5px 5px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+
+}
+.small-text{
+    margin-top: 10px;
+    display: block;	
+}
+
+.header-text{
+	font-size: 24px;
+	font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+    text-rendering: optimizelegibility;
+     padding: 10px 0 0 5px;
+}
+
+
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+.menubar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background-color: #242424;
+}
+
+/* 로고 */
+.menu_logo {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin: 8px 0 8px 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sub_menubar {
+  float: left;
+}
+
+.sub_menubar .sub_menu {
+  font-family: 'Nanum Gothic', serif;
+  padding: 18px 20px;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sub_menubar .sub_menu:hover {
+  background-color: black;
+  color: white;
+}
+.left_menu {
+	font-family: 'Nanum Gothic', serif;
+	font-size: 30px;
+	text-align: left;
+	float : left;
+	margin-top: 30px;
+}
+
+/* section.be_Registered_Project */
+.content_inner{
+	background-color: white;
+  width: 710px;
+  height: 150px;
+  margin: 30px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+   margin-top: 50px;
+}
+
+.be_Registered_Project {
+  margin-top: 50px;
+  height: max-content;
+  font-size: 50px;
+  text-align: center;
+}
+
+.center {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* style */
+
+
+/* 바디 */
+.index_body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+/* 메인 이미지 */
+.index_header {
+  height: 500px;
+  margin: 0 0 0 0;
+  background: url(../img/main_image.jpg) top;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+/* 로고 */
+.index_logo {
+  font-size: 40px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  text-align: left;
+  text-transform: uppercase;
+  clear: left;
+}
+
+.index_logo:hover {
+  color: white;
+}
+
+.main_navbar {
+  float: right;
+  margin: 28px 60px 0 0;
+  vertical-align: middle;
+}
+
+.main_navbar .main_menu {
+  display: inline-block;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 17px;
+  margin-left: 30px;
+  color: white;
+  vertical-align: middle;
+}
+
+.main_navbar .main_menu:hover {
+  color: #a0dcff;
+}
+
+/* 로그인 버튼 */
+.login {
+  display: table-cell;
+  font-size: 15px;
+  text-align: center;
+  padding: 0.3em;
+  border: #043e86 solid 5px;
+  vertical-align: middle;
+  border-radius: 250px;
+  background: #043e86;
+  width: 80px;
+  height: 22px;
+}
+
+.login:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+/* SIGN UP 버튼 */
+a {
+  text-decoration: none;
+}
+
+a .sign {
+  font-family: 'Ubuntu';
+  display: block;
+  border: 2px solid #FFFFFF;
+  border-radius: 220px;
+  width: 200px;
+  text-align: center;
+  font-size: 23px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  line-height: 50px;
+  clear: both;
+}
+
+a .sign:hover {
+  opacity: 0.8;
+}
+
+/* 메인 문구 */
+h1 {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 0.01em;
+  margin-bottom: 5px;
+  padding-top: 80px;
+  clear: both;
+}
+
+/* 서브 문구 */
+h2 {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: white;
+  padding-top: 1px;
+  margin-bottom: 40px;
+}
+
+/* 프로젝트 현황 테이블 section.stats */
+.stats {
+  border-top: 1px solid rgba(172, 172, 172, 0.3);
+  border-bottom: 1px solid #d4d5d6;
+  height: 92px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #fff;
+  display: block;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: 'Nanum Gothic';
+  text-align: center;
+}
+
+.stats_inner {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 20px;
+  display: inline-block;
+  border-right: 1px solid rgba(136, 136, 136, 0.2);
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+/* 최근 등록 프로젝트 */
+/* 최근 등록 프로젝트 헤더 */
+.recent_reg_project {
+  background: #f3f3f3;
+  width: 100%;
+  position: absolute;
+  font-family: 'Nanum Gothic', serif;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.recent_reg_project_header {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* 최근 등록 프로젝트 테이블 */
+.recent_reg_project_table {
+  display: block;
+  border-spacing: 40px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.recent_reg_project_inner {
+  display: table-row;
+}
+
+.recent_reg_project_item {
+  display: table-cell;
+  padding: 15px;
+  width: 33%;
+  text-align: center;
+  border: 1px solid green;
+  background: white;
+  background-size: 100% 100%;
+  background-position: center center;
+  border: 1px solid #dedede;
+  border-bottom: 3px solid #dedede;
+  overflow: hidden;
+}
+
+.recent_reg_project_item #item {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.recent_reg_project_item .item_period {
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
+
+.recent_reg_project_item .item_describe {
+  display: block;
+  vertical-align: middle;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.recent_reg_project_item .item_header {
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+/* 메인내용 section.be_registered_project */
+.be_registered_project {
+  height: max-content;
+  font-size: 100px;
+  text-align: center;
+}
+
+/* 최하단 footer */
+footer {
+  height: 300px;
+  margin: 0 0 0 0;
+  background: #242424;
+  background-size: cover;
+}
+
+.footer_logo {
+  font-size: 40px;
+  letter-spacing: -2.5px;
+  color: #e7f1fe;
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  text-align: left;
+  text-transform: uppercase;
+  clear: left;
+}
+
+/* 반응형 웹 설정 */
+@media screen and (max-width: 1276px) {
+  .stats {
+    display: none;
+  }
+}
+
+/* 기업 정보 입력 */
+.company_explain {
+  font-family: 'Nanum Gothic';
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+  margin: 10px 0 0 40px;
+  color: #e7f1fe;
+}
+
+.company_explain .footer_link {
+  color: white;
+  text-decoration: none;
+}
+
+.company_explain .footer_link:hover {
+  color: #a0dcff;
+}
+
+
+@charset "UTF-8";
+/*------------------------------ 인덱스 페이지 스타일시트 ------------------------------ */
+/* 폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+
+
+
+/* 사이드 메뉴 */
+.user-name-tag{
+    width: 250px;
+    padding: 15px 15px 19px;
+    background-color: #ffffff;
+    border: solid 1px #dedede;
+    border-bottom-width: 2px;
+    border-radius: 2px
+}
+
+.user-name-tag .active {
+    height: 48px;
+    padding: 4px 0;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.user-name-tag .sidebarbtn{
+	margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* 클라이언트정보 */
+.content-inner{
+	padding: 30px;
+	background-color: #fff;
+    border-radius: 3px;
+    border-bottom-width: 2px;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 300px;
+     margin-top: 30px;
+}
+
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+/* .userInfo { */
+/*   text-align: center; */
+/*   width: 230px; */
+/*   margin: 10px; */
+/* } */
+
+/* .userFace { */
+/*   border: 1px solid black; */
+/*   display: inline-block; */
+/*   text-align: center; */
+/*   float: left; */
+/*   margin: 20px 30px; */
+/*   width: 60px; */
+/*   height: 60px; */
+/* } */
+
+/* .sideTitle { */
+/*   font-weight: bold !important; */
+/*   margin: 20px 0 0 -20px; */
+/*   font-size: 17px !important; */
+/*   color: grey !important; */
+/* } */
+
+/* .clients { */
+/*   background-color: white; */
+/*   width: 270px; */
+/*   height: 140px; */
+/*   margin: 10px -10px; */
+/*   border: 1px solid #dedede; */
+/*   border-bottom: 2px solid #dedede; */
+/* } */
+/* /* 파트너 히스토리 마이뉴스 */ */
+/* .partners { */
+/*   background-color: white; */
+/*   width: 230px; */
+/*   height: 250px; */
+/*   margin: 10px; */
+/*   border-bottom: 3px solid #dedede; */
+/*   border: 1px solid #dedede; */
+/* } */
+
+.history {
+/*   background-color: white; */
+/*   width: 230px; */
+/*   height: 200px; */
+/*   margin: 10px; */
+/*   border-bottom: 3px solid #dedede; */
+/*   border: 1px solid #dedede; */
+  
+/*   .client 클래스 css정보 */
+  background-color: white;
+  width: 270px;
+  height: 140px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+.clientInfo{
+	background-color: white;
+  width: 270px;
+  height: 70px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+	
+}
+
+.myNews {
+  background-color: white;
+  width: 230px;
+  height: 400px;
+  margin: 10px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+}
+/* -- */
+
+.contentInterestProject {
+  background-color: white;
+  width: 960px;
+  height: 150px;
+  margin: -10px auto;
+   padding: 50px 0 5px 5px;
+  border-bottom: 2px solid #dedede;
+   border: 1px solid #dedede;
+  
+ 
+}
+
+.sidebar {
+
+  
+  display: block;
+  float: left;
+  margin: auto;
+  width: 250px;
+
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+/* 뉴 스  센 터 */
+.newsCenter {
+  background-color: #f3f3f3;
+  width: 980px;
+  height: 220px;
+  margin: 10px auto;
+  padding: 20px 0 0 5px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+   margin-top: 30px;
+}
+
+.newsList {
+  list-style: none;
+  width: 640px;
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+  display: list-item;
+}
+
+/*프로젝트 등록*/
+
+/* 게시판 */
+.wrap {
+  min-height: 100%;
+  height: 700px;
+  min-width: 1080px;
+/*   padding: 5 0 0 0px; */
+  margin: 0 auto;
+  background-color: #f3f3f3;
+}
+
+
+.project-client-contact-form-content-caption{
+	  margin: 10px 0 0 40px;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+
+
+.btn-wrapper{
+style="padding-left: 5px; margin-top: 5px;"
+}
+.project-client-contact-form-content project-client-contact-form-content-divider project-client-contact-form-content-small{
+ background-color: white;
+  width: 710px;
+  height: 150px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+ style="padding-bottom: 15px;"
+  margin: 10px 0 0 40px;
+  /*   margin: 30px; */
+   font-family: 'Nanum Gothic';
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+
+/* -- */
+
+.form-input-rapper{
+	font-family: "Nanum Gothic", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", AppleGothic, 돋움, Dotum, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: rgb(85, 85, 85)
+}
+
+
+.project-client-contact-title{
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.0;	
+}
+
+.content-header{
+	
+/*     border-top-color: rgb(222, 222, 222); */
+/*     border-top-style: solid; */
+/*     border-top-width: 1px; */
+/*     border-right-color: rgb(222, 222, 222); */
+/*     border-right-style: solid; */
+/*     border-right-width: 1px; */
+/*     border-bottom-color: rgb(222, 222, 222); */
+/*     border-bottom-style: solid; */
+/*     border-bottom-width: 1px; */
+/*     border-left-color: rgb(222, 222, 222); */
+/*     border-left-style: solid; */
+/*     border-left-width: 1px; */
+/*     border-image-source: initial; */
+/*     border-image-slice: initial; */
+/*     border-image-width: initial; */
+/*     border-image-outset: initial; */
+/*     border-image-repeat: initial; */
+	
+/* 	border-radius: 3px; */
+/*     border-bottom-width: 2px */
+	
+/*     padding-top: 5px; */
+/*     padding-right: 30px; */
+/*     padding-bottom: 1px; */
+/*     padding-left: 30px; */
+	
+/*     margin-top: 0px; */
+/*     margin-right: 0px; */
+/*     margin-bottom: 5px; */
+/*     margin-left: 0px; */
+/*     margin-bottom: 5px; */
+/* 	background-color: white; */
+
+  background-color: white;
+  width: 960px;
+  height: 210px;
+  margin: -10px auto;
+  padding: 3px 0 5px 5px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+
+}
+.small-text{
+    margin-top: 10px;
+    display: block;	
+}
+
+.header-text{
+	font-size: 24px;
+	font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+    text-rendering: optimizelegibility;
+     padding: 10px 0 0 5px;
+}
+
+
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+.menubar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background-color: #242424;
+}
+
+/* 로고 */
+.menu_logo {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin: 8px 0 8px 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sub_menubar {
+  float: left;
+}
+
+.sub_menubar .sub_menu {
+  font-family: 'Nanum Gothic', serif;
+  padding: 18px 20px;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sub_menubar .sub_menu:hover {
+  background-color: black;
+  color: white;
+}
+.left_menu {
+	font-family: 'Nanum Gothic', serif;
+	font-size: 30px;
+	text-align: left;
+	float : left;
+	margin-top: 30px;
+}
+
+/* section.be_Registered_Project */
+.content_inner{
+	background-color: white;
+  width: 710px;
+  height: 150px;
+  margin: 30px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+   margin-top: 50px;
+}
+
+.be_Registered_Project {
+  margin-top: 50px;
+  height: max-content;
+  font-size: 50px;
+  text-align: center;
+}
+
+.center {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* style */
+
+
+/* 바디 */
+.index_body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+/* 메인 이미지 */
+.index_header {
+  height: 500px;
+  margin: 0 0 0 0;
+  background: url(../img/main_image.jpg) top;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+/* 로고 */
+.index_logo {
+  font-size: 40px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  text-align: left;
+  text-transform: uppercase;
+  clear: left;
+}
+
+.index_logo:hover {
+  color: white;
+}
+
+.main_navbar {
+  float: right;
+  margin: 28px 60px 0 0;
+  vertical-align: middle;
+}
+
+.main_navbar .main_menu {
+  display: inline-block;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 17px;
+  margin-left: 30px;
+  color: white;
+  vertical-align: middle;
+}
+
+.main_navbar .main_menu:hover {
+  color: #a0dcff;
+}
+
+/* 로그인 버튼 */
+.login {
+  display: table-cell;
+  font-size: 15px;
+  text-align: center;
+  padding: 0.3em;
+  border: #043e86 solid 5px;
+  vertical-align: middle;
+  border-radius: 250px;
+  background: #043e86;
+  width: 80px;
+  height: 22px;
+}
+
+.login:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+/* SIGN UP 버튼 */
+a {
+  text-decoration: none;
+}
+
+a .sign {
+  font-family: 'Ubuntu';
+  display: block;
+  border: 2px solid #FFFFFF;
+  border-radius: 220px;
+  width: 200px;
+  text-align: center;
+  font-size: 23px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  line-height: 50px;
+  clear: both;
+}
+
+a .sign:hover {
+  opacity: 0.8;
+}
+
+/* 메인 문구 */
+h1 {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 0.01em;
+  margin-bottom: 5px;
+  padding-top: 80px;
+  clear: both;
+}
+
+/* 서브 문구 */
+h2 {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: white;
+  padding-top: 1px;
+  margin-bottom: 40px;
+}
+
+/* 프로젝트 현황 테이블 section.stats */
+.stats {
+  border-top: 1px solid rgba(172, 172, 172, 0.3);
+  border-bottom: 1px solid #d4d5d6;
+  height: 92px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #fff;
+  display: block;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: 'Nanum Gothic';
+  text-align: center;
+}
+
+.stats_inner {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 20px;
+  display: inline-block;
+  border-right: 1px solid rgba(136, 136, 136, 0.2);
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+/* 최근 등록 프로젝트 */
+/* 최근 등록 프로젝트 헤더 */
+.recent_reg_project {
+  background: #f3f3f3;
+  width: 100%;
+  position: absolute;
+  font-family: 'Nanum Gothic', serif;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.recent_reg_project_header {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* 최근 등록 프로젝트 테이블 */
+.recent_reg_project_table {
+  display: block;
+  border-spacing: 40px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.recent_reg_project_inner {
+  display: table-row;
+}
+
+.recent_reg_project_item {
+  display: table-cell;
+  padding: 15px;
+  width: 33%;
+  text-align: center;
+  border: 1px solid green;
+  background: white;
+  background-size: 100% 100%;
+  background-position: center center;
+  border: 1px solid #dedede;
+  border-bottom: 3px solid #dedede;
+  overflow: hidden;
+}
+
+.recent_reg_project_item #item {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.recent_reg_project_item .item_period {
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
+
+.recent_reg_project_item .item_describe {
+  display: block;
+  vertical-align: middle;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.recent_reg_project_item .item_header {
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+/* 메인내용 section.be_registered_project */
+.be_registered_project {
+  height: max-content;
+  font-size: 100px;
+  text-align: center;
+}
+
+/* 최하단 footer */
+footer {
+  height: 300px;
+  margin: 0 0 0 0;
+  background: #242424;
+  background-size: cover;
+}
+
+.footer_logo {
+  font-size: 40px;
+  letter-spacing: -2.5px;
+  color: #e7f1fe;
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  text-align: left;
+  text-transform: uppercase;
+  clear: left;
+}
+
+/* 반응형 웹 설정 */
+@media screen and (max-width: 1276px) {
+  .stats {
+    display: none;
+  }
+}
+
+/* 기업 정보 입력 */
+.company_explain {
+  font-family: 'Nanum Gothic';
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+  margin: 10px 0 0 40px;
+  color: #e7f1fe;
+}
+
+.company_explain .footer_link {
+  color: white;
+  text-decoration: none;
+}
+
+.company_explain .footer_link:hover {
+  color: #a0dcff;
+}
+
+
+@charset "UTF-8";
+/*------------------------------ 인덱스 페이지 스타일시트 ------------------------------ */
+/* 폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+
+
+
+/* 사이드 메뉴 */
+.user-name-tag{
+    width: 250px;
+    padding: 15px 15px 19px;
+    background-color: #ffffff;
+    border: solid 1px #dedede;
+    border-bottom-width: 2px;
+    border-radius: 2px
+}
+
+.user-name-tag .active {
+    height: 48px;
+    padding: 4px 0;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.user-name-tag .sidebarbtn{
+	margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* 클라이언트정보 */
+.content-inner{
+	padding: 30px;
+	background-color: #fff;
+    border-radius: 3px;
+    border-bottom-width: 2px;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 300px;
+     margin-top: 30px;
+}
+
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+/* .userInfo { */
+/*   text-align: center; */
+/*   width: 230px; */
+/*   margin: 10px; */
+/* } */
+
+/* .userFace { */
+/*   border: 1px solid black; */
+/*   display: inline-block; */
+/*   text-align: center; */
+/*   float: left; */
+/*   margin: 20px 30px; */
+/*   width: 60px; */
+/*   height: 60px; */
+/* } */
+
+/* .sideTitle { */
+/*   font-weight: bold !important; */
+/*   margin: 20px 0 0 -20px; */
+/*   font-size: 17px !important; */
+/*   color: grey !important; */
+/* } */
+
+/* .clients { */
+/*   background-color: white; */
+/*   width: 270px; */
+/*   height: 140px; */
+/*   margin: 10px -10px; */
+/*   border: 1px solid #dedede; */
+/*   border-bottom: 2px solid #dedede; */
+/* } */
+/* /* 파트너 히스토리 마이뉴스 */ */
+/* .partners { */
+/*   background-color: white; */
+/*   width: 230px; */
+/*   height: 250px; */
+/*   margin: 10px; */
+/*   border-bottom: 3px solid #dedede; */
+/*   border: 1px solid #dedede; */
+/* } */
+
+.history {
+/*   background-color: white; */
+/*   width: 230px; */
+/*   height: 200px; */
+/*   margin: 10px; */
+/*   border-bottom: 3px solid #dedede; */
+/*   border: 1px solid #dedede; */
+  
+/*   .client 클래스 css정보 */
+  background-color: white;
+  width: 270px;
+  height: 140px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+}
+.clientInfo{
+	background-color: white;
+  width: 270px;
+  height: 70px;
+  margin: 10px -10px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+	
+}
+
+.myNews {
+  background-color: white;
+  width: 230px;
+  height: 400px;
+  margin: 10px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+}
+/* -- */
+
+.contentInterestProject {
+  background-color: white;
+  width: 960px;
+  height: 150px;
+  margin: -10px auto;
+   padding: 50px 0 5px 5px;
+  border-bottom: 2px solid #dedede;
+   border: 1px solid #dedede;
+  
+ 
+}
+
+.sidebar {
+
+  
+  display: block;
+  float: left;
+  margin: auto;
+  width: 250px;
+
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+/* 뉴 스  센 터 */
+.newsCenter {
+  background-color: #f3f3f3;
+  width: 980px;
+  height: 220px;
+  margin: 10px auto;
+  padding: 20px 0 0 5px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+   margin-top: 30px;
+}
+
+.newsList {
+  list-style: none;
+  width: 640px;
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+  display: list-item;
+}
+
+/*프로젝트 등록*/
+
+/* 게시판 */
+.wrap {
+  min-height: 100%;
+  height: 700px;
+  min-width: 1080px;
+/*   padding: 5 0 0 0px; */
+  margin: 0 auto;
+  background-color: #f3f3f3;
+}
+
+
+.project-client-contact-form-content-caption{
+	  margin: 10px 0 0 40px;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+
+
+.btn-wrapper{
+style="padding-left: 5px; margin-top: 5px;"
+}
+.project-client-contact-form-content project-client-contact-form-content-divider project-client-contact-form-content-small{
+ background-color: white;
+  width: 710px;
+  height: 150px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+ style="padding-bottom: 15px;"
+  margin: 10px 0 0 40px;
+  /*   margin: 30px; */
+   font-family: 'Nanum Gothic';
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+
+/* -- */
+
+.form-input-rapper{
+	font-family: "Nanum Gothic", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", AppleGothic, 돋움, Dotum, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: rgb(85, 85, 85)
+}
+
+
+.project-client-contact-title{
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.0;	
+}
+
+.content-header{
+	
+/*     border-top-color: rgb(222, 222, 222); */
+/*     border-top-style: solid; */
+/*     border-top-width: 1px; */
+/*     border-right-color: rgb(222, 222, 222); */
+/*     border-right-style: solid; */
+/*     border-right-width: 1px; */
+/*     border-bottom-color: rgb(222, 222, 222); */
+/*     border-bottom-style: solid; */
+/*     border-bottom-width: 1px; */
+/*     border-left-color: rgb(222, 222, 222); */
+/*     border-left-style: solid; */
+/*     border-left-width: 1px; */
+/*     border-image-source: initial; */
+/*     border-image-slice: initial; */
+/*     border-image-width: initial; */
+/*     border-image-outset: initial; */
+/*     border-image-repeat: initial; */
+	
+/* 	border-radius: 3px; */
+/*     border-bottom-width: 2px */
+	
+/*     padding-top: 5px; */
+/*     padding-right: 30px; */
+/*     padding-bottom: 1px; */
+/*     padding-left: 30px; */
+	
+/*     margin-top: 0px; */
+/*     margin-right: 0px; */
+/*     margin-bottom: 5px; */
+/*     margin-left: 0px; */
+/*     margin-bottom: 5px; */
+/* 	background-color: white; */
+
+  background-color: white;
+  width: 960px;
+  height: 210px;
+  margin: -10px auto;
+  padding: 3px 0 5px 5px;
+  border: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
+
+}
+.small-text{
+    margin-top: 10px;
+    display: block;	
+}
+
+.header-text{
+	font-size: 24px;
+	font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+    text-rendering: optimizelegibility;
+     padding: 10px 0 0 5px;
+}
+
+
+.sub_body {
+  display: block;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+.menubar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background-color: #242424;
+}
+
+/* 로고 */
+.menu_logo {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin: 8px 0 8px 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sub_menubar {
+  float: left;
+}
+
+.sub_menubar .sub_menu {
+  font-family: 'Nanum Gothic', serif;
+  padding: 18px 20px;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sub_menubar .sub_menu:hover {
+  background-color: black;
+  color: white;
+}
+.left_menu {
+	font-family: 'Nanum Gothic', serif;
+	font-size: 30px;
+	text-align: left;
+	float : left;
+	margin-top: 30px;
+}
+
+/* section.be_Registered_Project */
+.content_inner{
+	background-color: white;
+  width: 710px;
+  height: 150px;
+  margin: 30px;
+  border-bottom: 3px solid #dedede;
+  border: 1px solid #dedede;
+   margin-top: 50px;
+}
+
+.be_Registered_Project {
+  margin-top: 50px;
+  height: max-content;
+  font-size: 50px;
+  text-align: center;
+}
+
+.center {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* style */
+
+
+/* 바디 */
+.index_body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+/* 메인 이미지 */
+.index_header {
+  height: 500px;
+  margin: 0 0 0 0;
+  background: url(../img/main_image.jpg) top;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+/* 로고 */
+.index_logo {
+  font-size: 40px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  text-align: left;
+  text-transform: uppercase;
+  clear: left;
+}
+
+.index_logo:hover {
+  color: white;
+}
+
+.main_navbar {
+  float: right;
+  margin: 28px 60px 0 0;
+  vertical-align: middle;
+}
+
+.main_navbar .main_menu {
+  display: inline-block;
+  font-family: 'Nanum Gothic', serif;
+  font-size: 17px;
+  margin-left: 30px;
+  color: white;
+  vertical-align: middle;
+}
+
+.main_navbar .main_menu:hover {
+  color: #a0dcff;
+}
+
+/* 로그인 버튼 */
+.login {
+  display: table-cell;
+  font-size: 15px;
+  text-align: center;
+  padding: 0.3em;
+  border: #043e86 solid 5px;
+  vertical-align: middle;
+  border-radius: 250px;
+  background: #043e86;
+  width: 80px;
+  height: 22px;
+}
+
+.login:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+/* SIGN UP 버튼 */
+a {
+  text-decoration: none;
+}
+
+a .sign {
+  font-family: 'Ubuntu';
+  display: block;
+  border: 2px solid #FFFFFF;
+  border-radius: 220px;
+  width: 200px;
+  text-align: center;
+  font-size: 23px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  line-height: 50px;
+  clear: both;
+}
+
+a .sign:hover {
+  opacity: 0.8;
+}
+
+/* 메인 문구 */
+h1 {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 0.01em;
+  margin-bottom: 5px;
+  padding-top: 80px;
+  clear: both;
+}
+
+/* 서브 문구 */
+h2 {
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: white;
+  padding-top: 1px;
+  margin-bottom: 40px;
+}
+
+/* 프로젝트 현황 테이블 section.stats */
+.stats {
+  border-top: 1px solid rgba(172, 172, 172, 0.3);
+  border-bottom: 1px solid #d4d5d6;
+  height: 92px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #fff;
+  display: block;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: 'Nanum Gothic';
+  text-align: center;
+}
+
+.stats_inner {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 20px;
+  display: inline-block;
+  border-right: 1px solid rgba(136, 136, 136, 0.2);
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+/* 최근 등록 프로젝트 */
+/* 최근 등록 프로젝트 헤더 */
+.recent_reg_project {
+  background: #f3f3f3;
+  width: 100%;
+  position: absolute;
+  font-family: 'Nanum Gothic', serif;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.recent_reg_project_header {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* 최근 등록 프로젝트 테이블 */
+.recent_reg_project_table {
+  display: block;
+  border-spacing: 40px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.recent_reg_project_inner {
+  display: table-row;
+}
+
+.recent_reg_project_item {
+  display: table-cell;
+  padding: 15px;
+  width: 33%;
+  text-align: center;
+  border: 1px solid green;
+  background: white;
+  background-size: 100% 100%;
+  background-position: center center;
+  border: 1px solid #dedede;
+  border-bottom: 3px solid #dedede;
+  overflow: hidden;
+}
+
+.recent_reg_project_item #item {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.recent_reg_project_item .item_period {
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
+
+.recent_reg_project_item .item_describe {
+  display: block;
+  vertical-align: middle;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.recent_reg_project_item .item_header {
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+/* 메인내용 section.be_registered_project */
+.be_registered_project {
+  height: max-content;
+  font-size: 100px;
+  text-align: center;
+}
+
+/* 최하단 footer */
+footer {
+  height: 300px;
+  margin: 0 0 0 0;
+  background: #242424;
+  background-size: cover;
+}
+
+.footer_logo {
+  font-size: 40px;
+  letter-spacing: -2.5px;
+  color: #e7f1fe;
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  text-align: left;
+  text-transform: uppercase;
+  clear: left;
+}
+
+/* 반응형 웹 설정 */
+@media screen and (max-width: 1276px) {
+  .stats {
+    display: none;
+  }
+}
+
+/* 기업 정보 입력 */
+.company_explain {
+  font-family: 'Nanum Gothic';
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.7em;
+  margin: 10px 0 0 40px;
+  color: #e7f1fe;
+}
+
+.company_explain .footer_link {
+  color: white;
+  text-decoration: none;
+}
+
+.company_explain .footer_link:hover {
+  color: #a0dcff;
+}
+
+
+@charset "UTF-8";
+/*------------------------------ 인덱스 페이지 스타일시트 ------------------------------ */
+/* 폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+
+
+
+/* 사이드 메뉴 */
+.user-name-tag{
+    width: 250px;
+    padding: 15px 15px 19px;
+    background-color: #ffffff;
+    border: solid 1px #dedede;
+    border-bottom-width: 2px;
+    border-radius: 2px
+}
+
+.user-name-tag .active {
+    height: 48px;
+    padding: 4px 0;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
 }
 
 .user-name-tag .sidebarbtn{

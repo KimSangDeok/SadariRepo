@@ -26,7 +26,7 @@
 	 	<header class="reg_project_header">
 		<div class="menubar">
 			<!-- 로고 버튼 -->
-			<a href="."><div class="menu_logo">SADARI</div></a>
+			<a href="./main.jsp"><div class="menu_logo">SADARI</div></a>
 
 			<!-- 대메뉴 -->
 			<nav class="sub_menubar"> 
@@ -46,15 +46,15 @@
 		<div class="user-name-tag-body">
 			<img alt="user사진"  src="img/default.png">
 			<h4 class="userid"><%=map.get("CT_ID") %></h4>
-			<a class="profile-setting" href=".">기본 정보 수정</a>
+			<a class="profile-setting" href=".">사진 업로드</a>
 		</div>
 	</div>
 
 	
 		<div class="user-name-tag">
 			<ul class="sidebarbtn">
-				<p class="active"><a href="./clientInfo.jsp">클라이언트 정보</a></p>
-				<p class=""><a href=".">프로젝트 히스토리</a></p>
+				<input type="submit" value="    클라이언트 정보    " class="active" ><a href="./clientInfo.jsp"></a></p>
+				<input type="submit" value="  프로젝트 히스토리    " class="active"><a href="."></a></p>
 			</ul>
 		</div>
 	</aside>
@@ -65,7 +65,7 @@
 
 	<div class="menubar">
 		<!-- 로고 버튼 -->
-		<a href="#"><div class="menu_logo">SADARI</div></a>
+		<a href="./main.jsp"><div class="menu_logo">SADARI</div></a>
 
 		<!-- 대메뉴 -->
 		<nav class="sub_menubar"> <a class="sub_menu" href="./projectInsertView.jsp">프로젝트
