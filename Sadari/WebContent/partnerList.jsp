@@ -23,7 +23,7 @@
 		<!-- end of header -->
  
 <!-- 메인 내용 -->
-	<section class="">
+	<section class="section2">
 	
 	 <div class="page">
 	     <div class="content">
