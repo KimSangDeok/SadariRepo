@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%
+// 	String userId=request.getParameter("id");  
+	String userId="iii";
+	%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -30,11 +34,11 @@
 		<header class="reg_project_header">
 		<div class="menubar">
 			<!-- 로고 버튼 -->
-			<a href="#"><div class="menu_logo">SADARI</div></a>
+			<a href="."><div class="menu_logo">SADARI</div></a>
 
 			<!-- 대메뉴 -->
 			<nav class="sub_menubar"> 
-			<a class="sub_menu" href="">프로젝트 등록</a> 
+			<a class="sub_menu" href="./projectInsertView.jsp">프로젝트 등록</a> 
 			<a class="sub_menu" href="">프로젝트 찾기</a> 
 			<a class="sub_menu" href="">파트너스 목록</a> 
 			</nav>
@@ -132,10 +136,13 @@
    <div class="centerText ">
      <label class="project-client-contact-form-label" for="cell_phone_number">
      
-      <input type="text" class="form-control" id="pwd" size="20" maxlength="50" placeholder="이름을 입력해 주세요" style="text-align:left">
+      <form class="form-group" action="sadari.sadari" method='post'>
+     <input type='hidden' name='cmd' value='client-info'/>
+     
+      <input type="text" class="form-control" name=ctName id="pwd" size="20" maxlength="50" placeholder="이름을 입력해 주세요" style="text-align:left">
         <br/>        
        <div align="left"> <p align="left" class="form-control"> *담당자 핸드폰 번호
-         <select class="project-client-contact-form-content-input-small" id="cell_phone_number_code" maxlength="20" name="cell_phone_number_code" tabindex="-1">
+         <select  name="cell_phone_number_code" class="project-client-contact-form-content-input-small" id="cell_phone_number_code" maxlength="20"  tabindex="-1">
            <option value="010">010 </option>
            <option value="global">해외</option>
          </select>
@@ -143,8 +150,8 @@
          <input name="cell_phone_number_middle" type="text" class="project-client-contact-form-content-input-small" id="cell_phone_number_middle" size="15" maxlength="20">
          <span class="form-phone-liner">-</span>
          <input name="cell_phone_number_end" type="text" class="project-client-contact-form-content-input-small" id="cell_phone_number_end" size="15" maxlength="20">
-         <br>
-         <br>
+         <br/>
+         <br/>
        </div>
        </label>
      
@@ -168,14 +175,14 @@
      </div>
  </div>
  
- <div class="form-group">
+<!--  <div class="form-group"> -->
  <div class="btn-wrapper" style="padding-left: 5px; margin-top: 5px;">
    <div align="left"><span class="project-client-contact-form-content-caption">
- <a href="./projectInsertView.jsp"><input type="submit" value="프로젝트 정보 등록하러 가기"></a>
+      <input type="submit" value="프로젝트 정보 등록하러 가기">
    </span>
    </div>
    </div>
-   </div>
+<!--    </div> -->
  </div>
  </div>
  
@@ -183,7 +190,7 @@
  </section>
  
  
- 
+  </form>
 
 </div>
 </div>

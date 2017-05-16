@@ -15,8 +15,8 @@ where ct_id=#{ctId}
 </update>
 
 
-<select id="clientSelect" parameterType="SadariModel.ClientRec">
-select ct_name as cName, ct_id as cId, ct_introduce as cI 
+<select id="clientSelect" resultType="hashmap">
+select ct_name, ct_id, ct_introduce 
 from client
 where ct_id=#{ctId}
 </select>
