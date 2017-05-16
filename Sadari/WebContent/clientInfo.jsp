@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<%
+	HashMap map = (HashMap)request.getAttribute("client-introduction-data");
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -27,7 +31,7 @@
 		<h3 class="user-name-tag-heading">클라이언트</h3>
 		<div class="user-name-tag-body">
 			<img alt="user사진"  src="img/default.png">
-			<h4 class="userid">userid</h4>
+			<h4 class="userid"><%=map.get("CT_ID") %></h4>
 			<a class="profile-setting" href=".">기본 정보 수정</a>
 		</div>
 	</div>
@@ -35,7 +39,7 @@
 	
 		<div class="user-name-tag">
 			<ul class="sidebarbtn">
-				<p class="active"><a href="">클라이언트 정보</a></p>
+				<p class="active"><a href="./clientInfo.jsp">클라이언트 정보</a></p>
 				<p class=""><a href="">프로젝트 히스토리</a></p>
 			</ul>
 		</div>
@@ -70,13 +74,14 @@
 					클라이언트 소개</label>
 			</div>
 			<div class="client-introduction-data">
-				<p>웹페이지 개발 테스트입니다.</p>
+				<p><%=map.get("CT_INTRODUCE") %></p>
 			</div>
 		</div>
 		<div class="client-homepage">
 			<div class="client-homepage-label">홈페이지</div>
 			<div class="client-homepage-data">None</div>
 		</div>
+		<br/>
 		<a href="./registerClientInfo.jsp"><input type="submit" value="수정"></a> </section>
 	</div>
 
