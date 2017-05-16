@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import SadariCommand.SadariCommand;
+import SadariCommand.SadariCommandAdminProject;
 import SadariCommand.SadariCommandClientUpdate;
 import SadariCommand.SadariCommandGetCountValue;
 import SadariCommand.SadariCommandInsertCheck;
@@ -70,6 +71,14 @@ public class SadariControl extends HttpServlet {
 		
 		//클라이언트 정보 업데이트
 		commandMap.put("client-info", new SadariCommandClientUpdate("projectInsertView.jsp"));
+		
+		//로그인시 관리자 아이디면 관리자 페이지로
+		commandMap.put("ad-mypage",	new SadariCommandAdminProject("managerTest.jsp"));
+		//관리자 아이디 아니면 
+		commandMap.put("pt-mypage", new SadariCommandNull("partnersPage.jsp"));
+		commandMap.put("ct-mypage", new SadariCommandNull("partnersPage.jsp"));
+		//로그인 폼으로
+		commandMap.put("login-form", new SadariCommandNull("loginForm.jsp"));
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

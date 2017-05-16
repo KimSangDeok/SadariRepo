@@ -9,6 +9,9 @@
 <select id="ctLoginCheck" parameterType="hashmap" resultType="String">
 	SELECT CT_ID FROM CLIENT WHERE CT_ID=#{userId} and CT_PASSWORD=#{userPw}
 </select>
+<select id="adLoginCheck" parameterType="hashmap" resultType="String">
+	SELECT ADMIN_ID FROM ADMIN WHERE ADMIN_ID=#{userId} and ADMIN_PASSWORD=#{userPw}
+</select>
 <select id="lookPassword" parameterType="hashmap" resultType="String">
 	SELECT PN_PASSWORD FROM PARTNER WHERE PN_ID=#{userId} and PN_TEL=#{userTel}
 </select>

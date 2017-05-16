@@ -15,4 +15,16 @@
     <url-pattern>*.sadari</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>SadariAdminControl</servlet-name>
+    <servlet-class>SadariControl.SadariAdminControl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SadariAdminControl</servlet-name>
+    <url-pattern>/sdrad</url-pattern>
+    <url-pattern>*.sdrad</url-pattern>
+  </servlet-mapping>
+  
+  
+  
 </web-app>

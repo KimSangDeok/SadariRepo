@@ -55,7 +55,7 @@ public class LoginRepository {
 			
 			String ptId=sqlSess.selectOne(namespace+".ptLoginCheck",map);
 			String ctId=sqlSess.selectOne(namespace+".ctLoginCheck",map);
-			
+			String adId=sqlSess.selectOne(namespace+".adLoginCheck",map);
 			if(ptId!=null) {
 				loginResult.put("id", ptId);
 				loginResult.put("type", "pt");
@@ -65,10 +65,14 @@ public class LoginRepository {
 				loginResult.put("id", ctId);
 				loginResult.put("type", "ct");
 				return loginResult;
+			}else if(adId!=null){
+				loginResult.put("id", adId);
+				loginResult.put("type", "ad");
+				return loginResult;
 			}else{
 				System.out.println("id값 null");
-				loginResult.put("id", "loginFaile");
-				loginResult.put("type", "loginFaile");
+				loginResult.put("id", "loginFail");
+				loginResult.put("type", "loginFail");
 				return loginResult;
 			}
 			

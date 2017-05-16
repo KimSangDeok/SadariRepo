@@ -6,16 +6,39 @@
 <mapper namespace="sadari.mapper.ProjectInsertMapper">
 
 <insert id="projectInsert" parameterType="SadariModel.ProjectRec">
-INSERT INTO PROJECT 
-(CT_NO, PJ_NO, PJ_TITLE, PJ_PRICE,
-PJ_ST_DT, PJ_TERM, PJ_CATEGORY, PJ_DEADLINE,
-PJ_PLAN, PJ_SKILLS, PJ_MEETING, PJ_LOC, PJ_SUBLOC, PJ_CONTENT ) 
-
-VALUES
-(client_seq.nextval, PROJECT_SEQ.nextval, #{pjTitle}, #{pjPrice},
-#{pjSt_dt}, #{pjTerm}, #{pjCategory}, #{pjDeadline},
-#{pjPlan}, #{pjSkills}, #{pjMeeting}, #{pjLoc}, #{pjSubloc},#{pjContent} )
-
-
+INSERT INTO PROJECT VALUES
+(2,
+PROJECT_SEQ.nextval,
+#{pjTitle},
+1000,
+#{pjSt_dt},
+#{pjTerm},
+#{pjCategory},
+#{pjDeadline})
 </insert>
+
+<select id="selectList" resultType="hashmap">
+SELECT CT.CT_NAME CT_NAME,PJ.PJ_TITLE PJ_TITLE,PJ.PJ_ST_DT PJ_ST_DT, PJ.PJ_NO PJ_NO
+FROM PROJECT PJ, CLIENT CT
+WHERE PJ.CT_NO = CT.CT_NO and PJ.PJ_SAVECHECK=1
+</select>
+
+<select id="selectSList" resultType="hashmap">
+SELECT CT.CT_NAME CT_NAME,PJ.PJ_TITLE PJ_TITLE,PJ.PJ_ST_DT PJ_ST_DT,PJ.PJ_SAVECHECK PJ_SAVECHECK
+FROM PROJECT PJ, CLIENT CT
+WHERE PJ.CT_NO = CT.CT_NO and (PJ.PJ_SAVECHECK=2 or PJ.PJ_SAVECHECK=3)
+</select>
+
+<select id="selectByProjectNo" parameterType="int" resultType="hashmap">
+SELECT PJ_TITLE,PJ_PRICE,PJ_TERM,PJ_CONTENT,PJ_SKILLS,PJ_NO
+FROM PROJECT
+WHERE PJ_NO=#{pjNo}
+</select>
+
+<update id="updateGumSu" parameterType="hashmap" >
+UPDATE PROJECT SET
+PJ_SAVECHECK=#{yn}
+WHERE PJ_NO=#{pjNo}
+</update>
+
 </mapper>

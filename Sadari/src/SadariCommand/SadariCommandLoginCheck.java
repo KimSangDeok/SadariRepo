@@ -27,9 +27,8 @@ public class SadariCommandLoginCheck implements SadariCommand{
 	    String type= ((String) loginResult.get("type")).trim();
 	    
 //	    loginFaile
-	    if(!(id.trim()).equals("loginFaile")){
+	    if(!(id.trim()).equals("loginFail")){
 	    	
-//	    	HttpSession se = ;
 	    	request.getSession().setAttribute("id", id);
 	    	request.getSession().setAttribute("type", type);
 	    }

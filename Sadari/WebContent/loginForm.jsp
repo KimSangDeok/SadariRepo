@@ -45,7 +45,7 @@ $(document).ready(function(){
 			dataType:'text',
 			success:function(data){
 				
-				if( data.trim() =='loginFaile'){
+				if( data.trim() =='loginFail'){
 					
 					$('#loginFaileMessage').show();
 				}else{
