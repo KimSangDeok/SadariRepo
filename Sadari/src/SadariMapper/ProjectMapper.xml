@@ -6,15 +6,16 @@
 <mapper namespace="sadari.mapper.ProjectInsertMapper">
 
 <insert id="projectInsert" parameterType="SadariModel.ProjectRec">
-INSERT INTO PROJECT VALUES
-(2,
-PROJECT_SEQ.nextval,
-#{pjTitle},
-1000,
-#{pjSt_dt},
-#{pjTerm},
-#{pjCategory},
-#{pjDeadline})
+INSERT INTO PROJECT 
+(CT_NO, PJ_NO, PJ_TITLE, PJ_PRICE,
+PJ_ST_DT, PJ_TERM, PJ_CATEGORY, PJ_DEADLINE,
+PJ_PLAN, PJ_SKILLS, PJ_MEETING, PJ_LOC, PJ_SUBLOC, PJ_CONTENT, PJ_SAVEDAY ) 
+
+VALUES
+(client_seq.nextval, PROJECT_SEQ.nextval, #{pjTitle}, #{pjPrice},
+#{pjSt_dt}, #{pjTerm}, #{pjCategory}, #{pjDeadline},
+#{pjPlan}, #{pjSkills}, #{pjMeeting}, #{pjLoc}, #{pjSubloc}, #{pjContent}, sysdate )
+
 </insert>
 
 <select id="selectList" resultType="hashmap">
