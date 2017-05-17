@@ -28,10 +28,12 @@ public class SadariCommandClientUpdate implements SadariCommand{
 		rec.setCtTel("010"+request.getParameter("cell_phone_number_middle")+request.getParameter("cell_phone_number_end"));
 		rec.setCtIntroduce(request.getParameter("company_intro"));
 		
+		int result = ClientUpdateRepository.getInstance().update(rec);
+		
 		HashMap clientInfo = ClientUpdateRepository.getInstance().select(rec);
 		request.setAttribute("clientInfo", clientInfo);
 		
-		int result = ClientUpdateRepository.getInstance().update(rec);
+		
 		return next;
 	}
 
