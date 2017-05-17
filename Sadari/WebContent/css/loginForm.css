@@ -27,6 +27,18 @@ h4 {
   color: grey;
 }
 
+.newsCenter2>h5 {
+  margin: 20px;
+  font-family: "Nanum Gothic", serif;
+  color: grey;
+}
+
+.newsCenter2h3 {
+  font-family: "Nanum Gothic", serif;
+  color: grey;
+  margin: 20px;
+}
+
 
 .sub_body {
   display: block;
@@ -84,7 +96,7 @@ h4 {
 
 /* 게시판 */
 .wrap {
-  height: 500px;
+  height: 800px;
   margin: 0 auto;
   background-color: #f3f3f3;
 }
@@ -128,10 +140,23 @@ h4 {
   height: 120px;
   padding-top: 10px;
   padding-left: 10px;
+  margin-top:50px;
 /*   border: 1px solid #dedede; */
   border: 1px solid #dedede;
 }
 
+.newsCenter2 {
+  
+  background-color: white;
+  width: 1060px;
+  height: 240px;
+  padding-top: 10px;
+  padding-left: 0px;
+  margin-top:320px;
+  margin-left:412px;
+/*   border: 1px solid #dedede; */
+  border: 1px solid #dedede;
+}
 .contentBundle {
   width: 710px;
   height: 100%;
@@ -153,7 +178,7 @@ h4 {
 	background-color: white;
 	width: 630px;
  	height: 300px;
-  	margin: 10px auto;
+  	margin: 10px auto 20px auto;
   	padding-top: 70px;
   	border: 1px solid #dedede;
 /* 	border: solid 3px blue; */
@@ -260,4 +285,11 @@ h4 {
   font-family: 'Nanum Gothic', serif;
   font-size: 30px;
   text-align: center;
+}
+
+.bestPartner{
+	padding-top:10px;
+	margin-left: 130px;
+
+	
 }

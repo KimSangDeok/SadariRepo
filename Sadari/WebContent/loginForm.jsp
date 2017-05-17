@@ -115,6 +115,16 @@ $(document).ready(function(){
 			<!-- END OF login-content -->
 		</div>
 		<!-- END OF page -->
+		<div class="newsCenter2">
+				<h3>베스트 파트너</h3>
+				<div class="bestPartner">
+				 <img src="./img/kakao.PNG" class="img-circle" width="131" height="131" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				 <img src="./img/tobal.PNG" class="img-circle" width="131" height="131">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				 <img src="./img/bongjin.PNG" class="img-circle" width="131" height="131">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				 <img src="./img/mark.PNG" class="img-circle" width="131" height="131">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				 <img src="./img/haejin.PNG" class="img-circle" width="131" height="131">
+				 </div>   
+		</div>
 	</div>
 	<!-- 	end of wrap -->
 
