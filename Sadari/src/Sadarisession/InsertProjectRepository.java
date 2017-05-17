@@ -146,4 +146,16 @@ public class InsertProjectRepository {
 		
 	}
 	
+	public List<HashMap> selectPayMentList(){
+		
+		SqlSession sqlSess = getSelSessionFactory().openSession();
+		
+		try{
+			
+			return sqlSess.selectList(namespace+".selectPayMentList");
+		}finally{
+			sqlSess.close();
+		}
+	}
+	
 }

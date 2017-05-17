@@ -45,9 +45,9 @@ $(document).ready(function(){
  <div class="page">
      <div class="content">       
             <div class="panel panel-danger">
-		      <div class="panel-heading">@프로젝트 명@<br/><%=pMap.get("PJ_TITLE") %></div>
+		      <div class="panel-heading"><%=pMap.get("PJ_TITLE") %></div>
 		      <div class="panel-body">
-		      		프로젝트 내용 ><%=pMap.get("PJ_CONTENT") %><br/>
+		      		<%=pMap.get("PJ_CONTENT") %><br/>
 		      		필요 기술 ><%=pMap.get("PJ_SKILLS") %><br/>
 		      </div>
 		    </div>
@@ -67,16 +67,7 @@ $(document).ready(function(){
     <!-- END OF content -->
 
 <!-- 사이드 메뉴 -->
-     <aside class="sidebar" style="margin:20px">
-			<div>
-				<h2>관리자</h2>
-				  <div class="list-group">
-				    <a href="#" class="list-group-item" style="text-align: center; font-size:25px">검수</a>
-				    <a href="#" class="list-group-item" style="text-align: center; font-size:25px">결제</a>
-				    <a href="#" class="list-group-item" style="text-align: center; font-size:25px">지급</a>				  
-				  </div>			
-			</div>
-    </aside>  
+     <jsp:include page="adminSideMenu.jsp"/>
      
  </div>
  <!-- END OF page -->

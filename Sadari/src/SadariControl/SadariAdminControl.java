@@ -10,17 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import SadariCommand.SadariCommand;
+import SadariCommand.SadariCommandAdminPayGive;
+import SadariCommand.SadariCommandAdminPayProject;
 import SadariCommand.SadariCommandAdminProject;
 import SadariCommand.SadariCommandAdminProjectGumSu;
 import SadariCommand.SadariCommandAdminProjectInfo;
-import SadariCommand.SadariCommandGetCountValue;
-import SadariCommand.SadariCommandInsertCheck;
-import SadariCommand.SadariCommandInsertMember;
-import SadariCommand.SadariCommandInsertProject;
-import SadariCommand.SadariCommandLoginCheck;
-import SadariCommand.SadariCommandNull;
-import SadariCommand.SadariCommandPasswordLook;
-import SadariCommand.SadariCommandPayment;
 import SadariModel.SadariException;
 
 /**
@@ -44,6 +38,8 @@ public class SadariAdminControl extends HttpServlet {
 		commandMap.put("ad-mypage",	new SadariCommandAdminProject("managerTest.jsp"));
 		commandMap.put("pj-info",	new SadariCommandAdminProjectInfo("managerTestProject.jsp"));
 		commandMap.put("pj-gumsu",	new SadariCommandAdminProjectGumSu("managerTest.jsp"));
+		commandMap.put("ad-pay",	new SadariCommandAdminPayProject("managerPay.jsp"));
+		commandMap.put("ad-paygive",	new SadariCommandAdminPayGive("managerPaygive.jsp"));
 //		commandMap.put("payment",	new SadariCommandPayment("managerPay.jsp"));
 	}
 
@@ -58,9 +54,10 @@ public class SadariAdminControl extends HttpServlet {
 
 	private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-
+		
 		String nextPage = "";
 		String cmdKey	= request.getParameter("cmd");
+		System.out.println("cmdKey :"+cmdKey);
 		if( cmdKey == null ){
 			
 			cmdKey = "main-page";

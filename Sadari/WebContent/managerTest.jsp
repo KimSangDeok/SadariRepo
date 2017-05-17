@@ -30,7 +30,7 @@
 
 function projInfo(pjNo){
 	
-	$(location).attr('href','pjInfo.sdrad?cmd=pj-info&pjNo='+pjNo);
+	$(location).attr('href','pjInfo.sdrad?cmd=pj-info&pjNo='+pjNo+'&pageName=ad-mypage');
 }
 $(document).ready(function(){
 	
@@ -108,19 +108,7 @@ $(document).ready(function(){
 			<!-- END OF content -->
 
 			<!-- 사이드 메뉴 -->
-			<aside class="sidebar" style="margin: 70px">
-				<div>
-					<h2>관리자</h2>
-					<div class="list-group">
-						<a href="sadari.sdrad?cmd=" class="list-group-item active"
-							style="text-align: center; font-size: 25px">검수</a> <a
-							href="sadari.sdrad?cmd=payment" class="list-group-item"
-							style="text-align: center; font-size: 25px">결제</a> <a href="#"
-							class="list-group-item"
-							style="text-align: center; font-size: 25px">지급</a>
-					</div>
-				</div>
-			</aside>
+			<jsp:include page="adminSideMenu.jsp"/>
 		</div>
 		<!-- END OF page -->
 	</div>

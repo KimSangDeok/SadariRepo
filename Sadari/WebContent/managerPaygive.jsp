@@ -51,16 +51,7 @@
     <!-- END OF content -->
 
 <!-- 사이드 메뉴 -->
-     <aside class="sidebar" style="margin:70px">
-			<div>
-				<h2>관리자</h2>
-				  <div class="list-group"  style="cursor:pointer">
-				    <a href="#" class="list-group-item" style="text-align: center; font-size:25px">검수</a>
-				    <a href="#" class="list-group-item" style="text-align: center; font-size:25px;" >결제</a>
-				    <a href="#" class="list-group-item active" style="text-align: center; font-size:25px">지급</a>
-				  </div>			
-			</div>
-    </aside>
+	<jsp:include page="adminSideMenu.jsp"/>
  </div>
  <!-- END OF page -->
 </div>

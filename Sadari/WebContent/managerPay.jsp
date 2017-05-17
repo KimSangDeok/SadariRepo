@@ -1,4 +1,8 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<%
+	List<HashMap> pList = (List<HashMap>)request.getAttribute("pList");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,15 +36,19 @@
 					      <tr>
 					        <th>클라이언트</th>
 					        <th>프로젝트명</th>
-					        <th>신청날짜</th>
+					        <th>프로젝트 가격</th>
 					      </tr>
 					    </thead>
 					    <tbody  style="cursor:pointer">
+					    <%for(HashMap map : pList){ %>
+					    <%if(map.get("PJM_PAYMENT").equals("n")) {%>
 					      <tr>
-					        <td>John</td>
-					        <td>Doe</td>
-					        <td>john@example.com</td>
+					        <td><%=map.get("CT_NAME") %></td>
+					        <td><%=map.get("PJ_TITLE") %></td>
+					        <td><%=map.get("PJ_PRICE") %></td>
 					      </tr>
+					      <%} %>
+					      <%} %>
 					      <tr>
 					        <td>Mary</td>
 					        <td>Moe</td>
@@ -64,15 +72,19 @@
 					      <tr>
 					        <th>클라이언트</th>
 					        <th>프로젝트명</th>
-					        <th>신청날짜</th>
+					        <th>프로젝트 가격</th>
 					      </tr>
 					    </thead>
 					    <tbody style="cursor:pointer">
+					      <%for(HashMap map : pList){ %>
+					    <%if(map.get("PJM_PAYMENT").equals("y")) {%>
 					      <tr>
-					        <td>John</td>
-					        <td>Doe</td>
-					        <td>john@example.com</td>
+					        <td><%=map.get("CT_NAME") %></td>
+					        <td><%=map.get("PJ_TITLE") %></td>
+					        <td><%=map.get("PJ_PRICE") %></td>
 					      </tr>
+					      <%} %>
+					      <%} %>
 					      <tr>
 					        <td>Mary</td>
 					        <td>Moe</td>
@@ -91,16 +103,7 @@
     <!-- END OF content -->
 
 <!-- 사이드 메뉴 -->
-     <aside class="sidebar" style="margin:70px">
-			<div>
-				<h2>관리자</h2>
-				  <div class="list-group"  style="cursor:pointer">
-				    <a href="#" class="list-group-item" style="text-align: center; font-size:25px">검수</a>
-				    <a href="#" class="list-group-item active" style="text-align: center; font-size:25px;" >결제</a>
-				    <a href="#" class="list-group-item" style="text-align: center; font-size:25px">지급</a>
-				  </div>			
-			</div>
-    </aside>
+		<jsp:include page="adminSideMenu.jsp"/>
  </div>
  <!-- END OF page -->
 </div>

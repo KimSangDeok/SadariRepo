@@ -27,6 +27,8 @@ public class SadariCommandAdminProject implements SadariCommand{
 		request.setAttribute("pList", pList);
 		request.setAttribute("sList", sList);
 		
+		request.setAttribute("pageName", request.getParameter("pageName"));
+		
 		return next;
 	}
 

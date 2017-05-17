@@ -50,7 +50,7 @@ $(document).ready(function(){
 					$('#loginFaileMessage').show();
 				}else{
 					
-					$(location).attr('href','main.sadari?cmd='+data.trim()+'-mypage');
+					$(location).attr('href','main.sadari?cmd='+data.trim()+'-mypage&pageName=ad-mypage');
 				}
 			},
 			error : function(request, status , error) {
