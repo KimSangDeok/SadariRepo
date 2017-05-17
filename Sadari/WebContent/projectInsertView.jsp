@@ -19,37 +19,37 @@
  
     
 //   숫자 천단위 콤마 찍기.
-    $(function() {
-    	  var $input = $("#projectCost");
-    	  $input.on('blur', function() {
-    	    // 입력 값 알아내기
-    	    var _$self = $(this);
-    	    var value = _$self.val();
+//     $(function() {
+//     	  var $input = $("#projectCost");
+//     	  $input.on('blur', function() {
+//     	    // 입력 값 알아내기
+//     	    var _$self = $(this);
+//     	    var value = _$self.val();
 
-    	    // 원단위로 변경하기
-    	    var result = AddComma(value);
+//     	    // 원단위로 변경하기
+//     	    var result = AddComma(value);
 
-    	    _$self.val(result);
-    	  })
+//     	    _$self.val(result);
+//     	  })
 
-    });
+//     });
 
-    	 function AddComma(dataValue) {
-    	  isNumber(dataValue);
-    	  var separateValue = Number(dataValue).toLocaleString('en');
-    	  if (separateValue == 'NaN') {
-    	    return '';
-    	  }
-    	  return separateValue;
-    	 }
+//     	 function AddComma(dataValue) {
+//     	  isNumber(dataValue);
+//     	  var separateValue = Number(dataValue).toLocaleString('en');
+//     	  if (separateValue == 'NaN') {
+//     	    return '';
+//     	  }
+//     	  return separateValue;
+//     	 }
 
-    	 function isNumber(checkValue) {
-    	    checkValue = '' + checkValue;
-    	    if (isNaN(checkValue) || checkValue == "") {
-    	      alert('숫자만 입력해 주세요!!!');
-    	      return;
-    	    }
-    	}
+//     	 function isNumber(checkValue) {
+//     	    checkValue = '' + checkValue;
+//     	    if (isNaN(checkValue) || checkValue == "") {
+//     	      alert('숫자만 입력해 주세요!!!');
+//     	      return;
+//     	    }
+//     	}
     
     
     
