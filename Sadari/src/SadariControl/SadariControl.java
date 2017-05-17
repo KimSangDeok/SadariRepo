@@ -70,7 +70,7 @@ public class SadariControl extends HttpServlet {
 		commandMap.put("show-partnerList", new SadariCommandNull("partnerList.jsp"));
 		
 		//클라이언트 정보 업데이트
-		commandMap.put("client-info", new SadariCommandClientUpdate("projectInsertView.jsp"));
+		commandMap.put("client-info", new SadariCommandClientUpdate("clientInfo.jsp"));
 		
 		//로그인시 관리자 아이디면 관리자 페이지로
 		commandMap.put("ad-mypage",	new SadariCommandAdminProject("managerTest.jsp"));
