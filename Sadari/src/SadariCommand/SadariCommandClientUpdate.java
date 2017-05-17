@@ -31,7 +31,7 @@ public class SadariCommandClientUpdate implements SadariCommand{
 		int result = ClientUpdateRepository.getInstance().update(rec);
 		
 		HashMap clientInfo = ClientUpdateRepository.getInstance().select(rec);
-		request.setAttribute("clientInfo", clientInfo);
+		request.setAttribute("client-introduction-data", clientInfo);
 		
 		
 		return next;
