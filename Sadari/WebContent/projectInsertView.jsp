@@ -165,8 +165,7 @@
     <body class="sub_body">
    
 <!-- header -->
-   <%@ include file="header.jsp" %>
-   
+<jsp:include page="header.jsp"/>   
  
     <!-- 메인 내용 -->
 <section class="be_registered_project">
