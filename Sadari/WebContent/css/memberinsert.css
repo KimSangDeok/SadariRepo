@@ -52,6 +52,7 @@ h4 {
   display: block;
   margin: 0 0 0 0;
   height: 100%;
+  background-color: #f3f3f3;
 }
 
 .reg_project_header {
@@ -114,15 +115,7 @@ h4 {
     margin-right: auto;
     width: 1080px;
 }
-
-
-
-
-
 /* 사이드 메뉴 */
-
-
-
 
 .contentProjectBundle {
   background-color: white;
@@ -151,22 +144,22 @@ h4 {
 }
 
 .login-content{
-		
-/* 	vertical-align: middle; */
-/* 	border: 5px solid pink; */
-	
+      
+/*    vertical-align: middle; */
+/*    border: 5px solid pink; */
+   
 }
-	
+   
 .loginForm{
-	
-	background-color: white;
-	width: 700px;
- 	height: 400px;
-  	margin: 10px auto;
-  	padding-top: 70px;
-  	border: 1px solid #dedede;
-/* 	border: solid 3px blue; */
-	float: left;
+   
+   background-color: white;
+   width: 700px;
+    height: 400px;
+     margin: 10px auto;
+     padding-top: 70px;
+     border: 1px solid #dedede;
+/*    border: solid 3px blue; */
+   float: left;
 }
 
 
@@ -175,23 +168,23 @@ h4 {
 
 
 .login-button{
-	
-	float: right;
-	padding-right: 108px;
-/* 	border: 1px solid green; */
+   
+   float: right;
+   padding-right: 108px;
+/*    border: 1px solid green; */
 }
 
 .facebookLoginForm{
-	
-	background-color: white;
-	width: 420px;
- 	height: 300px;
-  	margin-top: 10px;
-  	margin-right: 21px;
-  	
-  	border: 1px solid #dedede;
-	padding: 100px;
-	float: right;
+   
+   background-color: white;
+   width: 420px;
+    height: 300px;
+     margin-top: 10px;
+     margin-right: 21px;
+     
+     border: 1px solid #dedede;
+   padding: 100px;
+   float: right;
 }
 
 
@@ -216,17 +209,6 @@ h4 {
   height: 200px;
   margin: 0 auto;
 }
-
-
-
-/* .partners { */
-/*   background-color: white; */
-/*   width: 230px; */
-/*   height: 250px; */
-/*   margin: 10px -10px; */
-/*   border: 1px solid #dedede; */
-/*   border-bottom: 2px solid #dedede; */
-/* } */
 
 .history {
   background-color: white;
@@ -267,62 +249,56 @@ body {
     color: rgb(85, 85, 85);
     background-color: rgb(243, 244, 247);
     height: 100%;
+    height: 1100px;
     margin: 0px;
 }
-
 #wrap {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -250px;
-    padding: 0 0 250px;
-    min-width: 1080px;
+    height: 1100px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
 }
 
 
 .content{
-	border-radius: 3px;
-	display: inline;
+	margin-top: 100px;
+    border-radius: 3px;
     float: left;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 50px;
     width: 1060px;
-	-webkit-box-sizing: border-box;	
+    height: 100%;
+    background-color: #f3f3f3   
 }
 
 .content-header {
-    margin: 0;
-    margin-bottom: 5px;
+	margin-bottom: 10px;
     padding: 30px;
     background-color: #fff;
     border-radius: 3px;
     border-bottom-width: 2px;
     border: 1px solid #dedede;
-    -webkit-box-sizing: border-box;
-        display: block;
+    display: block;
     
 }
-div {
-    display: block;
-}
 .content-inner{
-	padding: 30px;
-	background-color: #fff;
+   padding: 30px;
+   background-color: #fff;
     border-radius: 3px;
     border-bottom-width: 2px;
-	border: 1px solid #dedede;
+   border: 1px solid #dedede;
 }
 
 
 .signup-body form {
-    border-right: 1px solid #09be49;
+    border-right: 1px solid #dedede;
 }
 
 .form-horizontal.control-label{
     text-align: right;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 7px;
+    padding-top: 3px;
     display: inline;
     float: left;
     margin-left: 10px;
@@ -330,16 +306,21 @@ div {
     width: 160px;
 }
 
+ul {
+	padding: 0;
+	margin: 0;
+}
+
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    cursor: default;
 }
 
 .form-group.signup-usage{
-	margin-bottom: 25px;
-	margin-left: -10px;
+	display:inline-block;
+   margin-bottom: 25px;
+   margin-left: -10px;
     margin-right: -10px;
 }
 
@@ -359,13 +340,13 @@ label {
 }
 
 .control-wrapper>ul{
-	margin-bottom: 0;
+   margin-bottom: 0;
     overflow: auto;
     display:inline;
 }
 
 .checkbox-wrapper{
-	padding-left: 180px;
+   padding-left: 180px;
     display: inline;
     float: left;
     margin-left: 10px;
@@ -374,7 +355,7 @@ label {
 }
 
 .btn-wrapper{
-	display: inline;
+   display: inline;
     float: left;
     margin-left: 10px;
     margin-right: 10px;
@@ -382,13 +363,13 @@ label {
 }
 
 .control-wrapper>ul>li{
-	margin-right: 0;
+   margin-right: 0;
     float: left;
     display: inline;
 }
 
 .btn.btn-block.btn-wishket.btn-lg.account-btn{
-	color: #fff;
+   color: #fff;
     background-color: #2099bb;
     border-color: #2099bb;
     margin-bottom: 0;
@@ -398,7 +379,7 @@ label {
 }
 
 .control-label.required{
-	padding-left: -45px;
+   padding-left: -45px;
     display: inline;
     float: left;
     margin-left: 10px;
@@ -430,7 +411,7 @@ input, button {
 
 
 #radio-two{
-   	cursor: pointer;
+      cursor: pointer;
     width: 190px;
     height: 137px;
     margin-left: 16px;
@@ -444,16 +425,16 @@ input, button {
 }
 
 .radio-inline{
-	margin-left: 0;
+   	margin-left: 0;
     font-size: 12px;
     padding: 0;
-    width: 190px;
+    width: 200px;
     text-align: center;
-    margin-top: 4px;
+    margin-top: -1px;
     line-height: 18px;
     line-height: 15px \9;
     color: #333;
-	vertical-align: middle;
+   vertical-align: middle;
     font-weight: normal;
     cursor: pointer;
 }
@@ -501,7 +482,7 @@ input, button {
 }
 
 .signup-aside{
-	padding-right: 14px;
+   	padding-right: 14px;
     padding-left: 35px;
     display: inline;
     float: left;
@@ -510,5 +491,4 @@ input, button {
     width: 308.5px;
     margin-top: 10px;
 }
-
 
