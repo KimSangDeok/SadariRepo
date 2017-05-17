@@ -20,7 +20,7 @@ h3 {
     margin: 0;
     font-size: 24px;
     font-family: inherit;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 1.1;
     color: inherit;
     text-rendering: optimizelegibility;   
@@ -105,7 +105,7 @@ h4 {
 
 /* 게시판 */
 .wrap {
-  height: 850px;
+  height: 950px;
   margin: 0 auto;
   background-color: #f3f3f3;
 }
@@ -152,9 +152,9 @@ h4 {
    
 .loginForm{
    
-   background-color: white;
-   width: 700px;
-    height: 400px;
+     background-color: white;
+     width: 700px;
+     height: 400px;
      margin: 10px auto;
      padding-top: 70px;
      border: 1px solid #dedede;
@@ -267,8 +267,10 @@ body {
     margin-right: 10px;
     margin-bottom: 50px;
     width: 1060px;
-    height: 100%;
-    background-color: #f3f3f3   
+    padding: 10px auto;
+    height: 950px;
+    background-color: #f3f3f3;
+    vertical-align: middle; 
 }
 
 .content-header {
@@ -283,15 +285,21 @@ body {
 }
 .content-inner{
    padding: 30px;
+   height: 750px;
    background-color: #fff;
-    border-radius: 3px;
-    border-bottom-width: 2px;
+   border-radius: 3px;
+   border-bottom-width: 2px;
    border: 1px solid #dedede;
+   vertical-align: middle;
 }
 
 
 .signup-body form {
     border-right: 1px solid #dedede;
+    padding: 20px;
+    width: 100%;
+    height: 650px;
+    float: left;
 }
 
 .form-horizontal.control-label{
@@ -322,6 +330,7 @@ label {
    margin-bottom: 25px;
    margin-left: -10px;
     margin-right: -10px;
+    float: left;
 }
 
 .control-wrapper {
@@ -369,13 +378,15 @@ label {
 }
 
 .btn.btn-block.btn-wishket.btn-lg.account-btn{
-   color: #fff;
+   	color: #fff;
     background-color: #2099bb;
     border-color: #2099bb;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-weight: normal;
     text-align: center;
     vertical-align: middle;
+    width: 200px;
+    float: right;
 }
 
 .control-label.required{
@@ -384,16 +395,12 @@ label {
     float: left;
     margin-left: 10px;
     margin-right: 10px;
-    width: ;
     width: 160px;
     margin-top: 0;
     margin-bottom: 0;
     g-top: 7px;
     text-align: right;
 }
-
-
-
 
 input, button {
     overflow: visible;
@@ -406,9 +413,6 @@ input, button {
     margin-right: 0;
     background-image: url(../img/client_nonselected.png);
 }
-
-
-
 
 #radio-two{
       cursor: pointer;
@@ -449,12 +453,9 @@ input, button {
     margin-left: 89px;
 }
 
-
-
-
 .form-control {
     display: block;
-    width: 100%;
+    width: 300px;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -486,9 +487,15 @@ input, button {
     padding-left: 35px;
     display: inline;
     float: left;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: 10px;
+    vertical-align: middle;
+    text-align: center;
     width: 308.5px;
     margin-top: 10px;
+}
+
+.aside-benefit-text{
+	text-align: left;
 }
 

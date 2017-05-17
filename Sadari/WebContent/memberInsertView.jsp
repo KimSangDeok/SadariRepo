@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SADARI | 나의 사다리</title>
+<title>SADARI | 회원가입</title>
 
 <!-- 스타일시트 추가 -->
 <link rel="stylesheet" href="./css/memberinsert.css">
@@ -83,7 +83,7 @@
 						회원가입 <small class="small-text">사다리에 오신 것을 환영합니다.</small>
 					</h3>
 				</div>
-				<div class="content-inner" style="height:700px">
+				<div class="content-inner">
 					<section class="signup-body">
 						<form action="meminsert.sadari" autocomplete="off"
 							class="form-horizontal has-validation-callback" id="signup-form"
@@ -158,7 +158,7 @@
 								<div class="checkbox-wrapper">
 									<div class="checkbox" style="padding-top: 0 !important;">
 										<label for="id_tos"> <input class="required"
-											id="id_tos" name="tos" type="checkbox"> <span>
+										id="id_tos" name="tos" type="checkbox"> <span>
 												<a href="/terms-of-service/" target="_blank">이용 약관</a> 및 <a
 												href="/privacy/" target="_blank">개인 정보 보호 방침</a>에 동의합니다.																			
 										</span>
@@ -195,7 +195,7 @@
 						<p class="aside-benefit-text">
 							<strong class="strong-value">27,520</strong>개의 <strong>클라이언트
 								기업</strong>과<br> <strong class="strong-value">36,182</strong>개의 <strong>개발회사
-								&amp; 프리랜서</strong>가<br> 함께하는 온라인 아웃소싱 플랫폼 위시켓
+								&amp; 프리랜서</strong>가<br> 함께하는 온라인 아웃소싱 플랫폼 사다리
 						</p>
 					</aside>
 				</div>
