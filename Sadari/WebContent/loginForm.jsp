@@ -108,7 +108,7 @@ $(document).ready(function(){
 					<button type="button" class="btn btn-primary btn-lg">페이스북으로
 						로그인</button>
 					<hr>
-					아직 회원이 아니신가요? <a href="#">회원가입</a>
+					아직 회원이 아니신가요? <a href="memberInsertView.jsp">회원가입</a>
 				</div>
 
 			</div>
