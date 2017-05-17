@@ -90,7 +90,7 @@ $(document).ready(function(){
 						<div class="form-group">
 							<label class="col-sm-2 control-label">비밀번호</label>
 							<div class="col-sm-8">
-								<input class="form-control" id="userPw" type="text" value="">
+								<input class="form-control" id="userPw" type="password" value="">
 							</div>
 						</div>
 					</form>
