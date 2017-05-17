@@ -2,8 +2,8 @@
 	pageEncoding="UTF-8"%>
 	
 	<%	
-// 	String userId=request.getParameter("id");  
-	String userId="iii";
+	String userId=request.getParameter("id");  
+// 	String userId="iii";
 	%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
