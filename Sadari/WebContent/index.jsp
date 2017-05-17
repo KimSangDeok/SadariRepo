@@ -58,7 +58,7 @@
     <!-- 메인 & 서브 문구 -->
         <h1>In the Hall of the Mountain King</h1>
         <h2>In the Hall of the Mountain KingIn the Hall of the Mountain <br/>KingIn the Hall of the Mountain King</h2>
-        <a href=""><span class="sign">SIGN UP</span></a>
+        <a href="memberInsertView.jsp"><span class="sign">SIGN UP</span></a>
     
     </header>
 <!-- END OF HEADER -->
