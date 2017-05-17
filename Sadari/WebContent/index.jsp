@@ -48,9 +48,9 @@
     <!-- 대메뉴 -->
         <nav class="main_navbar">
             <div class="menu_container">
-                <a class="main_menu" href="<%= projectName %>/regProject.sadari?cmd=reg-project">프로젝트 등록</a>
-                <a class="main_menu" href="<%= projectName %>/searchProject.sadari?cmd=search-project">프로젝트 찾기</a>
-                <a class="main_menu" href="<%= projectName %>/listProject.sadari?cmd=list-partner">파트너스 목록</a>
+                <a class="main_menu" href="<%= projectName %>/regProject.sadari?cmd=login-form">프로젝트 등록</a>
+                <a class="main_menu" href="<%= projectName %>/searchProject.sadari?cmd=login-form">프로젝트 찾기</a>
+                <a class="main_menu" href="<%= projectName %>/listProject.sadari?cmd=login-form">파트너스 목록</a>
                 <a class="main_menu" href="<%= projectName %>/signIn.sadari?cmd=login-form"><p class="login">SIGN IN</p></a>
             </div>
         </nav>
