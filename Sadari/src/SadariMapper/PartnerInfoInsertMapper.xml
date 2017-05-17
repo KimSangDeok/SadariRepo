@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sadari.mapper.PartnerInfoInsertMapper">
+<insert id="partnerinsert1" parameterType="SadariModel.PartnerInsertRec">
+	INSERT INTO pn_person(pn_id,pn_name,pn_gender,pn_birth,pn_si,pn_gu,pn_phone) 
+	VALUES(#{userId},#{full_name1},#{gender},#{birth},#{si},#{gu},#{personphone})
+</insert>
+<insert id="partnerinsert2" parameterType="SadariModel.PartnerInsertRec">
+	INSERT INTO pn_business(pn_id,pn_name,pn_company,pn_manager,pn_Established,pn_si,pn_gu,pn_phone) 
+	VALUES(#{userId},#{full_name2},#{Company},#{manager},#{Established},#{si},#{gu},#{bissphone})
+</insert>
+</mapper>

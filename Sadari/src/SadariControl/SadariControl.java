@@ -9,7 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import SadariCommand.CommandPartnerInfoInsert;
 import SadariCommand.SadariCommand;
+import SadariCommand.SadariCommandAddressGu;
+import SadariCommand.SadariCommandAddressSi;
 import SadariCommand.SadariCommandAdminProject;
 import SadariCommand.SadariCommandClientUpdate;
 import SadariCommand.SadariCommandGetCountValue;
@@ -57,7 +60,12 @@ public class SadariControl extends HttpServlet {
 		commandMap.put("basicinfo", new SadariCommandNull("partnerBasicInfo.jsp"));
 		
 		//개인정보 수정 페이지에서 파트너 개인정보 입력
-		commandMap.put("basincinfoInsert", new SadariCommandNull("partnerBasicInfo.jsp"));
+		commandMap.put("basicinfo-insert", new CommandPartnerInfoInsert("partnerList.jsp"));
+		
+		//주소 시,군,구 받아오기
+
+		commandMap.put("address-selectsi", new SadariCommandAddressSi("partnerBasicInfo.jsp"));
+		commandMap.put("address-selectgu", new SadariCommandAddressGu("partnerBasicInfo.jsp"));
 		
 		//파트너 프로필 페이지 넘기기
 		commandMap.put("introduce",	  new SadariCommandNull("partnersInstroduce.jsp"));
